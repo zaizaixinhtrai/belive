@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <!--<corners android:radius="8dp" />-->
+        <!--</shape>-->
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/color_e8e8e8"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/video_call_icon"
+            android:alpha="50"/>
+    </item>
+</layer-list>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_view_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:paddingEnd="17dp"
+        android:paddingStart="17dp">
+
+        <com.appster.customview.CustomFontEditText
+            android:id="@+id/edt_input_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_tapbar_of_search"
+            android:layout_gravity="center"
+            android:background="@drawable/fragment_home_rlt_search"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/img_search"
+            android:gravity="center|start"
+            android:hint="@string/search_title"
+            android:inputType="textFilter"
+            android:paddingEnd="35dp"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="#4d4d4d"
+            android:textSize="14sp"
+            app:appFont="@string/font_questrialregular"
+            app:edt_drawable_start_height="20dp"
+            app:edt_drawable_start_width="20dp" />
+
+        <ImageButton
+            android:id="@+id/imv_clear_text"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_close_grey600_48dp" />
+    </FrameLayout>
+
+    <include layout="@layout/social_contacts_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvListUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#FFFFFF"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="40dp"
+            android:text="@string/search_no_users_found"
+            android:textColor="#9B9B9B"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

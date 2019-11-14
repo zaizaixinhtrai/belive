@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/thisweek_active_vi" android:state_selected="true" />
+    <item android:drawable="@drawable/thisweek_inactive_vi"/>
+</selector>

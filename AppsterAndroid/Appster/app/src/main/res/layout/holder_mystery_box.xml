@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mystery_box_height"
+    android:layout_marginStart="@dimen/mystery_box_margin"
+    android:layout_marginEnd="@dimen/mystery_box_margin"
+    android:layout_marginBottom="@dimen/mystery_box_margin"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="@dimen/mystery_box_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.appster.customview.RoundRectCornerImageView
+            android:id="@+id/imCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/mystery_box_thumb_radius" />
+
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_box_title"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:appFont="@string/font_opensansbold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Free mystery box" />
+
+        <com.appster.customview.RoundRectCornerImageView
+            android:id="@+id/iv_thumb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/mystery_box_margin"
+            android:layout_marginEnd="@dimen/mystery_box_margin"
+            android:layout_marginBottom="@dimen/mystery_box_margin"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:radius="@dimen/mystery_box_thumb_radius"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <HorizontalScrollView
+            android:id="@+id/hor_scroll_prize_list"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/mystery_box_margin"
+            android:layout_marginEnd="@dimen/mystery_box_margin"
+            android:minWidth="155dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_thumb"
+            app:layout_constraintTop_toBottomOf="@+id/tv_prize_list">
+
+            <LinearLayout
+                android:id="@+id/lo_prize_list_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_prize_list"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:text="@string/prize_list"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensanslight"
+            app:layout_constraintStart_toStartOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintTop_toBottomOf="@id/tv_box_title" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_view_all_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:text="@string/view_all_next"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:appFont="@string/font_opensansbold"
+            app:layout_constraintEnd_toEndOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintTop_toTopOf="@+id/tv_prize_list" />
+
+
+        <LinearLayout
+            android:id="@+id/lo_price"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_mystery_price_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_thumb"
+            app:layout_constraintEnd_toEndOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintStart_toStartOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintTop_toBottomOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintVertical_bias="1">
+
+            <ImageView
+                android:id="@+id/iv_price_thumb"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/navi_icon_points_small"
+                android:visibility="gone" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:appFont="@string/font_opensansbold"
+                tools:text="10:10:10" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

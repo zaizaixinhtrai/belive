@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/item_feed_height_action_like_comment"
+    android:paddingLeft="@dimen/margin_left_newsfeed"
+    android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fm_like"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imv_like"
+                android:layout_width="@dimen/icon_action_share_like_size"
+                android:layout_height="@dimen/icon_action_share_like_size"
+                android:src="@drawable/ic_heart_like_25dp_selected"
+                android:contentDescription="@string/content_desc"
+                android:scaleType="fitCenter" />
+
+            <ProgressBar
+                android:id="@+id/pblikeProgress"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_toRightOf="@+id/fm_like"
+            android:id="@+id/imgComment"
+            android:layout_width="@dimen/icon_action_share_like_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_height="@dimen/icon_action_share_like_size"
+            android:background="@drawable/ic_comment_25dp_states"
+            android:contentDescription="@string/content_desc"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_toRightOf="@+id/imgComment"
+            android:layout_width="@dimen/icon_action_share_like_size"
+            android:layout_height="@dimen/icon_action_share_like_size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_share_25dp_states"
+            android:scaleType="fitCenter" />
+    <!--<LinearLayout-->
+            <!--android:id="@+id/ln_menu_dialog_button"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="@dimen/item_feed_height_action_like_comment"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+        <ImageButton
+            android:id="@+id/ln_menu_dialog_button"
+            android:layout_width="35dp"
+            android:layout_height="@dimen/item_feed_height_action_like_comment"
+            android:src="@drawable/ic_option_menu"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/content_desc"
+            style="@style/clickable_ripple"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

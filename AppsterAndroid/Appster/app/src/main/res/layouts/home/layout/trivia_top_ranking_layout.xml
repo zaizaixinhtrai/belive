@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_6c9bff"
+              android:paddingTop="34dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_close_button_white"/>
+
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvWinnerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_function_trophy"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="20dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/top_winner_title"
+            android:textColor="@color/white"
+            android:textDirection="locale"
+            android:textSize="27sp"
+            app:appFont="@string/font_questrialregular"
+            app:drawable_start_height="30dp"
+            app:drawable_start_width="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvWinnerText"
+            android:paddingBottom="17dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp"
+            >
+            <ImageView
+                android:id="@+id/ivThisWeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/trivia_this_week_selector"/>
+            <ImageView
+                android:id="@+id/ivAllTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/trivia_all_time_selector"
+                />
+
+        </LinearLayout>
+
+        <com.apster.common.view.PagerSlidingTabStrip
+            android:id="@+id/rankingTabStrip"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tvWinnerText"
+            android:background="@color/trans_parent"
+            app:defaultFont="@string/font_helveticaneuebold"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:pstsIndicatorColor="@color/color_ffe548"
+            app:pstsIndicatorHeight="3dp"
+            app:pstsIndicatorWidth="20dp"
+            app:pstsShouldExpand="true"
+            app:pstsTextDefaultColor="@color/white"
+            app:pstsTextSelectedColor="@color/color_ffe548"
+            app:pstsUnderlineColor="#eeeeee"
+            app:pstsUnderlineHeight="0dp"
+            app:selectedFont="@string/font_helveticaneuebold"
+            app:tabSelectedTextSize="10"
+            app:tabTextSize="10"
+            app:tab_count="2"
+            app:tralling_space="0.28"/>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/rankingViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

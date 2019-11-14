@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingStart="30dp"
+    android:paddingTop="30dp"
+    android:paddingEnd="30dp">
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redemption_userId_title"
+        android:textColor="#58585b"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensanslight" />
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:enabled="false"
+        android:textColor="#bbbbbb"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansregular"
+        tools:text="zaizaixinhtrai" />
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/redemption_your_name_title"
+        android:textColor="#58585b"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensanslight" />
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:maxLength="225"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansregular"
+        tools:text="zaizaixinhtrai" />
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/redemption_email_title"
+        android:textColor="#58585b"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensanslight" />
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:inputType="textEmailAddress"
+        android:maxLength="225"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansregular"
+        tools:text="zaizaixinhtrai" />
+
+    <com.appster.customview.CustomFontCheckBox
+        android:id="@+id/cbConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:text="@string/redemption_confirm_text"
+        android:textColor="#58585b"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensanslight" />
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btSubmit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/redemption_submit_button"
+        android:clickable="false"
+        android:gravity="center"
+        android:letterSpacing="0.14"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:appFont="@string/font_opensansbold" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

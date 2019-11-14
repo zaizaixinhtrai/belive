@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <string name="no_internet_connection">Hãy chắn chắn rằng tín hiệu đường truyền của bạn ổn định.</string>
+    <string name="connecting_msg">Đang kết nối …</string>
+    <string name="processing_msg">Đang xử lý …</string>
+
+    <string name="nothing_here">Chưa có gì cả</string>
+    <string name="block_user">Người Dùng Hạn Chế</string>
+    <string name="blocked">Khoá</string>
+    <string name="unblock">Bỏ khoá thành công</string>
+    <string name="unfollow_confirmation">Bạn có chắc muốn bỏ theo dõi người dùng này </string>
+    <string name="skip">Bỏ qua</string>
+    <string name="follow">Theo dõi</string>
+    <string name="suggested">Gợi Ý</string>
+    <string name="maintenance_message">CHÚNG TÔI ĐANG BẢO TRÌ HỆ THỐNG</string>
+
+    <!--  Login page values  -->
+    <string name="user_name_or_email">Tên đăng nhập hoặc Email</string>
+    <string name="password">Password</string>
+    <string name="invalid_email">Tài khoản email không hợp lệ</string>
+    <string name="login_Sign_in_later">Đăng nhập lần sau</string>
+    <string name="phone_login_sigin_signup">Đăng nhập / Đăng ký</string>
+    <string name="phone_signin">Đăng nhập</string>
+    <string name="phone_login_signup">Đăng ký</string>
+    <string name="phone_login_message">Hãy nhập số điện thoại của bạn</string>
+    <string name="phone_login_message_has_account">Số điện thoại này đã được đăng ký.\nĐăng nhập bằng password.</string>
+    <string name="phone_signup_message">Hãy nhập mã đăng kí \n bạn đã nhận được %s</string>
+    <string name="phone_signup_new_password_messsage">Vui lòng tạo password cho tài khoản của bạn.</string>
+    <string name="phone_signup_new_password_messsage_2">Nhập password</string>
+    <string name="phone_signup_new_password_tips">Password giới hạn 6~20 kí tự.</string>
+    <string name="dont_receive_virification_code">Không nhận được mã đăng nhập</string>
+    <string name="phone_number_hint">Số điện thoại</string>
+    <string name="password_hint">Nhập password</string>
+    <string name="verification_code_hint">Nhập mã đăng nhập hợp lệ</string>
+    <string name="next">Tiếp theo</string>
+    <string name="resend_in_count_down">Gửi lại (%d)</string>
+    <string name="resend_fixed_60s">Gửi lại (60)</string>
+    <string name="resend">Gửi lại</string>
+    <string name="verify">Xác nhận</string>
+    <string name="phone_verify_title">Đăng kí bằng %s</string>
+    <string name="phone_signin_verify_message">Số điện thoại này chưa được đăng ký. Bấm Xác nhận để nhận được mã đăng ký.</string>
+    <string name="phone_signin_invalid_code_message">Mã đăng ký không hợp lệ. Bấm Gửi lại để nhận được mã đăng ký mới.</string>
+    <string name="phone_signin_incorrect_password">Password không chính xác.</string>
+    <string name="forgot_password">Quên password?</string>
+    <string name="reset_password">Đổi password</string>
+    <!--
+   <string name="send_verification_code">send verification</string>
+   -->
+    <string name="reset_password_message">Đổi password bằng \nmã xác nhận đã được gửi.</string>
+    <!--
+   <string name="phone_login_user_id_default">belive</string>
+   -->
+    <!--  Forgot password page values  -->
+    <!--  Sign up page values  -->
+    <string name="user_name">Tên đăng nhập</string>
+    <string name="activity_sign_unknown_error">Vui lòng thử lại !</string>
+    <!--  Let's Start   -->
+    <!--  Image Select popup values  -->
+    <!--
+   <string name="photo_library">Photo Library</string>
+   -->
+    <string name="camera">Camera</string>
+    <string name="btn_text_cancel">Huỷ</string>
+    <string name="btn_text_ok">OK</string>
+    <string name="btn_text_done">Xong</string>
+    <string name="btn_text_wait">Xin chờ</string>
+    <string name="btn_text_close_stream">Đóng</string>
+    <string name="choose_from_library">Thư viện</string>
+    <string name="toast_cannot_retrieve_cropped_image">Không thể thay đổi kích thước hình ảnh</string>
+    <!--  Edit profile page values  -->
+    <string name="edit_profile">Chỉnh sửa</string>
+    <string name="edit_pro_dbo">Ngày sinh</string>
+    <string name="edit_pro_avatar">Ảnh đại diện</string>
+    <string name="edit_pro_display_name">Tên hiển thị</string>
+    <string name="edit_pro_id_name">ID hiển thị</string>
+    <string name="edit_pro_gender">Giới tính</string>
+    <string name="edit_pro_gender_male">Nam</string>
+    <string name="edit_pro_gender_female">Nữ</string>
+    <!--
+   <string name="edit_pro_gender_secret">Secret</string>
+   -->
+    <string name="edit_pro_biography">Trạng thái</string>
+    <string name="edit_pro_birthday">Ngày sinh</string>
+    <string name="edit_pro_save">Lưu</string>
+    <string name="edit_pro_display_name_validation">Tên hiển thị giới hạn 3~16 kí tự.</string>
+    <string name="edit_pro_error_unselected_gender">Hãy chọn giới tính</string>
+    <string name="edit_pro_quote_hind">Cập nhật trạng thái của bạn</string>
+    <!--  Home page values  -->
+    <string name="search_new_user">Tìm kiếm</string>
+    <!-- <string name="home_live">Live</string> -->
+    <!-- <string name="home_feed">Feed</string> -->
+    <string name="search_title">Tìm kiếm người dùng</string>
+    <!-- daily login -->
+    <string name="daily_treat_message">Chúc mừng! Bạn đã nhận được...</string>
+    <string name="daily_treat_message_ultimate">WOW! Bạn đã nhận được quà tặng đặc biệt!</string>
+    <string name="open_it">Mở</string>
+    <string name="daily_treat_result_message">Bạn đã mở quà và nhận được...</string>
+    <string name="daily_treat_result_message_already_claimed">Bạn đã nhận quà ngày hôm nay!</string>
+    <string name="claim">Nhận</string>
+    <string name="claim_later">OK</string>
+    <string name="daily_treat_reopen_in">Trở lại sau %s để tiếp tục nhận quà!</string>
+    <string name="daily_treat_share_message">Chia sẻ với bạn bè !</string>
+    <string name="daily_treat_share_content">Tôi đã thắng %1$,d %2$s! Hãy chơi với tôi trên BeLive!</string>
+    <!-- search screen -->
+    <string name="facebok_friends">Bạn Facebook</string>
+    <!--  User Profile page values  -->
+    <string name="profile_header">Thông tin cá nhân</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="stars">stars</string>
+    <string name="profile_follow">Following</string>
+    <string name="profile_un_follow">@string/follow</string>
+    <!-- <string name="profile_me">Me</string> -->
+    <string name="pop_up_option">Lựa chọn</string>
+    <string name="pop_up_follow_user">Follow User</string>
+    <string name="pop_up_unfollow_user">Unfollow User</string>
+    <string name="follow_us">Follow us</string>
+    <!--  User Profile page POPUP values  -->
+    <string name="btn_text_yes">Có</string>
+    <string name="btn_text_no">Không</string>
+    <string name="are_you_sure_to_proceed">Bạn có chắc chắn?</string>
+    <!--  Photos page values  -->
+    <string name="do_you_want_to_delete_this_post">Bạn có muốn xoá bài post?</string>
+    <string name="do_you_want_to_delete_this_stream">Bạn có muốn xoá recorded stream?</string>
+    <!--  News Feed page values  -->
+    <string name="profile_post_not_of_me">Bài post này không phải của bạn</string>
+    <string name="newsfeed_menu_del_post">Xoá bài post</string>
+    <string name="newsfeed_menu_edit_post">Chỉnh sửa bài post</string>
+    <string name="newsfeed_menu_unfolow">Bỏ theo dõi</string>
+    <string name="newsfeed_menu_repost">Báo cáo xấu</string>
+    <string name="newsfeed_menu_unrepost">Bỏ báo cáo xấu</string>
+    <string name="newsfeed_like_count_text">likes</string>
+    <string name="newsfeed_like_count_is_one">like</string>
+    <!--  Slider page values  -->
+    <string name="messages">Tin nhắn</string>
+    <string name="transactions_slider">Ví</string>
+    <string name="setting_slider">Cài đặt</string>
+    <string name="personal_leaderboard_slider">Bảng xếp hạn</string>
+    <string name="daily_treats">Quà tặng hằng ngày</string>
+    <string name="invite_a_friend_slider">Mời bạn</string>
+    <string name="logout_slider">Đăng Xuất</string>
+    <!--
+   <string name="nav_suggested_friend_list">Suggested Friend</string>
+   -->
+    <string name="login_slider">Đăng nhập</string>
+    <string name="are_you_sure_you_want_to_logout">Bạn có chắc chắn không?</string>
+    <!--  Message page values  -->
+    <string name="write_a_message">Soạn tin nhắn</string>
+    <!--  Chat page values  -->
+    <string name="chat_camera">Camera</string>
+    <string name="chat_video"> Video </string>
+    <!--  Leaderboard Page values  -->
+    <!--  Settings page values  -->
+    <string name="settings_bold">Cài đặt</string>
+    <!--  Setting PopUp values  -->
+    <string name="select_a_picture_from">Chọn hình từ </string>
+    <string name="select_a_videos_from">Chọn videos từ</string>
+    <string name="select_a_stream_cover_from">Chọn hình đại diện stream từ</string>
+    <string name="view_more">Xem thêm</string>
+    <!--  Write A Post Page Values  -->
+    <string name="add_descriptions">Viết tiêu đề</string>
+    <string name="check_in_your_location_bold">Chọn vị trí</string>
+    <string name="please_enter_description">Hãy nhập chú thích</string>
+    <string name="post_video">Video</string>
+    <string name="post_quotes">Bài Post</string>
+    <string name="post_photo">Hình Ảnh</string>
+    <string name="post_discard_current_post">Xoá bài post này?</string>
+    <string name="post_btn_Discard">Xoá</string>
+    <!--  Send A Gift page values  -->
+    <string name="sendgift_no_choose_gift">Hãy chọn quà tặng.</string>
+    <string name="sendgift_no_enough_bean">Bạn không có đủ gems.</string>
+    <!--  Invite page values  -->
+    <string name="invite_bold">Mời bạn</string>
+    <string name="invite_phone_number_email">Nhập email bạn bè với\';\'</string>
+    <string name="invite_someone_to_appster">Mời bạn bè tham gia BeLive</string>
+    <string name="invite_your_referral_id">Mã giới thiệu của bạn</string>
+    <string name="share_your_referral_code">Chia sẻ mã giới thiệu của bạn</string>
+    <string name="share_referral_code">Chia sẻ mã giới thiệu</string>
+    <string name="invite_not_input_email">Vui lòng nhập email hợp lệ.</string>
+    <string name="invite_send_to_self">Bạn không thể tự gửi cho mình</string>
+    <string name="invite_sns_message">Hãy tham gia Belive với tôi và cùng nhận thưởng! Đây là mã giới thiệu của tôi - %s</string>
+    <string name="invite_sns_trivia_message">Sử dụng mã giới thiệu của tôi để cùng nhận được 1 lần Thêm Lượt cho Master Brain - Gameshow tương tác trực tiếp với phần thưởng hấp dẫn! Đây là mã giới thiệu của tôi - %s</string>
+    <string name="invite_mail_subject">Tôi, Bạn và Belive!</string>
+    <!--  notification  -->
+    <string name="notification_you">Bạn</string>
+    <string name="notification">Thông Báo</string>
+    <string name="notification_following">Đã theo dõi</string>
+    <!--  postcomment  -->
+    <string name="comment">Bình luận</string>
+    <!-- Streaming> -->
+    <string name="app_fail_login_live_Stream">Fail Login live stream </string>
+    <string name="app_fail_get_config_amazon_live_Stream">Fail get config live stream </string>
+    <string name="number_view">người xem </string>
+    <string name="hint_name_your_stream">Đặt tên stream</string>
+    <string name="hint_add_title">Nhập tiêu đề</string>
+    <string name="number_here_view" formatted="false">%s lượt xem / %s</string>
+    <string name="just_send_gift">gửi 1 %s!</string>
+    <string name="chat_box_live_commerce_suggestion">Mua sắm!</string>
+    <string name="viewer">người xem</string>
+    <string name="viewers">người xem</string>
+    <string name="live_commerce_announcement_message">thay thế bởi.</string>
+    <string name="like_this">Like </string>
+    <string name="low_network_message">Đường truyền không ổn định. Hãy sử dụng Wifi hoặc thay đổi đường truyền tốt hơn</string>
+    <string name="record_instruction">Hãy post video của bạn\nđể mọi người có thể xem lại.</string>
+    <string name="record_instruction_below_one_minute">Để lưu hoặc post,\nvideo cần kéo dài hơn 1 phút.</string>
+    <string name="delete_confirm_message">Bạn có chắc chắn muốn xoá video không?</string>
+    <string name="delete_confirm_title">Xoá Video?</string>
+    <string name="saved">Lưu</string>
+    <string name="deleted">Đã xoá</string>
+    <string name="delete">xoá</string>
+    <string name="save">lưu</string>
+    <string name="stream_pause">Stream sẽ được quay lại \n trong chốc lát! </string>
+    <string name="enter_the_water_mask">nhập văn bản</string>
+    <string name="tutorial_face_sticker">Select a Face sticker\nfor more fun!</string>
+    <string name="tutorial_sns_host">Mời bạn bè\nxem livestream của bạn!</string>
+    <string name="tutorial_sns_viewer">Chia sẻ livestream này\nđể cùng xem với bạn bè!</string>
+    <string name="tutorial_stream_title">Thêm bình luận \ncho livestream của bạn!</string>
+    <string name="tutorial_send_gift_viewer">Gửi quà đến người livestream\n và xem cảm nhận của họ!</string>
+    <string name="tutorial_chat_viewer">Bắt đầu cuộc trò chuyện!</string>
+    <plurals name="open_permission_setting_explanation">
+        <item quantity="other">Để thực hiện tác vụ này, bạn cần cấp quyền \'%1$s\'</item>
+    </plurals>
+    <!-- live commerce -->
+    <string name="shop">SHOP</string>
+    <string name="promo_code">Mã khuyến mãi</string>
+    <string name="order_now">Mua ngay</string>
+    <string name="copied">Sao chép</string>
+    <!-- XMPP Create Accoutn Error -->
+    <!-- Trending> -->
+    <string name="trending_this_week">Trong Tuần</string>
+    <string name="trending_this_month">Trong Tháng</string>
+    <string name="trending_all_time">Tất Cả</string>
+    <!-- Trim videos  -->
+    <string name="trim_videos">Cắt Videos</string>
+    <string name="support_mp4">Chỉ hỗ trợ file mp4</string>
+    <string name="fail_to_load_video">Tải video không thành công</string>
+    <string name="reduce_videos_quality_process">Chỉnh sửa kích thước videos</string>
+    <string name="please_wait">Xin chờ…</string>
+    <!--  Refill page values  -->
+    <string name="refill_title">Nạp Xu </string>
+    <string name="refill_menu">Nạp Xu </string>
+    <string name="refill_balance">Tài khoản : </string>
+    <string name="refill_invite_and_get">Mời &amp; Nhận  &#032;&#032; &#032; &#032; &#032;  &#032;   2 &#032;  </string>
+    <!--  Error values  -->
+    <string name="system_error">Lỗi hệ thống</string>
+    <string name="parameter_missing">Thiếu thông số</string>
+    <string name="model_state_error">Lỗi hệ thống</string>
+    <string name="account_deactivated_or_suspended">Tài khoản đã huỷ hoặc bị khoá</string>
+    <string name="account_deactivate_or_invalid_email">Tài khoản đã huỷ hoặc email không hợp lệ</string>
+    <string name="insufficient_gold">Không đủ Gem</string>
+    <string name="email_has_already_been_verified">Email đã đăng ký</string>
+    <string name="invalid_data">Thông tin không hợp lệ</string>
+    <string name="invalid_user_id">Thông tin người dùng không hợp lệ</string>
+    <string name="filter_is_invalid">Thông tin không hợp lệ</string>
+    <string name="media_type_is_invalid">Định dạng file không đúng</string>
+    <string name="invalid_login_credentials">Thông tin đăng nhập không chính xác</string>
+    <string name="out_of_length_bound">Vượt quá kí tự cho phép</string>
+    <string name="invalid_datetime">Ngày giờ không đúng</string>
+    <string name="invalid_data_type">Kiểu dữ liệu không hợp lệ</string>
+    <string name="invalid_email_format">Định dạng email không hợp lệ</string>
+    <string name="message_content_missing">Thiếu nội dung tin nhắn</string>
+    <string name="email_is_missing">Thiếu Email</string>
+    <string name="display_name_is_missing">Thiếu tên đăng nhập</string>
+    <string name="invalid_device_type">Thiết bị không hợp lệ</string>
+    <string name="invalid_credit_type">Thông tin thanh toán không chính xác</string>
+    <string name="invalid_post_id">Bài Post không hợp lệ</string>
+    <string name="invalid_follower_id">Người theo dõi không chính xác</string>
+    <string name="invalid_owner_id">Chủ sở hữu không hợp lệ</string>
+    <string name="invalid_report_user_id">Người báo cáo không hợp lệ</string>
+    <string name="invalid_notification_status">Trạng thái thông báo không hợp lệ</string>
+    <string name="invalid_save_push_notification_id">Mã thông báo không hợp lệ</string>
+    <string name="invalid_receiver_id">Mã người nhận không hợp lệ</string>
+    <string name="invalid_user_role">Vai trò người dùng không đúng</string>
+    <string name="invalid_referral_id">Mã giới thiệu không hợp lệ</string>
+    <string name="dob_is_out_of_accepted_age_range">Độ tuổi không cho phép</string>
+    <string name="missing_required_data">Thiếu thông tin yêu cầu</string>
+    <string name="email_already_existed">Email đã sử dụng.</string>
+    <string name="not_exist">Không tồn tại</string>
+    <string name="data_has_been_deleted">Thông tin đã bị xoá</string>
+    <string name="missing_paypal_email">Thiếu email paypal </string>
+    <string name="missing_account_number">Thiếu mã số đăng kí</string>
+    <string name="missing_branch_code">Missing branch code</string>
+    <string name="missing_bank_name">Thiếu tên ngân hàng</string>
+    <string name="username_has_been_used">Tên đăng nhập đã được sử dụng</string>
+    <string name="email_has_been_used">Email đã được sử dụng</string>
+    <string name="no_data_found">Không tìm thấy thông tin</string>
+    <string name="user_not_found">Không tìm thấy người dùng</string>
+    <string name="no_page_found">Không tìm thấy trang</string>
+    <string name="transaction_info_not_found">Không tìm thấy thông tin giao dịch</string>
+    <string name="update_fail">Lỗi cập nhật </string>
+    <string name="create_fail">Lỗi đăng ký</string>
+    <string name="delete_fail">Không thể xoá</string>
+    <string name="can_not_edit_comment">Không thể chỉnh sửa bình luận</string>
+    <string name="can_not_create_comment">Không thể bình luận</string>
+    <string name="can_not_delete_comment">Không thể xoá bình luận</string>
+    <string name="can_not_create_post">Không thể tạo post</string>
+    <string name="can_not_update_post">Không thể chỉnh sửa post</string>
+    <string name="can_not_delete_post">Không thể xoá post</string>
+    <string name="can_not_delete_conversation">Không thể xoá cuộc trò chuyện</string>
+    <string name="save_cashback_error">Lỗi rút tiền</string>
+    <string name="send_receive_gift_error">Lỗi gửi quà</string>
+    <string name="unauthorized">Không được phép</string>
+    <string name="user_rejected">Người dùng bị từ chối</string>
+    <string name="not_in_leaderboard">Không nằm trong bản xếp hạng</string>
+    <string name="post_not_belong_to_user">Bài Post không thuộc về người dùng</string>
+    <string name="can_not_send_email">Không thể gửi email</string>
+    <string name="self_communication">Tự trao đỏi</string>
+    <string name="account_authentication_problem">Đăng nhập hết hạn. Vui lòng đăng nhập lại</string>
+    <string name="Media_content_type_is_not_support">Định dạng file không được hỗ trợ</string>
+    <string name="Transaction_Error">Lỗi Giao Dịch</string>
+    <string name="Register_Xmpp_accrount_failed">Lỗi tài khoản đăng kí</string>
+    <string name="Referral_ID_already_exist">Mã giới thiệu đã được sử dụng</string>
+    <string name="Email_has_been_used_with_another_facebook_id">Email đã được sử dụng cho tài khoản Facebook khác</string>
+    <string name="User_does_not_have_any_email">Người dùng không có tài khoản email</string>
+    <string name="Error_Email_has_not_been_verified">Tài khoản email không hợp lệ</string>
+    <string name="Already_like_that_post">Bài post đã được Like</string>
+    <string name="Stream_already_exists">Stream đã tồn tại</string>
+    <string name="Request_cashback_fail">Yêu cầu Rút tiền không thành công (thử lại)</string>
+    <string name="User_turn_off_chat">Người dùng tắt trof chuyện</string>
+    <string name="Notification_not_belong_to_user">Thông báo không thuộc về người dùng</string>
+    <string name="Can_not_upload_media_content">Không thể nhập nội dung </string>
+    <!--  Setting  -->
+    <string name="setting_title_notifications">Thông Báo</string>
+    <string name="setting_notifications">Hệ Thống Thông Báo</string>
+    <string name="setting_live_notification">Thông Báo Trực Tiếp</string>
+    <string name="setting_notification_sound">Âm Thanh Thông Báo</string>
+    <string name="setting_hide_message_details">Ẩn Tin Nhắn</string>
+    <string name="setting_Searchable">Có Thể Tìm Kiếm</string>
+    <string name="setting_Messaging">Tin Nhắn</string>
+    <string name="setting_Language">Ngôn Ngữ</string>
+    <string name="setting_Profile">Thông Tin Cá Nhân</string>
+    <string name="setting_playtoken_connect">Connect to PLAYTOKEN</string>
+    <string name="setting_playtoken_connected">Connected to PLAYTOKEN</string>
+    <string name="setting_Edit_Profile">Chỉnh Sửa Thông Tin</string>
+    <string name="setting_blocked_list">Danh Sách Giới Hạn</string>
+    <string name="setting_Connect_to_Facebook">Kết nối Facebook</string>
+    <string name="setting_Support">Hỗ trợ</string>
+    <string name="setting_About_Us">Giới thiệu</string>
+    <string name="setting_Terms_And_Conditions">Điều khoản chung</string>
+    <string name="setting_Deactivate_Account">Huỷ tài khoản</string>
+    <string name="setting_confirm_Deactivate_Account">Bạn có muốn huỷ tài khoản không ?</string>
+    <string name="setting_title_choose_language">Chọn Ngôn Ngữ</string>
+    <string name="setting_Disconnect_facebook">Ngắt kết Facebook</string>
+    <string name="setting_Do_you_disconnect_facebook">Bạn có muốn huỷ kết nối Facebook ?</string>
+    <string name="setting_check_update">Cập nhật</string>
+    <string name="setting_version">Phiên bản %s</string>
+    <string name="setting_has_already_newest_version">Bạn đã cập nhật phiên bản mới nhất.</string>
+    <!-- Pocket> -->
+    <string name="pocket_title">Ví</string>
+    <string name="pocket_Current_Balance">Tài khoản hiện tại</string>
+    <string name="pocket_Beans">Gems</string>
+    <string name="pocket_View_your_transaction_history">Xem lại lịch sử giao dịch.</string>
+    <string name="pocket_USD">Gems</string>
+    <string name="pocket_Date">Ngày</string>
+    <string name="pocket_Remark">Đánh dấu</string>
+    <string name="pocket_Total">Tổng cộng</string>
+    <string name="pocket_In">Vào/Ra</string>
+    <string name="pocket_DescripBteioan">Mô tả/Ngày</string>
+    <string name="pocket_Current">Hiện tại</string>
+    <string name="pocket_to">đến</string>
+    <string name="pocket_start_date_over_current">Ngày bắt đầu phải trước hiện tại</string>
+    <!-- Social -->
+    <string name="social_sucess">Thành Công</string>
+    <!-- Block Message> -->
+    <!-- Gift receive store -->
+    <string name="gift_receive_Received">Nhận</string>
+    <string name="gift_receive_Sent">Gửi</string>
+    <!-- Post detail> -->
+    <string name="post_detail_title">Posts</string>
+    <string name="Please_click_back_again_to_exit">Bấm Back lần nữa để thoát</string>
+    <!-- Time> -->
+    <string name="viet_namese_just_started">Vừa mới bắt đầu</string>
+    <string name="time_just_now">vừa mới</string>
+    <string name="time_a_minute_ago">1 phút trước</string>
+    <string name="time_minutes_ago">phút trước</string>
+    <string name="time_an_hour_ago">1 giờ trước</string>
+    <string name="time_hours_ago">giờ trước</string>
+    <string name="time_yesterday">hôm qua</string>
+    <string name="time_days_ago">ngày trước</string>
+    <string name="time_year_ago">năm trước</string>
+    <string name="time_month_ago">tháng trước</string>
+    <string name="time_day_ago">1 ngày trước</string>
+    <string name="time_an_month_ago">1 tháng trước</string>
+    <string name="time_an_year_ago">1 năm trước</string>
+    <string name="time_a_week_ago">1 tuần trước</string>
+    <string name="time_weeks_ago">tuần trước</string>
+    <!--  For Record Pic/Videos activity  -->
+    <!-- <string name="recording">recording&#8230;</string> -->
+    <string name="create_profile_btn_next">Bắt Đầu!</string>
+    <string name="create_profile">Tạo tài khoản</string>
+    <string name="create_profile_enter_email">Nhập email.</string>
+    <string name="create_profile_please_input_your_username">Nhập tên đăng nhập</string>
+    <string name="create_profile_skip">bỏ qua</string>
+    <string name="create_profile_please_input_email">Nhập email.</string>
+    <!-- Login Play Token  -->
+    <string name="play_token_register">Đăng ký</string>
+    <string name="login_playtoken_please_input_your_username_">Nhập tên đăng nhập</string>
+    <string name="login_playtoken_please_input_your_password">Nhập Password</string>
+    <string name="register_playtoken_username_range">Tên đăng nhập giới hạn 3~16 kí tự.</string>
+    <string name="register_playtoken_password_range">Password giới hạn 6~15 kí tự.</string>
+    <string name="register_playtoken_re_enter_Email_hint">Email (tuỳ chọn)</string>
+    <string name="register_playtoken_re_enter_Referer_hint">Mã giới thiệu (tuỳ chọn)</string>
+    <string name="register_not_number">Phải là chữ số </string>
+    <string name="register_playtoken_re_enter_user_name_hint">Tên đăng nhập</string>
+    <!--
+   <string name="live_trim_saved_video">Save video</string>
+   -->
+    <!-- <string name="live_trim_record">Record</string> -->
+    <!--
+   <string name="live_trim_not_recorded">Not Recorded</string>
+   -->
+    <string name="not_data_following">Bạn chưa theo dõi ai trên BeLive. Xem liveshow phổ biến tại :</string>
+    <string name="number_view_is_one">người xem</string>
+    <string name="gift_title">Quà tặng</string>
+    <string name="profile_following_title">Following</string>
+    <string name="profile_followers_title">Followers</string>
+    <string name="chat_gift">Quà tặng</string>
+    <!--  Array String color  -->
+    <string name="home_type_sport">Thể Thao</string>
+    <string name="home_type_fashion">Thời Trang</string>
+    <string name="home_type_games">Games</string>
+    <string name="header_title_share_post" formatted="false">Kiểm tra bài post BeLive %s bằng @%s\n</string>
+    <string name="header_title_share_stream_viewer" formatted="false">%s @%s\nHãy cùng tôi tham gia Belive! :)</string>
+    <string name="header_title_share_stream_host" formatted="false">%s @%s\nTôi đang LIVE! Hãy tham gia cùng tôi trên Belive! :)</string>
+    <string name="share_live_others">Khác</string>
+    <string name="share_live_share">Chia sẻ</string>
+    <string name="share_no_instagram_app">Instagram chưa được cài đặt</string>
+    <string name="share_instagram_not_share_text">Bạn chỉ có thể chia sẻ 1 tấm hình hoặc 1 video</string>
+    <string name="share_live_copy_link">Sao chép link</string>
+    <string name="share_link_copied">Link đã được sao chép </string>
+    <string name="post_updating">Cập Nhật</string>
+    <string name="post_post_updated">Bài Post đã cập nhật</string>
+    <string name="post_sharing">Chia sẻ</string>
+    <string name="post_share_facebook_success">Bài Post của bạn đã được chia sẻ trên Facebook </string>
+    <string name="share_no_twitter_app">Twitter chưa được cài đặt</string>
+    <string name="stream_share_facebook_success">Stream của bạn đã được chia sẻ trên Facebook </string>
+    <string name="stream_share_twitter_success">Stream của bạn đã được chia sẻ trên Twitter </string>
+    <string name="report_sexual_content">Nội dung khiêu dâm</string>
+    <string name="report_violent">Nội dung bạo lực hoặc phản cảm</string>
+    <string name="report_hateful">Nội dung thù địch hoặc lạm dụng</string>
+    <string name="report_harmful">Hành vi nguy hiểm có hại</string>
+    <string name="report_child">Lạm dụng trẻ em</string>
+    <string name="report_spam">Spam hoặc gây hiểu lầm</string>
+    <string name="report_infringes">Vi phạm quyền lợi</string>
+    <string name="report_what_issue">Lý do báo cáo</string>
+    <string name="report_user">Báo cáo người dùng</string>
+    <string name="live_stream_ended">Live kết thúc</string>
+    <string name="message_do_you_want_to_delete_message">Bạn có muốn xoá tin nhắn?</string>
+    <string name="gift_has_been_sent_successfully">Quà tặng đã được gửi thành công</string>
+    <string name="your_post_has_delete">Xoá thành công</string>
+    <string name="intivite_friend_successful">Đã gửi lời mời.</string>
+    <string name="please_input_display_name">Vui lòng nhập tên hiểu thị</string>
+    <string name="live_stream_category">Thể loại</string>
+    <string name="gift_refill_more_dialog_title">Không đủ gems</string>
+    <string name="gift_refill_more_dialog_message">Bạn có muốn nạp Gems thêm </string>
+    <string name="home_find_out">Tìm thêm</string>
+    <string name="home_event">Sự kiện</string>
+    <string name="login_by_signing_up">Bằng cách đăng ký, bạn đồng ý với </string>
+    <string name="login_terms">Điều khoản</string>
+    <string name="login_privacy_policy">Chính sách bảo mật</string>
+    <string name="message_do_not_have_permission_create_stream">Tài khoản của bạn đã bị khoá. Vui lòng liên hệ BeLive để biết thêm thông tin.</string>
+    <string name="message_stream_remove">Stream đã bị xoá.</string>
+    <string name="invite_friend_send">Đã gửi</string>
+    <string name="please_contact_appsters_team">Tài khoản của bạn đã bị huỷ. Vui lòng liên hệ BeLive để biết thêm thông tin.</string>
+    <string name="whatsapp_have_not_been_installed">Whatsapp chưa được cài đặt.</string>
+    <string name="wechat_have_not_been_installed">WeChat chưa được cài đặt.</string>
+    <string name="weibo_have_not_been_installed">Weibo chưa được cài đặt.</string>
+    <string name="email_have_not_been_installed">Email chưa được cài đặt.</string>
+    <string name="you_have_no_conversation">Bạn không có cuộc hội thoại nào</string>
+    <string name="start_capturing_and_share_your_moments">Bắt đầu chia sẻ khoảnh khắc của bạn</string>
+    <string name="leaderboard_there_are_no_activity">Không có hoạt động nào</string>
+    <string name="notification_no_notification">Không có thông báo</string>
+    <string name="you_did_not_receive_any_gift">Bạn chưa nhận được quà tặng nào</string>
+    <string name="do_you_want_stop_record">Bạn có muốn huỷ ? </string>
+    <string name="member_doesnot_want_to_receive_message">Người dùng không nhận tin nhắn vào lúc này</string>
+    <string name="home_try_again">Thử lại</string>
+    <string name="some_error_happen_please_try">Có lỗi. Vui lòng thử lại.</string>
+    <string name="error_title">Lỗi</string>
+    <string name="check_your_connection">Kiểm tra kết nối và thử lại.</string>
+    <string name="income_menu">Thu nhập</string>
+    <string name="income_what_are_stars">Stars là gì ?</string>
+    <string name="income_start_to_cash">Chuyển đổi gems</string>
+    <string name="income_start_to_gem">Đổi quà</string>
+    <string name="income_start_are_ear">Stars là giá trị quà tặng bạn nhận được khi có người tặng. Càng nhiều Stars có nghĩa là bạn càng nổi tiếng! Stars có thể đổi sang Gems hoặc đổi ra phần thưởng.</string>
+    <string name="income_what_are_gems">Gems là gì ?</string>
+    <string name="income_gems_enable">Gems cho phép bạn mua quà cho các kênh yêu thích, cho phép họ chú ý hơn khi họ thừa nhận bạn là người hâm mộ hàng đầu của họ (Để gửi quà, bạn có thể vào trang Tiểu sử hoặc luồng trực tiếp của họ).</string>
+    <string name="income_exchange_rate_tips">Tỷ giá quy đổi</string>
+    <string name="exchange_confirm_title">Bạn có chắc không?</string>
+    <string name="stars_to_gems_exchange_confirm_exchange">Chuyển đổi</string>
+    <string name="exchange_confirm_to">thành</string>
+    <string name="exchange_success">Thàng công!</string>
+    <string name="stars_to_gems_exchange_have_added">đã thêm.</string>
+    <string name="exchange_oops">Xin lỗi!</string>
+    <string name="stars_to_gems_exchange_not_enough_gold">Không có đủ Stars.</string>
+    <string name="feature_will_be_coming_soon">Tính năng sắp ra mắt!</string>
+    <string name="stream_end_stream_home_btn">HOME</string>
+    <string name="stream_end_stream_viewer_count">Người xem</string>
+    <string name="stream_end_stream_likes_count">Likes</string>
+    <string name="stream_end_stream_stars_count">Stars</string>
+    <string name="stream_stars_from_fan">stars từ fans</string>
+    <string name="toppan_title">Bảng Xếp Hạng</string>
+    <string name="toppan_have_not_fan">Chưa có gì cả.</string>
+    <!--
+   <string name="search_header_suggested">@string/suggested</string>
+   -->
+    <string name="search_header_recent">Vừa mới</string>
+    <string name="streaming_recorded_live_toast">Recorded Live</string>
+    <string name="likes_title">Likes</string>
+    <string name="newsfeed_menu_del_stream">Xoá </string>
+    <string name="newsfeed_menu_share_stream">Chia sẻ</string>
+    <string name="stream_disclaimer">Xin chào!\nChúng tôi sẽ cấm vĩnh viễn người dùng có nội dung hiển thị ảnh khoả thân, nội dung khiêu dâm và các hoạt động tình dục có liên quan, mại dâm, cờ bạc, hút thuốc lá, bắt nạt và các hành vi bất hợp pháp khác.</string>
+    <string name="recorded_stream_has_been_deleted">Stream đã bị chủ sở hữu xóa</string>
+    <string name="btn_text_update">Cập nhật</string>
+    <string name="search_user">Người dùng</string>
+    <string name="search_latest_live">Live mới nhất</string>
+    <string name="search_no_stream">Không có ai Live tại thời điểm này</string>
+    <string name="start_stream_poor_connection">Chất lượng của stream có thể bị ảnh hưởng bởi đường truyền không tốt, hãy đảm bảo bạn có kết nối tốt.</string>
+    <!--  Item Wall Feed  -->
+    <string name="started_xx_ago" formatted="false">Đã bắt đầu %s</string>
+    <string name="view_count" formatted="false"> %s lượt xem</string>
+    <string name="views_count" formatted="false"> %s lượt xem</string>
+    <string name="like_count" formatted="false"> %s like</string>
+    <string name="likes_count" formatted="false"> %s likes</string>
+    <string name="view_all_for" formatted="false"> Hiển thị tất cả %s bình luận</string>
+    <string name="wall_feed">Tin tức</string>
+    <string name="display_name_required">Nhập tên đăng nhập</string>
+    <string name="user_id_required">Nhập ID</string>
+    <string name="characters_range" formatted="false">Chỉ sử dụng từ %s đến %s kí </string>
+    <string name="share_with_friend">Chia sẻ với bạn bè</string>
+    <string name="register_your_id">ID</string>
+    <!--
+   <string name="register_your_display_name">YOUR DISPLAY NAME</string>
+   -->
+    <!--
+   <string name="register_email_optional">EMAIL (OPTIONAL)</string>
+   -->
+    <!--
+   <string name="register_referral">REFERRAL CODE (OPTIONAL)</string>
+   -->
+    <string name="register_create_your_profile">Tạo tài khoản của bạn</string>
+    <string name="register_your_bold">của bạn</string>
+    <string name="register_begin">Bắt đầu</string>
+    <string name="register_duplicated_id">ID đã được sử dụng</string>
+    <string name="user_has_been_suspended">Người dùng đã bị khoá</string>
+    <string name="search_no_users_found">Không tìm người dùng</string>
+    <!--
+   <string name="search_title_explore">EXPLORE</string>
+   -->
+    <string name="chat_with_everyone">Trò chuyện với mọi người</string>
+    <string name="stream_end_stream_profile_btn">Thông tin cá nhân</string>
+    <string name="stream_end_share_achievements">Chia sẻ thành tích</string>
+    <string name="string_stop">Dừng lại</string>
+    <string name="string_block">Khoá</string>
+    <string name="string_mute">Mute</string>
+    <string name="string_ban">Ban</string>
+    <string name="string_hide">Hide</string>
+    <string name="string_unhide">Unhide</string>
+    <string name="string_unmute">Unmute</string>
+    <string name="string_unblock">Bỏ khoá</string>
+    <string name="stars_received">stars nhận được</string>
+    <string name="topfan_sent">đã gửi</string>
+    <string name="silder_menu_balance">Tài Khoản :</string>
+    <string name="income_start_received">Stars đang có</string>
+    <string name="picture">Hình ảnh</string>
+    <string name="chat_empty_holder_message">Chưa có gì cả. \n Hãy bắt đầu trò chuyện?</string>
+    <string name="convert_to_gem_gem_on_hand">Gems đang có:</string>
+    <string name="friend_already_on_belive">Bạn bè trên BeLive</string>
+    <string name="report_toast_message">Báo cáo người dùng của bạn sẽ được xem xét và xử lý.</string>
+    <!-- blocked screen -->
+    <string name="blocked_screen_title">Danh sách giới hạn</string>
+    <string name="exchange_dialog_sure">Chắc chắn</string>
+    <string name="block_this_user">Khoá người dùng này?</string>
+    <string name="unblock_this_user">Bỏ khoá người dùng này?</string>
+    <string name="block_confirmation_content">Khi bạn khoá một người dùng có nghĩa là bạn không thể xem bất kì bài post hay tìm kiếm, hoặc nhận thông báo từ người này</string>
+    <string name="unblock_confirmation_content">Người dùng này sẽ được phép xem luồng và bài đăng của bạn, tìm bạn trên Tìm kiếm và nhận thông báo từ bạn.</string>
+    <string name="no_post_found">Không tìm thấy bài post</string>
+    <string name="share_end_result_message">Hãy tham cùng tôi trên BeLive! :)</string>
+    <string name="these_emails_has_been_invited">These emails has been invited:</string>
+    <string name="these_emails_has_been_blocked">These emails has been blocked:</string>
+    <string name="these_emails_has_been_invalid">These emails has been invalid:</string>
+    <string name="friends_already_on_belive">Bạn bè đã có trên BeLieve</string>
+    <string name="are_you_sure_you_want_to_end_this_stream">Bạn có chắc chắn muốn kết thúc Stream này không ?</string>
+    <string name="end_stream">Kết thúc</string>
+    <string name="paypal_firstname">Họ</string>
+    <string name="paypal_lastname">Tên</string>
+    <string name="paypal_email">EMAIL PAYPAL</string>
+    <string name="paypal_mobile_num">Số điện thoại</string>
+    <string name="dont_have_paypal_account">Không có tài khoản PayPal?</string>
+    <string name="submit">Gửi</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="not_enought_stars">Không có đủ %s khả dụng</string>
+    <string name="not_enought_stars_pre">Không có đủ </string>
+    <string name="not_enought_stars_post">khả dụng</string>
+    <string name="btn_text_sure">Chắc chắn</string>
+    <string name="all_fields_required">Tất cả các trường được yêu cầu phải điền vào.</string>
+    <string name="enter_valid_paypal_email">Nhập email PayPal.</string>
+    <string name="enter_valid_phone_number">Nhập số điện thoại.</string>
+    <string name="withdrawn_successfully">Gửi thành công</string>
+    <string name="confirm_cashout">Xác nhận tiền gửi</string>
+    <string name="sns_default_message">Cùng khám phá điều thú vị trên BeLive! #BeLiveSG</string>
+    <string name="sns_facebook_message">Cùng khám phá điều thú vị trên BeLive! #BeLiveSG http://belive.sg/fb</string>
+    <string name="btn_text_confirm">Xác nhận</string>
+    <string name="error_start_stream">Lỗi tại stream</string>
+    <string name="invite_friend_award">Mời bạn bè tham gia Belive và \ncả hai cùng nhận được :gem: 100</string>
+    <string name="network_error">Lỗi đường truyền</string>
+    <string name="network_unstable_error_message">Kết nối không ổn định. Vui lòng thử lại.</string>
+    <string name="newly_registered_user_title">Chào mừng đến với BeLive</string>
+    <string name="newly_registered_user">Chúng tôi không chấp nhận hành vi và nội dung hiển thị ảnh khoả thân, nội dung khiêu dâm và các hoạt động tình dục có liên quan, mại dâm, cờ bạc, bắt nạt và hút thuốc trên cộng đồng của chúng tôi. Người vi phạm sẽ bị cấm vĩnh viễn.\n\nHãy làm cho trải nghiệm thú vị với mọi người!</string>
+    <string name="hot_network_is_low">Tín hiệu đường truyền Streamer không ổn định</string>
+    <string name="stream_network_unstable">Tín hiệu đường truyền không ổn định. Bạn có muốn chờ không?</string>
+    <string name="send_gift_combo" formatted="false">Gửi %s</string>
+    <plurals name="gifts">
+        <item quantity="one">Gửi 1 %s!</item>
+        <item quantity="other">Gửi %s</item>
+    </plurals>
+    <string name="viewer_network_is_low">Tín hiệu đường truyền không tốt</string>
+    <string name="copy_this_text">Sao chép văn bản</string>
+    <string name="text_copied">Sao chép văn bản</string>
+    <string name="message_get_access_token">Lấy thông tin tài khoản …</string>
+    <string name="message_is_lived_now">đang lên sóng.</string>
+    <string name="message_joined">đã tham gia</string>
+    <string name="message_followed">đã theo dõi %s!</string>
+    <string name="message_sent">gửi</string>
+    <string name="message_sent_a">gửi 1</string>
+    <string name="message_sent_a_item">gửi 1 %s!</string>
+    <string name="message_received_end_message">Received end message</string>
+    <string name="message_check_network">kiểm tra đường truyền…</string>
+    <string name="message_prepare_stream">Chuẩn bị tạo stream…</string>
+    <string name="message_beauty_on">Tự động điều chỉnh: bật</string>
+    <string name="message_beauty_off">Tự động điều chỉnh: tắt</string>
+    <string name="message_network_not_good">Đường truyền không tốt!</string>
+    <string name="message_select_cate">Chọn mô tả cho Live của bạn</string>
+    <string name="error_auth_failed">Kết nối không thành công</string>
+    <string name="tag_hot">Hot</string>
+    <string name="tag_entertainment">Giải trí</string>
+    <string name="button_send">GỬI</string>
+    <!-- suggested frend list -->
+    <string name="friend_suggestion_title">Gợi ý</string>
+    <string name="invite_friend">mời bạn bè</string>
+    <string name="friend_on_belive">Bạn bè trên Belive</string>
+    <string name="txt_friend_invitation_suggestion">Chưa kết nối bạn bè? Mời và nhận :gem: **100** mỗi người :)</string>
+    <string name="txt_friend_invitation_suggestion_non_fb">Chưa kết nối bạn bè!\n Mời và nhận :gem: **100** mỗi người :)</string>
+    <!--
+
+       Your Branch App Key Goes Here
+       If you don't have one, see the Branch Android Quick-Start for how to get one:
+       https://github.com/BranchMetrics/Branch-Integration-Guides/blob/master/android-quick-start.md
+
+
+       Your Twitter Key and Secret Goes Here
+       If you don't have these, see the Twitter Kit for Android documentation:
+       https://dev.twitter.com/twitter-kit/android
+
+   -->
+    <!--
+   -->
+    <!--
+   -->
+    <string name="prelive_change_cover_image">Thay đổi ảnh đại diện</string>
+    <string name="prelive_notice">Để lưu hoặc post,\nvideo cần kéo dài hơn 1 phút.</string>
+    <string name="cover_image_changed">Ảnh đại diện thay đổi thành công!</string>
+    <string name="upload_cover_photo">Thay đồi ảnh bìa</string>
+    <string name="prelive_cover_tip">Tăng lượt xem của bạn bằng cách tải lên ảnh bìa có liên quan!</string>
+    <string name="we_are_under_maintenance">CHÚNG TÔI ĐANG BẢO TRÌ HỆ THỐNG</string>
+    <string name="please_visit_us_later">Vui lòng quay lại sau</string>
+    <string name="invite_friend_referral_code">Mã giới thiệu</string>
+    <string name="invite_friend_input_your_friend_referral_and_get_gem">Nhập mã giới thiệu của bạn bè và nhận 100 :gem:</string>
+    <string name="invite_friend_enter_code">Nhập mã</string>
+    <string name="invite_friend_you_entered_referral_code">Nhập mã giới thiệu</string>
+    <string name="invite_friend_please_input_referral_code">Vui lòng nhập mã giới thiệu!</string>
+    <string name="invite_friend_refID_invalid">Mã giới thiệu không chính xác!</string>
+    <!--  IAppPay strings  -->
+    <string name="iapppay_not_yet_processed">Vui lòng chờ trong khi yêu cầu của bạn đang được xử lý.</string>
+    <string name="iapppay_ss_orderid">Vui lòng chụp ảnh màn hình và liên hệ với dịch vụ khách hàng về yêu cầu của bạn theo ID:</string>
+    <string name="iapppay_purchase_success">Thanh toán thành công!</string>
+    <string name="you_have_been_kicked_out_of_the_stream">Bạn bị bắt buộc rời khỏi stream bởi BeLive Admin</string>
+    <string name="stream_title_not_available">Nhập tiêu đề cho stream của bạn</string>
+    <string name="do_you_want_resume_previous_stream">Bạn có muốn tiếp tục stream lần trước không?</string>
+    <string name="resume">Tiếp tục</string>
+    <string name="hot_can_not_create_group">Kết nối với phòng trò chuyện</string>
+    <string name="viewer_can_not_join_group">Kết nối với phòng trò chuyện</string>
+    <string name="custom_tab_menu_title_share">Chia sẻ</string>
+    <string name="custom_tab_menu_title_copy">Sao chép văn bản</string>
+    <string name="stars_recommended">Gợi ý</string>
+    <string name="bottom_bar_home">Home</string>
+    <string name="bottom_bar_newfeeds">Tin tức</string>
+    <string name="bottom_bar_search">Tìm Kiếm</string>
+    <string name="bottom_bar_points">points</string>
+    <string name="today">Hôm nay</string>
+    <string name="chattime_yesterday">Hôm qua</string>
+    <string name="profile_menu">Thông tin cá nhân </string>
+    <!--
+   -->
+    <string name="btn_post">POST</string>
+    <string name="label_free">FREE</string>
+    <string name="label_synthesis">Tổng hợp dữ liệu…</string>
+    <array name="expensive_gifts">
+        <item name="gift_lux_car">Luxury Car</item>
+        <item name="gift_supercar">Supercar</item>
+        <item name="gift_mansion">Mansion</item>
+        <item name="gift_watch">Designer Watch</item>
+        <item name="gift_rose">Rose Bouquet</item>
+        <item name="gift_ring">Diamond Ring</item>
+        <item name="gift_teddy">Teddy Bear</item>
+    </array>
+    <string name="user_exists">ID đã tồn tại</string>
+    <string name="shared_live_stream">chia sẻ livestream!</string>
+    <string name="onboarding_title1">Be Live</string>
+    <string name="onboarding_desc1">Kết nối với người thật</string>
+    <string name="onboarding_title2"><![CDATA[ Stream & Earn ]]></string>
+    <string name="onboarding_desc2">Nhận ngay quà tặng</string>
+    <string name="onboarding_title3">Chia sẻ khoảnh khắc</string>
+    <string name="onboarding_desc3">Cho phép người theo dõi được cập nhật</string>
+    <string name="onboarding_skip">Bỏ qua</string>
+    <string name="welcome_done">Xong</string>
+    <string name="ban_user_message">Do you want to ban this user ?</string>
+    <string name="ban_user_title">Ban User</string>
+    <string name="ban_user">Ban User</string>
+    <string name="ban_user_successed">You banned the user</string>
+    <string name="ban_user_failed">Failed to ban the user</string>
+    <string name="stop_stream_title">Dừng Stream</string>
+    <string name="stop_stream_message">Bạn có chắc muốn dừng stream này ?</string>
+    <string name="hide_unhide_stream_title">%s Stream</string>
+    <string name="hide_unhide_stream_message">Bạn có chắc muốn dừng %s stream này ?</string>
+    <string name="hide_stream_succeeded">You hid the stream</string>
+    <string name="unhide_stream_succeeded">You unhid the stream</string>
+    <string name="hide_unhide_stream_failed">Failed to %s the stream</string>
+    <string name="just_joined_the_stream">vừa tham gia vào stream</string>
+    <string name="recommended_follow_all">Theo dõi tất cả </string>
+    <string name="recommended_unfollow_all">Không theo dõi ai</string>
+    <string name="recommended_start">Bắt đầu</string>
+    <string name="video_call_live_invite_title">Mời tham gia LIVE</string>
+    <string name="video_call_host_invitation">%s mời bạn tham gia LIVE!</string>
+    <string name="video_call_decline">Từ chối</string>
+    <string name="video_call_accept">Chấp nhận</string>
+    <string name="vid_call_user_not_available">Người dùng chưa sẵn sàng</string>
+    <string name="vid_call_declined">Cuộc gọi bị từ chối</string>
+    <string name="vid_in_a_call">Bạn đang kết nối cuộc gọi</string>
+    <string name="ended_stream_post">POST</string>
+    <string name="ended_stream_follow">Theo dõi</string>
+    <string name="ended_stream_profile">Thông tin</string>
+    <string name="ended_stream_back">Trở lại</string>
+    <string name="start_external_cam_live">Start External Camera Live</string>
+    <string name="stream_id">Stream ID</string>
+    <string name="cashout_not_enough_stars">Không đủ Stars.</string>
+    <string name="cumulative_total_cash">Tổng cộng</string>
+    <string name="transaction_hitory">Lịch sử</string>
+    <string name="accepted">Được chấp nhận</string>
+    <string name="pending">Đang xử lý</string>
+    <string name="rejected">Bị từ chối</string>
+    <string name="cashout_once_per_month">Bạn đã gửi yêu cầu của mình trong tháng này. Bạn chỉ có thể yêu cầu mỗi tháng một lần.</string>
+    <string name="insufficient_stars">Bạn không có đủ stars</string>
+    <string name="title_share_end_stream" formatted="false">%s @%s\nHào hứng cùng tối trên Belive! :)</string>
+    <string name="welcome_stream_message">Bạn đang xem %s bắt đầu chat! </string>
+    <string name="calling_disconnect_title">Ngắt kết nối</string>
+    <string name="get_daily_next_treat">Đăng nhập để nhận quà hôm nay</string>
+    <string name="treats_reseted">Daily treats has been refreshed. Grab your daily treat now</string>
+    <plurals name="treat_reset_days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <string name="transaction_list_nothing_here">Chưa có gì cả</string>
+    <string name="copy_stream_comment">Sao chép bình luận</string>
+    <string name="stream_comment_delete_text">Xoá bình luận</string>
+    <string name="delete_comment_title">Xoá bình luận</string>
+    <string name="delete_comment_body">Bạn có muốn xoá bình luận?</string>
+    <string name="delete_comment_delete_button">Xoá</string>
+    <string name="delete_comment_delete_cancel">Huỷ</string>
+    <string name="contacts_friends">Danh bạ</string>
+    <string name="contacts_title">Danh bạ</string>
+    <string name="invite_friends">Mời bạn bè</string>
+    <string name="invite">Mời</string>
+    <string name="fetching_contacts">Đang tìm nhập địa chỉ liên hệ...</string>
+    <string name="watch_from_browser_user">Người dùng xem trên trình duyệt</string>
+    <string name="trivia_ans_correct">Correct!</string>
+    <string name="trivia_ans_incorrect">Incorrect</string>
+    <string name="trivia_ans_eliminated">Disqualified</string>
+    <string name="trivia_game_leave_confirm_text">Sau khi thoát, bạn sẽ tự động bị loại khỏi game</string>
+    <string name="leave_text">Rời khỏi</string>
+    <string name="stay_text">Ở lại</string>
+    <string name="leave_the_game_text">Rời khỏi game?</string>
+    <string name="trivia_use_revise">Sử dụng Thêm Lượt</string>
+    <string name="trivia_get_revises">Thêm Lượt</string>
+    <string name="revives_count">%s Thêm Lượt</string>
+    <string name="top_winner_title">Bảng xếp hạng</string>
+    <string name="out_of_unpurchasable_gift">Bạn đã hết món quà này</string>
+    <string name="revived_from_last_round" formatted="false">%s người đã quay lại game</string>
+    <string name="popup_winner_title">Bạn là Master Brain</string>
+    <string name="winner_money_title">Bạn đã chiến thắng!</string>
+    <string name="winner_notification_of_admin">Belive sẽ liên lạc với bạn trong vòng 1 ngày. Vui lòng phản hồi lại trong vòng 24 giờ, nếu không giải thưởng của bạn sẽ không hợp lệ..</string>
+    <string name="winner_share_title">Chia sẻ với bạn bè!</string>
+    <string name="mb_not_begun_yet">Master Brain, Gameshow tương tác trực tiếp chưa bắt đầu!</string>
+    <string name="count_down_winners_list_ended_title">Winner list ended in</string>
+    <string name="minimum_for_cash">Số tiền tối thiểu để giao dịch là $20, tiếp tục chơi Master Brain để kiếm thêm nhiều tiền thưởng hơn!</string>
+    <string name="trivia_aw_okay">Ok</string>
+    <string name="trivia_get_revives">Thêm lượt</string>
+    <string name="trivia_cancel_use_revise">Huỷ</string>
+    <string name="trivia_winners_number" formatted="false">%s winners!</string>
+    <string name="trivia_ranking_this_week">Trong tuần</string>
+    <string name="trivia_ranking_all_time">Tất cả</string>
+    <string name="cashout_your_balance">Tiền thưởng</string>
+    <string name="cashout_exchange">Chuyển đổi</string>
+    <string name="claim_button">NHẬN</string>
+    <string name="profile_dialog_follow">Đã theo dõi</string>
+    <string name="search_user_load_more_friends">Hiển thị thêm</string>
+
+    <!-- prize bag -->
+    <string name="prize_bag_title">Giỏ quà của bạn</string>
+    <string name="prize_bag_noti_text">Thẻ quà tặng sẽ tự động \n xóa sau khi hết hạn.</string>
+    <string name="prize_bt_check">Kiểm tra</string>
+    <string name="prize_bt_redeem">Đổi quà</string>
+    <string name="prize_bt_rejected">Đã hủy</string>
+    <string name="prize_bt_sent">Đã gửi</string>
+    <string name="your_prize_has_been_sent_out">Phần thưởng đã được gửi đến email của bạn</string>
+    <string name="your_prize_your_item_has_been_rejected">Rất tiếc, phần thưởng của bạn đã bị hủy. Vui lòng liên hệ với chúng tôi để biết thêm chi tiết:</string>
+    <string name="prize_text_nodata">Chưa có phần thưởng! \n Hãy thử mở thêm hộp khác! </string>
+    <string name="prize_redeem_now_text">Đổi quà ngay</string>
+    <string name="prize_redeem_later_text">Để sau</string>
+    <string name="prize_congrats_message_title">Xin chúc mừng!</string>
+    <string name="prize_congrats_message">Vui lòng điền thông tin để đổi phần thưởng!</string>
+    <string name="redemption_title">Phiếu đổi phần thưởng</string>
+    <string name="redemption_userId_title">Belive ID</string>
+    <string name="redemption_your_name_title">Tên</string>
+    <string name="redemption_email_title">Email</string>
+    <string name="redemption_confirm_text">Tôi xin cam đoan thông tin trên là hoàn toàn chính xác, Belive sẽ không chịu trách nhiệm cho trường hợp điền sai thông tin mail.</string>
+    <string name="prize_bag_view_send_to">Gửi đến:</string>
+    <string name="prize_bag_view_should_receiver">Phần thưởng sẽ được gửi trong vòng 7 ngày làm việc.\nNếu bạn chưa nhận được hãy liên hệ với chúng tôi: </string>
+    <string name="prize_bag_view_form_received_message">Cảm ơn đã điền thông tin! \n Chúng tôi sẽ gửi voucher điện tử qua email cho bạn trong vòng</string>
+    <string name="prize_bag_seven_woking_day">7 ngày làm việc.</string>
+    <string name="prize_bag_view_form_received_title">Đã gửi phiếu!</string>
+    <string name="prize_bag_view_pick_item_title">Xin chúc mừng!</string>
+    <string name="prize_bag_redeem_have_been_created">đã được tạo cho tài khoản của bạn</string>
+
+    <!--points system-->
+    <string name="redeemable_points">Điểm quy đổi</string>
+    <string name="prize_list">Danh sách</string>
+    <string name="view_all_next">Tất cả ></string>
+    <string name="no_prize_in_this_box">Không có phần thưởng nào trong hộp này</string>
+    <string name="need_more_point">Bạn cần thêm điểm Belive!</string>
+    <string name="need_more_point_content">Chia sẻ LIVE show sẽ giúp bạn nhận được điểm Belive.</string>
+    <string name="how_mark">Làm cách nào?</string>
+    <string name="go_to_bag">Đi đến giỏ quà</string>
+    <string name="back">Quay lại</string>
+    <string name="open">Mở</string>
+    <string name="free_mystery_box">Hộp \nquà tặng</string>
+    <string name="premium_mystery_box">Hộp \nbí ẩn</string>
+    <string name="points_menu">Điểm thưởng </string>
+</resources>

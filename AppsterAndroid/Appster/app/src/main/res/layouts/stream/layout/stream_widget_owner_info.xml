@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/llLiveVideoOwner"
+              android:layout_width="wrap_content"
+              android:layout_height="38dp"
+              android:layout_marginStart="10dp"
+              android:gravity="center_vertical"
+              android:background="@drawable/black_boder_view_bg"
+              android:orientation="horizontal">
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/ciOwnerUserImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/user_image_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <wowza.gocoder.sdk.app.ui.TimerView
+                android:id="@+id/txtTimer"
+                style="@style/widget_owner_info_textstyle"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="00:00:00" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvLiveOwnerUserName"
+                style="@style/widget_owner_info_textstyle"
+                android:textSize="11sp"
+                android:visibility="gone"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="thanhbc" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvCurrentView"
+                style="@style/widget_owner_info_stats_textstyle"
+                android:drawableEnd="@drawable/ic_view_stats_small"
+                android:text="0"
+                app:appFont="@string/font_opensansemibold"
+
+                />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvTotalLiked"
+                style="@style/widget_owner_info_stats_textstyle"
+                android:drawableEnd="@drawable/ic_like_stats_small"
+                android:text="0"
+                app:appFont="@string/font_opensansemibold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

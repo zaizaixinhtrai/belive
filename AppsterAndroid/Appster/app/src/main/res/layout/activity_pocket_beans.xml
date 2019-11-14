@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFB"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pocket_Current_Balance"
+        android:textSize="15sp" />
+
+    <RelativeLayout style="@style/pocket_linearlayout_style">
+
+        <TextView
+            android:id="@+id/llSenderMessageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pocket_Beans"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imv_bean"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/txt_bean"
+            android:background="@drawable/icon_gift_currency" />
+
+        <TextView
+            android:id="@+id/txt_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="#EC008D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="789555"
+            android:textColor="#F7941D"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pocket_Date"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/edt_date_start"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/pocket_to"
+            android:background="@drawable/activity_beans_editext_backgrond"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/pocket_to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/pocket_to"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/edt_date_end"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/pocket_to"
+            android:background="@drawable/activity_beans_editext_backgrond"
+            android:gravity="center"
+            android:text="@string/pocket_Current"
+            android:textColor="#949599" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#E7E7E8"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:text="@string/pocket_DescripBteioan"
+            android:textColor="#404041"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txt_In"
+            style="@style/pocket_text_number_adapter"
+            android:text="@string/pocket_In" />
+
+        <TextView
+            android:id="@+id/txt_Total"
+            style="@style/pocket_text_number_adapter"
+            android:text="@string/pocket_Total" />
+
+        <TextView
+            android:id="@+id/txt_Remark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/pocket_Remark"
+            android:textSize="@dimen/pocket_txt_In_text_size" />
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_bean_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#FAFAFB"
+        android:divider="#FAFAFB"
+        android:dividerHeight="2dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Xmas" parent="AppTheme">
+        <item name="themedToolbarDrawable">@drawable/background_top_bar_xmas</item>
+        <item name="themedToolbarMenuIconDrawable">@drawable/menu_icon_xmas</item>
+        <item name="themedToolbarNotificationIconDrawable">@drawable/btn_notification_xmas</item>
+        <item name="themedToolbarLogoDrawable">@drawable/topbar_belive_logo_xmas</item>
+        <item name="themedLiveCategoryDrawable">@drawable/bg_category_tag_xmas</item>
+        <item name="themedLiveCategoryLongDrawable">@drawable/bg_category_tag_xmas_long</item>
+        <item name="themedNavCenterDrawable">@drawable/ic_actionbar_xmas</item>
+        <item name="themedLiveTitleTextColor">@color/color_005bbc</item>
+        <item name="themedTabSelectedTextColor">@color/color_005bbc</item>
+        <item name="themedTabIndicatorColor">@color/color_f17ba0</item>
+        <item name="themedToolbarTitleStyle">@style/header_title.xmas</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="themedToolbarHeight">@dimen/height_top_bar_xmas</item>
+        <item name="themedToolbarBackIconDrawable">@drawable/icon_back_btn_white_xmas</item>
+        <item name="themedProfileAppBarCustomWindow">false</item>
+        <item name="themedNavProfileHeaderHeight">@dimen/nav_header_height_xmas</item>
+        <item name="themedToolbarPaddingTop">@dimen/status_bar_height_xmas</item>
+        <item name="themedLiveGradientDrawable">@drawable/home_gradient_tag</item>
+        <item name="themedLiveTagDrawable">@drawable/ic_home_btn_live_xmas</item>
+        <item name="themedRecordedTagDrawable">@drawable/ic_home_btn_recorded_xmas</item>
+        <item name="themedShopButtonBackground">@drawable/background_top_bar_xmas</item>
+        <item name="themedShopButtonTextStyle">@style/clickable_ripple_xmas</item>
+        <item name="themedShopButtonContainerBackground">@drawable/border_radius_xmas</item>
+        <item name="themedShopPromoteTextColor">@color/color_005bbc</item>
+        <item name="themedLiveTitleTextFont">@string/font_helveticaneuelight</item>
+        <item name="themedTransactionHistoryTextStyle">@style/header_transaction_style.xmas</item>
+        <item name="themedKeyboardAvailableScreenStyle">@style/keyboardScreenStyle.xmas</item>
+    </style>
+</resources>

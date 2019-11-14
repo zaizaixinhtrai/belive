@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:weightSum="8">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center"
+        android:layout_weight="3"
+        android:gravity="center|left"
+        android:minWidth="130dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Top Up of bearyryryryryrygfgfgfgfgfgfgfgfgfgfg7676767676767676"
+            android:textColor="#404041"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txt_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24th Aug 2014, 3.50pm"
+            android:textColor="#404041"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_In"
+        style="@style/pocket_text_number_adapter"
+        android:text="1205656" />
+
+    <TextView
+        android:id="@+id/txt_Total"
+        style="@style/pocket_text_number_adapter"
+        android:text="1205656" />
+
+    <TextView
+        android:id="@+id/txt_Remark"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="@dimen/pocket_txt_In_text_size" />
+
+</LinearLayout>

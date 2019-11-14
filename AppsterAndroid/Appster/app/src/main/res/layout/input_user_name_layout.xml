@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/inputUserOrEmail"
+        android:layout_width="@dimen/quick_signup_width_input_text"
+        android:layout_height="@dimen/quick_signup_height_input_text"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/create_profile_input_text"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColorHint="#000000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/inputUserOrEmail_inval"
+        android:layout_width="@dimen/quick_signup_width_input_text"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name_et"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/create_profile_please_input_your_username"
+        android:textColor="#AE4C3D"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/inputReferer"
+        android:layout_width="@dimen/quick_signup_width_input_text"
+        android:layout_height="@dimen/quick_signup_height_input_text"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/create_profile_input_text"
+        android:hint="@string/register_playtoken_re_enter_Referer_hint"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColorHint="#000000"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/create_profile_next_btn"
+        android:text="@string/create_profile_btn_next"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

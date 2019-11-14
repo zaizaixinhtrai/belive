@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/incoming_call_background"
+              android:clipChildren="false"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:layout_marginEnd="10dp"
+              tools:parentTag="LinearLayout">
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/ivHostAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/user_image_default"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="8dp"
+        android:orientation="vertical">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textDirection="locale"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:maxLines="1"
+            app:appFont="@string/font_helveticaneuelight"
+            tools:text="Soh Pei Shi "/>
+
+        <com.appster.customview.AnimateTextView
+            android:id="@+id/tvCallState"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="80dp"
+            android:padding="2dp"
+            tools:text="Connecting..."
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textDirection="locale"
+            android:textSize="10sp"
+            app:appFont="@string/font_helveticaneuebold"
+            />
+    </LinearLayout>
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/ibEndCall"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_gravity="top|end"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:src="@drawable/ic_vidcall_end"/>-->
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvCountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textColor="#66000000"
+        app:appFont="@string/font_HelveticaNeueRegular"
+        android:text="3"
+        tools:text="3"/>
+</LinearLayout>

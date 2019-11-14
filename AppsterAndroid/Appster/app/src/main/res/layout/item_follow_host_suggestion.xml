@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="@dimen/chat_margin_start"
+    android:background="@drawable/bg_follow_host_suggestion"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="2.5dp"
+    android:paddingEnd="2.5dp"
+    android:paddingStart="12dp"
+    android:paddingTop="2.5dp">
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginTop="-4dp"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:appFont="@string/font_opensansregular" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/follow"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansbold" />
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:src="@drawable/user_image_default" />
+</LinearLayout>

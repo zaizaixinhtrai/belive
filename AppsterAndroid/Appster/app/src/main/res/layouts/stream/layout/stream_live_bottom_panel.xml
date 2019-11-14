@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="54dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/stream_live_bottom_panel"
+              android:background="@color/live_stream_background_user_layout"
+              android:orientation="horizontal"
+              android:paddingStart="7dp"
+              android:paddingEnd="7dp"
+              android:visibility="visible"
+              tools:showIn="@layout/activity_streaming_gpuplus"
+              >
+
+    <ImageButton
+        android:id="@+id/img_more_options"
+        style="@style/stream_bottom_icon_style"
+        android:src="@drawable/ic_live_host_option_up"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etComment"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="400dp"
+        android:minEms="17"
+        android:hint="@string/chat_with_everyone"
+        app:appFont="@string/font_opensanssemibold"
+        style="@style/stream_comment_style"/>
+
+
+    <ImageButton
+        android:id="@+id/ibSendComment"
+        android:src="@drawable/icon_chat_send"
+        android:minWidth="72dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:visibility="gone"
+        style="@style/stream_send_comment_icon_style"/>
+
+    <ImageButton
+        android:id="@+id/btn_face_unity_sticker"
+        style="@style/stream_bottom_icon_style"
+        android:src="@drawable/ic_live_host_sticker"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/ibShareStream"
+        style="@style/stream_bottom_icon_style"
+        android:src="@drawable/ic_share_stream_host"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/onOffBeauty"
+        style="@style/stream_bottom_icon_style"
+        android:src="@drawable/icon_beauty_on"/>
+
+    <ImageButton
+        android:id="@+id/onOffFlash"
+        style="@style/stream_bottom_icon_style"
+        tools:visibility="visible"
+        android:src="@drawable/icon_flash_off"
+        android:scaleType="fitCenter"
+        android:alpha="0.5"/>
+
+    <ImageButton
+        android:id="@+id/icon_swith_camera"
+        android:src="@drawable/icon_switch_cam"
+        style="@style/stream_bottom_icon_style"/>
+</LinearLayout>

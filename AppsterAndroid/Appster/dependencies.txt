@@ -1,0 +1,2692 @@
+Parallel execution with configuration on demand is an incubating feature.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+:app:dependencies
+
+------------------------------------------------------------
+Project :app
+------------------------------------------------------------
+
+_beliveDevDebugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevDebugAndroidTestApk - ## Internal use, do not manually configure ##
+\--- com.android.support:multidex-instrumentation:1.0.1
+     \--- com.android.support:multidex:1.0.1
+
+_beliveDevDebugAndroidTestCompile - ## Internal use, do not manually configure ##
+\--- com.android.support:multidex-instrumentation:1.0.1
+     \--- com.android.support:multidex:1.0.1
+
+_beliveDevDebugAndroidTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevDebugAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevDebugApk - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevDebugCompile - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevDebugJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevDebugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevDebugUnitTestApk - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevDebugUnitTestCompile - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevDebugUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevReleaseAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevReleaseApk - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevReleaseCompile - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevReleaseJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevReleaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveDevReleaseUnitTestApk - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevReleaseUnitTestCompile - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveDevReleaseUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdDebugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdDebugAndroidTestApk - ## Internal use, do not manually configure ##
+\--- com.android.support:multidex-instrumentation:1.0.1
+     \--- com.android.support:multidex:1.0.1
+
+_beliveProdDebugAndroidTestCompile - ## Internal use, do not manually configure ##
+\--- com.android.support:multidex-instrumentation:1.0.1
+     \--- com.android.support:multidex:1.0.1
+
+_beliveProdDebugAndroidTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdDebugAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdDebugApk - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdDebugCompile - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdDebugJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdDebugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdDebugUnitTestApk - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdDebugUnitTestCompile - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdDebugUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdReleaseAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdReleaseApk - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdReleaseCompile - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdReleaseJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdReleaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveProdReleaseUnitTestApk - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdReleaseUnitTestCompile - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveProdReleaseUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagDebugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagDebugAndroidTestApk - ## Internal use, do not manually configure ##
+\--- com.android.support:multidex-instrumentation:1.0.1
+     \--- com.android.support:multidex:1.0.1
+
+_beliveStagDebugAndroidTestCompile - ## Internal use, do not manually configure ##
+\--- com.android.support:multidex-instrumentation:1.0.1
+     \--- com.android.support:multidex:1.0.1
+
+_beliveStagDebugAndroidTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagDebugAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagDebugApk - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagDebugCompile - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagDebugJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagDebugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagDebugUnitTestApk - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagDebugUnitTestCompile - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagDebugUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagReleaseAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagReleaseApk - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagReleaseCompile - ## Internal use, do not manually configure ##
++--- com.android.support:multidex:1.0.1
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
++--- com.google.firebase:firebase-core:9.8.0
+|    \--- com.google.firebase:firebase-analytics:9.8.0
+|         +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|         +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+|         \--- com.google.firebase:firebase-analytics-impl:9.8.0
+|              +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|              +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+|              \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagReleaseJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagReleaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_beliveStagReleaseUnitTestApk - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagReleaseUnitTestCompile - ## Internal use, do not manually configure ##
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+_beliveStagReleaseUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+androidJacocoAgent - The Jacoco agent to use to get coverage data.
+\--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+
+androidJacocoAnt - The Jacoco ant tasks to use to get execute Gradle tasks.
+\--- org.jacoco:org.jacoco.ant:0.7.5.201505241946
+     +--- org.jacoco:org.jacoco.core:0.7.5.201505241946
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     +--- org.jacoco:org.jacoco.report:0.7.5.201505241946
+     |    +--- org.jacoco:org.jacoco.core:0.7.5.201505241946 (*)
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     \--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+
+androidTestAnnotationProcessor - Classpath for the annotation processor for 'androidTest'.
+No dependencies
+
+androidTestApk - Classpath packaged with the compiled 'androidTest' classes.
+No dependencies
+
+androidTestApt
+No dependencies
+
+androidTestBeliveDevAnnotationProcessor - Classpath for the annotation processor for 'androidTestBeliveDev'.
+No dependencies
+
+androidTestBeliveDevApk - Classpath packaged with the compiled 'androidTestBeliveDev' classes.
+No dependencies
+
+androidTestBeliveDevCompile - Classpath for compiling the androidTestBeliveDev sources.
+No dependencies
+
+androidTestBeliveDevJackPlugin - Classpath for the 'androidTestBeliveDev' Jack plugins.
+No dependencies
+
+androidTestBeliveDevProvided - Classpath for only compiling the androidTestBeliveDev sources.
+No dependencies
+
+androidTestBeliveDevWearApp - Link to a wear app to embed for object 'androidTestBeliveDev'.
+No dependencies
+
+androidTestBeliveProdAnnotationProcessor - Classpath for the annotation processor for 'androidTestBeliveProd'.
+No dependencies
+
+androidTestBeliveProdApk - Classpath packaged with the compiled 'androidTestBeliveProd' classes.
+No dependencies
+
+androidTestBeliveProdCompile - Classpath for compiling the androidTestBeliveProd sources.
+No dependencies
+
+androidTestBeliveProdJackPlugin - Classpath for the 'androidTestBeliveProd' Jack plugins.
+No dependencies
+
+androidTestBeliveProdProvided - Classpath for only compiling the androidTestBeliveProd sources.
+No dependencies
+
+androidTestBeliveProdWearApp - Link to a wear app to embed for object 'androidTestBeliveProd'.
+No dependencies
+
+androidTestBeliveStagAnnotationProcessor - Classpath for the annotation processor for 'androidTestBeliveStag'.
+No dependencies
+
+androidTestBeliveStagApk - Classpath packaged with the compiled 'androidTestBeliveStag' classes.
+No dependencies
+
+androidTestBeliveStagCompile - Classpath for compiling the androidTestBeliveStag sources.
+No dependencies
+
+androidTestBeliveStagJackPlugin - Classpath for the 'androidTestBeliveStag' Jack plugins.
+No dependencies
+
+androidTestBeliveStagProvided - Classpath for only compiling the androidTestBeliveStag sources.
+No dependencies
+
+androidTestBeliveStagWearApp - Link to a wear app to embed for object 'androidTestBeliveStag'.
+No dependencies
+
+androidTestCompile - Classpath for compiling the androidTest sources.
+No dependencies
+
+androidTestJackPlugin - Classpath for the 'androidTest' Jack plugins.
+No dependencies
+
+androidTestProvided - Classpath for only compiling the androidTest sources.
+No dependencies
+
+androidTestWearApp - Link to a wear app to embed for object 'androidTest'.
+No dependencies
+
+annotationProcessor - Classpath for the annotation processor for 'main'.
+No dependencies
+
+apk - Classpath packaged with the compiled 'main' classes.
+No dependencies
+
+apt
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.android.support:multidex:1.0.1
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
+\--- com.google.firebase:firebase-core:9.8.0
+     \--- com.google.firebase:firebase-analytics:9.8.0
+          +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+          +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+          \--- com.google.firebase:firebase-analytics-impl:9.8.0
+               +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+               +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+               \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+beliveDevAnnotationProcessor - Classpath for the annotation processor for 'beliveDev'.
+No dependencies
+
+beliveDevApk - Classpath packaged with the compiled 'beliveDev' classes.
+No dependencies
+
+beliveDevCompile - Classpath for compiling the beliveDev sources.
+No dependencies
+
+beliveDevDebugAnnotationProcessor - Classpath for the annotation processor for 'beliveDevDebug'.
+No dependencies
+
+beliveDevDebugApk - Classpath packaged with the compiled 'beliveDevDebug' classes.
+No dependencies
+
+beliveDevDebugCompile - Classpath for compiling the beliveDevDebug sources.
+No dependencies
+
+beliveDevDebugJackPlugin - Classpath for the 'beliveDevDebug' Jack plugins.
+No dependencies
+
+beliveDevDebugProvided - Classpath for only compiling the beliveDevDebug sources.
+No dependencies
+
+beliveDevDebugWearApp - Link to a wear app to embed for object 'beliveDevDebug'.
+No dependencies
+
+beliveDevJackPlugin - Classpath for the 'beliveDev' Jack plugins.
+No dependencies
+
+beliveDevProvided - Classpath for only compiling the beliveDev sources.
+No dependencies
+
+beliveDevReleaseAnnotationProcessor - Classpath for the annotation processor for 'beliveDevRelease'.
+No dependencies
+
+beliveDevReleaseApk - Classpath packaged with the compiled 'beliveDevRelease' classes.
+No dependencies
+
+beliveDevReleaseCompile - Classpath for compiling the beliveDevRelease sources.
+No dependencies
+
+beliveDevReleaseJackPlugin - Classpath for the 'beliveDevRelease' Jack plugins.
+No dependencies
+
+beliveDevReleaseProvided - Classpath for only compiling the beliveDevRelease sources.
+No dependencies
+
+beliveDevReleaseWearApp - Link to a wear app to embed for object 'beliveDevRelease'.
+No dependencies
+
+beliveDevWearApp - Link to a wear app to embed for object 'beliveDev'.
+No dependencies
+
+beliveProdAnnotationProcessor - Classpath for the annotation processor for 'beliveProd'.
+No dependencies
+
+beliveProdApk - Classpath packaged with the compiled 'beliveProd' classes.
+No dependencies
+
+beliveProdCompile - Classpath for compiling the beliveProd sources.
+No dependencies
+
+beliveProdDebugAnnotationProcessor - Classpath for the annotation processor for 'beliveProdDebug'.
+No dependencies
+
+beliveProdDebugApk - Classpath packaged with the compiled 'beliveProdDebug' classes.
+No dependencies
+
+beliveProdDebugCompile - Classpath for compiling the beliveProdDebug sources.
+No dependencies
+
+beliveProdDebugJackPlugin - Classpath for the 'beliveProdDebug' Jack plugins.
+No dependencies
+
+beliveProdDebugProvided - Classpath for only compiling the beliveProdDebug sources.
+No dependencies
+
+beliveProdDebugWearApp - Link to a wear app to embed for object 'beliveProdDebug'.
+No dependencies
+
+beliveProdJackPlugin - Classpath for the 'beliveProd' Jack plugins.
+No dependencies
+
+beliveProdProvided - Classpath for only compiling the beliveProd sources.
+No dependencies
+
+beliveProdReleaseAnnotationProcessor - Classpath for the annotation processor for 'beliveProdRelease'.
+No dependencies
+
+beliveProdReleaseApk - Classpath packaged with the compiled 'beliveProdRelease' classes.
+No dependencies
+
+beliveProdReleaseCompile - Classpath for compiling the beliveProdRelease sources.
+No dependencies
+
+beliveProdReleaseJackPlugin - Classpath for the 'beliveProdRelease' Jack plugins.
+No dependencies
+
+beliveProdReleaseProvided - Classpath for only compiling the beliveProdRelease sources.
+No dependencies
+
+beliveProdReleaseWearApp - Link to a wear app to embed for object 'beliveProdRelease'.
+No dependencies
+
+beliveProdWearApp - Link to a wear app to embed for object 'beliveProd'.
+No dependencies
+
+beliveStagAnnotationProcessor - Classpath for the annotation processor for 'beliveStag'.
+No dependencies
+
+beliveStagApk - Classpath packaged with the compiled 'beliveStag' classes.
+No dependencies
+
+beliveStagCompile - Classpath for compiling the beliveStag sources.
+No dependencies
+
+beliveStagDebugAnnotationProcessor - Classpath for the annotation processor for 'beliveStagDebug'.
+No dependencies
+
+beliveStagDebugApk - Classpath packaged with the compiled 'beliveStagDebug' classes.
+No dependencies
+
+beliveStagDebugCompile - Classpath for compiling the beliveStagDebug sources.
+No dependencies
+
+beliveStagDebugJackPlugin - Classpath for the 'beliveStagDebug' Jack plugins.
+No dependencies
+
+beliveStagDebugProvided - Classpath for only compiling the beliveStagDebug sources.
+No dependencies
+
+beliveStagDebugWearApp - Link to a wear app to embed for object 'beliveStagDebug'.
+No dependencies
+
+beliveStagJackPlugin - Classpath for the 'beliveStag' Jack plugins.
+No dependencies
+
+beliveStagProvided - Classpath for only compiling the beliveStag sources.
+No dependencies
+
+beliveStagReleaseAnnotationProcessor - Classpath for the annotation processor for 'beliveStagRelease'.
+No dependencies
+
+beliveStagReleaseApk - Classpath packaged with the compiled 'beliveStagRelease' classes.
+No dependencies
+
+beliveStagReleaseCompile - Classpath for compiling the beliveStagRelease sources.
+No dependencies
+
+beliveStagReleaseJackPlugin - Classpath for the 'beliveStagRelease' Jack plugins.
+No dependencies
+
+beliveStagReleaseProvided - Classpath for only compiling the beliveStagRelease sources.
+No dependencies
+
+beliveStagReleaseWearApp - Link to a wear app to embed for object 'beliveStagRelease'.
+No dependencies
+
+beliveStagWearApp - Link to a wear app to embed for object 'beliveStag'.
+No dependencies
+
+compile - Classpath for compiling the main sources.
++--- com.android.support:support-v4:25.0.1
+|    +--- com.android.support:support-compat:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    +--- com.android.support:support-media-compat:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-utils:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    +--- com.android.support:support-core-ui:25.0.1
+|    |    \--- com.android.support:support-compat:25.0.1 (*)
+|    \--- com.android.support:support-fragment:25.0.1
+|         +--- com.android.support:support-compat:25.0.1 (*)
+|         +--- com.android.support:support-media-compat:25.0.1 (*)
+|         +--- com.android.support:support-core-ui:25.0.1 (*)
+|         \--- com.android.support:support-core-utils:25.0.1 (*)
++--- com.squareup.okhttp3:okhttp:3.3.1 -> 3.6.0
+|    \--- com.squareup.okio:okio:1.11.0
++--- com.android.support:multidex:1.0.1
++--- com.jakewharton:butterknife:7.0.1
++--- org.greenrobot:eventbus:3.0.0
++--- org.igniterealtime.smack:smack-tcp:4.1.4
+|    \--- org.igniterealtime.smack:smack-core:4.1.4
+|         \--- org.jxmpp:jxmpp-core:0.4.2
+|              \--- org.jxmpp:jxmpp-util-cache:0.4.2
++--- com.squareup.picasso:picasso:2.5.2
++--- com.warnyul.android.fast-video-view:fast-video-view:1.0.2
++--- com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.0
++--- io.reactivex:rxjava:1.1.8 -> 1.2.9
++--- nl.littlerobots.rxlint:rxlint:1.0
++--- com.jakewharton.timber:timber:4.3.1
++--- com.facebook.stetho:stetho:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    \--- commons-cli:commons-cli:1.2
++--- com.facebook.stetho:stetho-okhttp3:1.3.1
+|    +--- com.google.code.findbugs:jsr305:2.0.1
+|    +--- com.squareup.okhttp3:okhttp:3.0.1 -> 3.6.0 (*)
+|    \--- com.facebook.stetho:stetho:1.3.1 (*)
++--- com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0
+|    \--- com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0
++--- com.android.support:design:25.0.1
+|    +--- com.android.support:appcompat-v7:25.0.1
+|    |    +--- com.android.support:support-vector-drawable:25.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.0.1
+|    |         \--- com.android.support:support-vector-drawable:25.0.1
+|    +--- com.android.support:recyclerview-v7:25.0.1
+|    |    \--- com.android.support:support-annotations:25.0.1
+|    \--- com.android.support:transition:25.0.1
++--- com.squareup.retrofit2:retrofit:2.1.0 -> 2.2.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0 -> 2.2.0
+|    +--- com.google.code.gson:gson:2.7
+|    \--- com.squareup.retrofit2:retrofit:2.2.0 (*)
++--- com.squareup.retrofit2:adapter-rxjava:2.1.0 -> 2.2.0
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    \--- io.reactivex:rxjava:1.2.0 -> 1.2.9
++--- com.squareup.okhttp3:logging-interceptor:3.3.1 -> 3.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.6.0 (*)
++--- com.squareup.okhttp3:okhttp-urlconnection:3.3.1
++--- com.google.android.gms:play-services-gcm:9.8.0
+|    +--- com.google.android.gms:play-services-base:9.8.0
+|    |    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1
+|    |    |    \--- com.android.support:support-v4:24.0.0 -> 25.0.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:9.8.0 -> 10.2.1
+|    |         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    \--- com.google.android.gms:play-services-iid:9.8.0
+|         +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|         \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- com.google.android.gms:play-services-auth:9.8.0
+|    \--- com.google.android.gms:play-services-auth-base:9.8.0
++--- com.google.android.gms:play-services-analytics:9.8.0
+|    +--- com.google.android.gms:play-services-analytics-impl:9.8.0
+|    |    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+|    +--- com.google.android.gms:play-services-base:9.8.0 (*)
+|    \--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
++--- project :librarypulltorefresh
++--- project :libArcMenuLayout
++--- project :ucrop
++--- project :photoview
++--- com.facebook.android:facebook-android-sdk:4.7.0
+|    \--- com.parse.bolts:bolts-android:1.2.0
++--- com.crashlytics.sdk.android:crashlytics:2.6.6
+|    +--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:beta:1.2.3
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    +--- com.crashlytics.sdk.android:answers:1.3.11
+|    |    \--- io.fabric.sdk.android:fabric:1.3.15
+|    \--- com.crashlytics.sdk.android:crashlytics-core:2.3.15
+|         +--- io.fabric.sdk.android:fabric:1.3.15
+|         \--- com.crashlytics.sdk.android:answers:1.3.11 (*)
++--- org.igniterealtime.smack:smack-android-extensions:4.1.4
+|    +--- org.igniterealtime.smack:smack-extensions:4.1.4
+|    |    \--- org.igniterealtime.smack:smack-im:4.1.4
+|    \--- org.igniterealtime.smack:smack-android:4.1.4
+|         +--- org.igniterealtime.smack:smack-resolver-minidns:4.1.4
+|         |    +--- de.measite.minidns:minidns:[0.1,0.2) -> 0.1.7
+|         |    \--- org.jxmpp:jxmpp-util-cache:0.4.2
+|         +--- org.igniterealtime.smack:smack-im:4.1.4
+|         \--- org.igniterealtime.smack:smack-sasl-provided:4.1.4
++--- com.twitter.sdk.android:twitter:2.3.1
+|    +--- com.twitter.sdk.android:tweet-composer:2.3.1
+|    |    +--- com.twitter:twitter-text:1.13.0
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.twitter.sdk.android:tweet-ui:2.3.1
+|    |    +--- com.twitter.sdk.android:twitter-core:2.3.0
+|    |    \--- com.squareup.picasso:picasso:2.5.2
+|    \--- com.twitter.sdk.android:twitter-core:2.3.0
++--- com.amplitude:android-sdk:2.9.2
++--- io.reactivex:rxandroid:1.2.1
+|    \--- io.reactivex:rxjava:1.1.6 -> 1.2.9
++--- com.jakewharton.rxbinding:rxbinding:0.4.0
++--- com.tbruyelle.rxpermissions:rxpermissions:0.7.1
++--- project :video-player-manager
++--- io.branch.sdk.android:library:2.+ -> 2.6.1
+|    +--- com.crashlytics.sdk.android:answers-shim:0.0.6
+|    \--- com.android.support:support-annotations:22.2.0 -> 25.0.1
++--- com.adjust.sdk:adjust-android:4.11.3
++--- com.gtoken:playground-belive:1.0.2
+|    +--- io.reactivex:rxjava:1.2.9
+|    +--- io.reactivex:rxandroid:1.2.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava:2.2.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.2.0 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:3.6.0 (*)
+|    +--- com.google.firebase:firebase-iid:10.2.1
+|    |    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |    \--- com.google.firebase:firebase-common:10.2.1
+|    |         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
+|    |         \--- com.google.android.gms:play-services-tasks:10.2.1 (*)
+|    \--- com.appsflyer:af-android-sdk:4.6.7
+\--- com.google.firebase:firebase-core:9.8.0
+     \--- com.google.firebase:firebase-analytics:9.8.0
+          +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+          +--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+          \--- com.google.firebase:firebase-analytics-impl:9.8.0
+               +--- com.google.android.gms:play-services-basement:9.8.0 -> 10.2.1 (*)
+               +--- com.google.firebase:firebase-iid:9.8.0 -> 10.2.1 (*)
+               \--- com.google.firebase:firebase-common:9.8.0 -> 10.2.1 (*)
+
+debugAnnotationProcessor - Classpath for the annotation processor for 'debug'.
+No dependencies
+
+debugApk - Classpath packaged with the compiled 'debug' classes.
+No dependencies
+
+debugCompile - Classpath for compiling the debug sources.
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+debugJackPlugin - Classpath for the 'debug' Jack plugins.
+No dependencies
+
+debugProvided - Classpath for only compiling the debug sources.
+No dependencies
+
+debugWearApp - Link to a wear app to embed for object 'debug'.
+No dependencies
+
+default - Configuration for default artifacts.
+No dependencies
+
+default-mapping - Configuration for default mapping artifacts.
+No dependencies
+
+default-metadata - Metadata for the produced APKs.
+No dependencies
+
+io.fabric - fabric and its transitive dependencies.
+No dependencies
+
+jackPlugin - Classpath for the 'main' Jack plugins.
+No dependencies
+
+provided - Classpath for only compiling the main sources.
+No dependencies
+
+releaseAnnotationProcessor - Classpath for the annotation processor for 'release'.
+No dependencies
+
+releaseApk - Classpath packaged with the compiled 'release' classes.
+No dependencies
+
+releaseCompile - Classpath for compiling the release sources.
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+releaseJackPlugin - Classpath for the 'release' Jack plugins.
+No dependencies
+
+releaseProvided - Classpath for only compiling the release sources.
+No dependencies
+
+releaseWearApp - Link to a wear app to embed for object 'release'.
+No dependencies
+
+retrolambdaConfig
+\--- net.orfjackal.retrolambda:retrolambda:2.5.1
+
+testAnnotationProcessor - Classpath for the annotation processor for 'test'.
+No dependencies
+
+testApk - Classpath packaged with the compiled 'test' classes.
+No dependencies
+
+testApt
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+testBeliveDevAnnotationProcessor - Classpath for the annotation processor for 'testBeliveDev'.
+No dependencies
+
+testBeliveDevApk - Classpath packaged with the compiled 'testBeliveDev' classes.
+No dependencies
+
+testBeliveDevCompile - Classpath for compiling the testBeliveDev sources.
+No dependencies
+
+testBeliveDevDebugAnnotationProcessor - Classpath for the annotation processor for 'testBeliveDevDebug'.
+No dependencies
+
+testBeliveDevDebugApk - Classpath packaged with the compiled 'testBeliveDevDebug' classes.
+No dependencies
+
+testBeliveDevDebugCompile - Classpath for compiling the testBeliveDevDebug sources.
+No dependencies
+
+testBeliveDevDebugJackPlugin - Classpath for the 'testBeliveDevDebug' Jack plugins.
+No dependencies
+
+testBeliveDevDebugProvided - Classpath for only compiling the testBeliveDevDebug sources.
+No dependencies
+
+testBeliveDevDebugWearApp - Link to a wear app to embed for object 'testBeliveDevDebug'.
+No dependencies
+
+testBeliveDevJackPlugin - Classpath for the 'testBeliveDev' Jack plugins.
+No dependencies
+
+testBeliveDevProvided - Classpath for only compiling the testBeliveDev sources.
+No dependencies
+
+testBeliveDevReleaseAnnotationProcessor - Classpath for the annotation processor for 'testBeliveDevRelease'.
+No dependencies
+
+testBeliveDevReleaseApk - Classpath packaged with the compiled 'testBeliveDevRelease' classes.
+No dependencies
+
+testBeliveDevReleaseCompile - Classpath for compiling the testBeliveDevRelease sources.
+No dependencies
+
+testBeliveDevReleaseJackPlugin - Classpath for the 'testBeliveDevRelease' Jack plugins.
+No dependencies
+
+testBeliveDevReleaseProvided - Classpath for only compiling the testBeliveDevRelease sources.
+No dependencies
+
+testBeliveDevReleaseWearApp - Link to a wear app to embed for object 'testBeliveDevRelease'.
+No dependencies
+
+testBeliveDevWearApp - Link to a wear app to embed for object 'testBeliveDev'.
+No dependencies
+
+testBeliveProdAnnotationProcessor - Classpath for the annotation processor for 'testBeliveProd'.
+No dependencies
+
+testBeliveProdApk - Classpath packaged with the compiled 'testBeliveProd' classes.
+No dependencies
+
+testBeliveProdCompile - Classpath for compiling the testBeliveProd sources.
+No dependencies
+
+testBeliveProdDebugAnnotationProcessor - Classpath for the annotation processor for 'testBeliveProdDebug'.
+No dependencies
+
+testBeliveProdDebugApk - Classpath packaged with the compiled 'testBeliveProdDebug' classes.
+No dependencies
+
+testBeliveProdDebugCompile - Classpath for compiling the testBeliveProdDebug sources.
+No dependencies
+
+testBeliveProdDebugJackPlugin - Classpath for the 'testBeliveProdDebug' Jack plugins.
+No dependencies
+
+testBeliveProdDebugProvided - Classpath for only compiling the testBeliveProdDebug sources.
+No dependencies
+
+testBeliveProdDebugWearApp - Link to a wear app to embed for object 'testBeliveProdDebug'.
+No dependencies
+
+testBeliveProdJackPlugin - Classpath for the 'testBeliveProd' Jack plugins.
+No dependencies
+
+testBeliveProdProvided - Classpath for only compiling the testBeliveProd sources.
+No dependencies
+
+testBeliveProdReleaseAnnotationProcessor - Classpath for the annotation processor for 'testBeliveProdRelease'.
+No dependencies
+
+testBeliveProdReleaseApk - Classpath packaged with the compiled 'testBeliveProdRelease' classes.
+No dependencies
+
+testBeliveProdReleaseCompile - Classpath for compiling the testBeliveProdRelease sources.
+No dependencies
+
+testBeliveProdReleaseJackPlugin - Classpath for the 'testBeliveProdRelease' Jack plugins.
+No dependencies
+
+testBeliveProdReleaseProvided - Classpath for only compiling the testBeliveProdRelease sources.
+No dependencies
+
+testBeliveProdReleaseWearApp - Link to a wear app to embed for object 'testBeliveProdRelease'.
+No dependencies
+
+testBeliveProdWearApp - Link to a wear app to embed for object 'testBeliveProd'.
+No dependencies
+
+testBeliveStagAnnotationProcessor - Classpath for the annotation processor for 'testBeliveStag'.
+No dependencies
+
+testBeliveStagApk - Classpath packaged with the compiled 'testBeliveStag' classes.
+No dependencies
+
+testBeliveStagCompile - Classpath for compiling the testBeliveStag sources.
+No dependencies
+
+testBeliveStagDebugAnnotationProcessor - Classpath for the annotation processor for 'testBeliveStagDebug'.
+No dependencies
+
+testBeliveStagDebugApk - Classpath packaged with the compiled 'testBeliveStagDebug' classes.
+No dependencies
+
+testBeliveStagDebugCompile - Classpath for compiling the testBeliveStagDebug sources.
+No dependencies
+
+testBeliveStagDebugJackPlugin - Classpath for the 'testBeliveStagDebug' Jack plugins.
+No dependencies
+
+testBeliveStagDebugProvided - Classpath for only compiling the testBeliveStagDebug sources.
+No dependencies
+
+testBeliveStagDebugWearApp - Link to a wear app to embed for object 'testBeliveStagDebug'.
+No dependencies
+
+testBeliveStagJackPlugin - Classpath for the 'testBeliveStag' Jack plugins.
+No dependencies
+
+testBeliveStagProvided - Classpath for only compiling the testBeliveStag sources.
+No dependencies
+
+testBeliveStagReleaseAnnotationProcessor - Classpath for the annotation processor for 'testBeliveStagRelease'.
+No dependencies
+
+testBeliveStagReleaseApk - Classpath packaged with the compiled 'testBeliveStagRelease' classes.
+No dependencies
+
+testBeliveStagReleaseCompile - Classpath for compiling the testBeliveStagRelease sources.
+No dependencies
+
+testBeliveStagReleaseJackPlugin - Classpath for the 'testBeliveStagRelease' Jack plugins.
+No dependencies
+
+testBeliveStagReleaseProvided - Classpath for only compiling the testBeliveStagRelease sources.
+No dependencies
+
+testBeliveStagReleaseWearApp - Link to a wear app to embed for object 'testBeliveStagRelease'.
+No dependencies
+
+testBeliveStagWearApp - Link to a wear app to embed for object 'testBeliveStag'.
+No dependencies
+
+testCompile - Classpath for compiling the test sources.
+\--- com.squareup.leakcanary:leakcanary-android-no-op:1.5
+
+testDebugAnnotationProcessor - Classpath for the annotation processor for 'testDebug'.
+No dependencies
+
+testDebugApk - Classpath packaged with the compiled 'testDebug' classes.
+No dependencies
+
+testDebugCompile - Classpath for compiling the testDebug sources.
+No dependencies
+
+testDebugJackPlugin - Classpath for the 'testDebug' Jack plugins.
+No dependencies
+
+testDebugProvided - Classpath for only compiling the testDebug sources.
+No dependencies
+
+testDebugWearApp - Link to a wear app to embed for object 'testDebug'.
+No dependencies
+
+testJackPlugin - Classpath for the 'test' Jack plugins.
+No dependencies
+
+testProvided - Classpath for only compiling the test sources.
+No dependencies
+
+testReleaseAnnotationProcessor - Classpath for the annotation processor for 'testRelease'.
+No dependencies
+
+testReleaseApk - Classpath packaged with the compiled 'testRelease' classes.
+No dependencies
+
+testReleaseCompile - Classpath for compiling the testRelease sources.
+No dependencies
+
+testReleaseJackPlugin - Classpath for the 'testRelease' Jack plugins.
+No dependencies
+
+testReleaseProvided - Classpath for only compiling the testRelease sources.
+No dependencies
+
+testReleaseWearApp - Link to a wear app to embed for object 'testRelease'.
+No dependencies
+
+testWearApp - Link to a wear app to embed for object 'test'.
+No dependencies
+
+wearApp - Link to a wear app to embed for object 'main'.
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+BUILD SUCCESSFUL
+
+Total time: 2.046 secs

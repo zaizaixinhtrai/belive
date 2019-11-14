@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:background="@color/transparent"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivHostAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_image_default"
+        android:visibility="gone"/>
+    <View android:id="@+id/vGuestAvatarOverlay"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="#64ffffff"
+          android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/llStreamStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/llCameraActionContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/ivSwitchCam"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_vidcall_guest_flipcam"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ivVideoControl"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/ic_vidcall_guest_disable_cam"/>-->
+
+        </LinearLayout>
+        <include layout="@layout/ripple_image_item"
+            android:visibility="gone"/>
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingBottom="6dp"
+            android:text="Soh Pei Shi"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp"
+            app:appFont="@string/font_helveticaneuelight"
+            tools:text="Soh Pei Shi"
+            android:visibility="gone"
+            />
+
+        <com.appster.customview.AnimateTextView
+            android:id="@+id/tvCallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingBottom="7dp"
+            android:text="Connecting..."
+            android:textColor="@color/color_333333"
+            android:textSize="10sp"
+            app:appFont="@string/font_helveticaneuebold"
+            android:visibility="gone"
+            tools:text="Connecting..."/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="15dp">
+
+            <ImageButton
+                android:id="@+id/ibEndCall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_vidcall_end"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvCountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="48sp"
+        android:visibility="gone"
+        app:appFont="@string/font_HelveticaNeueRegular"
+        tools:text="3"/>
+
+    <com.appster.customview.OneThreeFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flUserInfoContainer"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="10sp"
+            tools:text="Soh Pei Shi"
+            android:includeFontPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/bg_vid_call_gradient"
+            android:gravity="bottom"
+            app:appFont="@string/font_helveticaneuebold"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"/>
+    </com.appster.customview.OneThreeFrameLayout>
+</FrameLayout>

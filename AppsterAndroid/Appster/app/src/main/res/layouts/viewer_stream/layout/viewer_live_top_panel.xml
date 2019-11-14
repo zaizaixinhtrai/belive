@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llStreamingToppanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="18dp"
+    android:paddingStart="0dp"
+    android:paddingTop="11dp">
+
+    <include layout="@layout/viewer_widget_owner_info" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/top_fan_margin_start"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_corner_small"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:drawableEnd="@drawable/ic_stats_arrow"
+            app:drawable_end_height="13dp"
+            app:drawable_end_width="8dp"
+            android:drawableStart="@drawable/ic_stars_currency"
+            app:drawable_start_height="13dp"
+            app:drawable_start_width="13dp"
+            app:appFont="@string/font_opensansemibold" />
+
+        <com.appster.customview.GiftRankingGroupView
+            android:id="@+id/grv_ranking"
+            style="@style/giftRankingGroupViewStyle"
+            android:layout_toEndOf="@id/txt_stars"
+            />
+    </RelativeLayout>
+</LinearLayout>

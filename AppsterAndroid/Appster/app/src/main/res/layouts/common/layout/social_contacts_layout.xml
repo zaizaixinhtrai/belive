@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       tools:parentTag="android.widget.LinearLayout">
+
+    <LinearLayout
+        android:id="@+id/llFacebookFriendContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_fb_fiends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_login_facebook"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingEnd="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/facebok_friends"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansemibold"
+            app:drawable_start_height="35dp"
+            tools:targetApi="lollipop"
+            tools:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/badgeContainerFacebook"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvFacebookFriendsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/ic_gray_arrow_thin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContactFriendContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvContacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_contacts"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/contacts_friends"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansemibold"
+            app:drawable_start_height="35dp"
+            tools:targetApi="lollipop"
+            tools:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/badgeContainerContact"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvContactFriendsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/ic_gray_arrow_thin"/>
+    </LinearLayout>
+
+</merge>

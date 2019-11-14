@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/transparent"
+             android:clipChildren="false">
+
+    <ImageView
+        android:id="@+id/ivHostAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_image_default"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/vGuestAvatarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#64ffffff"
+        android:visibility="gone"/>
+
+
+    <com.appster.customview.AnimateTextView
+        android:id="@+id/tvCallStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:paddingBottom="7dp"
+        android:text="Disconnecting..."
+        android:textColor="@color/color_333333"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:appFont="@string/font_helveticaneuebold"
+        tools:text="Disconnecting..."
+        tools:visibility="visible"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_black_gradient"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:paddingBottom="5dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:clipChildren="false"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal"
+                      tools:parentTag="LinearLayout">
+
+            <com.appster.customview.CircleImageView
+                android:id="@+id/ivGuestCircleAvatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_image_default"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:singleLine="true"
+                    android:text="Guest"
+                    android:textColor="@color/white"
+                    android:textDirection="locale"
+                    android:textSize="10sp"
+                    app:appFont="@string/font_HelveticaNeueRegular"
+                    tools:ignore="Deprecated"
+                    tools:text="Guest"/>
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvDisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:paddingTop="4dp"
+                    android:text="Soh Pei Shi"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxWidth="150dp"
+                    android:textColor="@color/white"
+                    android:textDirection="locale"
+                    android:textSize="11sp"
+                    app:appFont="@string/font_helveticaneuebold"
+                    tools:text="Soh Pei Shi"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/ibEndCall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_vidcall_end"/>
+
+    <ImageView
+        android:id="@+id/ivSwitchCam"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_switch_cam"/>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="2dp"
+       android:background="@drawable/bg_topfan_join_gradient"
+       android:clipChildren="false"
+       android:gravity="center_vertical"
+       android:orientation="horizontal"
+       android:paddingEnd="24dp"
+       android:paddingStart="0dp"
+       tools:parentTag="LinearLayout">
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/ivTopFanAvatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/user_image_default"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dp"
+            android:drawableStart="@drawable/ic_topfan_1"
+            android:textColor="#ffffff"
+            android:textDirection="locale"
+            android:textSize="15sp"
+            app:appFont="@string/font_helveticaneuebold"
+            tools:text="BaZzZeurdox"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/just_joined_the_stream"
+            android:textColor="#ffffff"
+            android:textDirection="locale"
+            android:textSize="10sp"
+            app:appFont="@string/font_helveticamedium"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivBannerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/user_image_default"
+        />
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btnFollow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="50dp"
+        android:textAllCaps="true"
+        android:text="@string/follow_us"
+        android:background="@color/color_f05c56"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="bottom"
+        android:letterSpacing="0.15"
+        app:appFont="@string/font_opensansbold" />
+</FrameLayout>

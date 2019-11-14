@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/prize_item_height"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/lo_prize"
+        android:layout_width="@dimen/prize_item_width"
+        android:layout_height="@dimen/prize_item_height"
+        android:layout_gravity="center">
+
+        <aapt:attr name="android:background">
+
+            <selector android:exitFadeDuration="120">
+
+                <item android:state_pressed="true">
+
+                    <shape android:shape="rectangle">
+
+                        <solid android:color="#d9d9d9" />
+
+                        <corners android:radius="40dp" />
+                    </shape>
+                </item>
+
+                <item>
+
+                    <shape android:shape="rectangle">
+
+                        <solid android:color="#eee" />
+
+                        <corners android:radius="40dp" />
+                    </shape>
+                </item>
+            </selector>
+        </aapt:attr>
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/iv_prize_thumb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/prize_list_circle_image"
+            android:src="@color/white" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_prize_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_prize_thumb"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/iv_prize_thumb"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:appFont="@string/font_opensansbold"
+            tools:text="Tickets to London" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_prize_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_prize_title"
+            android:layout_alignStart="@+id/tv_prize_title"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:appFont="@string/font_opensanslight"
+            tools:text="Tickets to London" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="connecting_msg">连接中。。。</string>
+    <string name="processing_msg">处理中。。。</string>
+    <string name="nothing_here">空白</string>
+    <string name="block_user">屏蔽用户</string>
+    <string name="unblock">成功解除屏蔽</string>
+    <string name="unfollow_confirmation">您确定，你要停止关注吗</string>
+
+    <!-- Login page values -->
+    <string name="user_name_or_email">用户名或电邮</string>
+    <string name="password">密码</string>
+    <string name="invalid_email">无效电邮地址</string>
+    <string name="login_Sign_in_later">稍后注册</string>
+
+    <!-- Sign up page values -->
+    <string name="user_name">用户名</string>
+    <string name="activity_sign_unknown_error">未知错误，请再次尝试！</string>
+
+    <!-- Image Select popup values -->
+    <string name="camera">相机</string>
+    <string name="btn_text_cancel">取消</string>
+    <string name="btn_text_ok">好</string>
+    <string name="btn_text_wait">等待</string>
+    <string name="btn_text_close_stream">关闭直播</string>
+    <string name="choose_from_library">相册</string>
+    <string name="toast_cannot_retrieve_cropped_image">不能恢复已剪裁的照片</string>
+
+    <!-- Edit profile page values -->
+    <string name="edit_profile">编辑个人资料</string>
+    <string name="edit_pro_dbo">-</string>
+    <string name="edit_pro_display_name">昵称</string>
+    <string name="edit_pro_display_name_validation">展示名需要大于或等于 3 个字节且小于或等于 16 个字节</string>
+    <string name="edit_pro_quote_hind">更新您的状态</string>
+
+    <!-- Home page values -->
+    <!--<string name="KM">千米</string>-->
+    <string name="search_new_user">搜索</string>
+    <string name="km_default"> -- 千米</string>
+    <!--<string name="home_live">直播</string>-->
+    <!--<string name="home_feed">更新</string>-->
+    <string name="home_event">活动</string>
+    <string name="home_find_out">找出</string>
+    <string name="home_try_again">再次尝试</string>
+    <string name="home_type_fashion">时尚</string>
+    <string name="home_type_games">游戏</string>
+    <string name="home_type_sport">体育</string>
+
+    <!-- User Profile page values -->
+    <string name="profile_header">个人资料</string>
+    <string name="followers">粉丝</string>
+    <string name="following">关注</string>
+    <string name="stars">星星</string>
+    <string name="profile_follow">关注</string>
+    <string name="profile_un_follow">关注</string>
+    <!--<string name="profile_me">我</string>-->
+    <string name="pop_up_option">选择项</string>
+    <string name="pop_up_follow_user">关注用户</string>
+    <string name="pop_up_unfollow_user">取消关注用户</string>
+    <string name="follow_us">关注我们</string>
+
+    <!-- User Profile page POPUP values -->
+    <string name="btn_text_yes">是</string>
+    <string name="btn_text_no">否</string>
+    <string name="are_you_sure_to_proceed">您确定要继续吗？</string>
+
+    <!-- Photos page values -->
+    <string name="do_you_want_to_delete_this_post">你想要删除这篇贴文吗？</string>
+    <string name="do_you_want_to_delete_this_stream">您想要删除录制的直播内容吗？</string>
+
+    <!-- News Feed page values -->
+    <string name="profile_post_not_of_me">这篇贴文不属于您</string>
+    <string name="newsfeed_btn_live">直播</string>
+    <string name="newsfeed_like_count_is_one">赞</string>
+    <string name="newsfeed_like_count_text">收到点赞</string>
+    <string name="newsfeed_menu_del_post">删除贴文</string>
+    <string name="newsfeed_menu_del_stream">删除</string>
+    <string name="newsfeed_menu_edit_post">编辑贴文</string>
+    <string name="newsfeed_menu_folow">关注</string>
+    <string name="newsfeed_menu_unfolow">取消关注</string>
+    <string name="newsfeed_menu_repost">举报</string>
+    <string name="newsfeed_menu_unrepost">解除举报</string>
+    <string name="newsfeed_menu_share_stream">分享</string>
+
+    <!-- Slider page values -->
+    <string name="messages">信息</string>
+    <string name="transactions_slider">口袋</string>
+    <string name="setting_slider">设置</string>
+    <string name="personal_leaderboard_slider">排行榜</string>
+    <string name="invite_a_friend_slider">邀请朋友</string>
+    <string name="logout_slider">注销</string>
+    <string name="login_slider">登录</string>
+    <string name="are_you_sure_you_want_to_logout">您确定要退出账号吗？</string>
+    <string name="silder_menu_balance">余额：</string>
+
+    <!-- Message page values -->
+    <string name="write_a_message">编写信息</string>
+
+    <!-- Chat page values -->
+    <string name="chat_camera">相机</string>
+    <string name="chat_video">视频</string>
+    <string name="chat_gift">礼物</string>
+    <string name="chat_empty_holder_message">空白，为什么不开始聊天</string>
+    <string name="chat_with_everyone">和每个人聊天</string>
+
+    <!-- Settings page values -->
+    <string name="settings_bold">设置</string>
+
+    <!-- Setting PopUp values -->
+    <string name="select_a_picture_from">选择照片</string>
+    <string name="select_a_videos_from">选择视频</string>
+    <string name="select_a_stream_cover_from">选择您的直播封面图片</string>
+    <string name="view_more">查阅更多</string>
+
+    <!-- Write A Post Page Values -->
+    <string name="add_descriptions">编写标题</string>
+    <string name="check_in_your_location_bold">未知签到</string>
+    <string name="please_enter_description">请输入描述</string>
+    <string name="post_btn_Discard">删除</string>
+    <string name="post_detail_title">贴文</string>
+    <string name="post_discard_current_post">删除当前贴文？</string>
+    <string name="post_not_belong_to_user">贴文不属于用户</string>
+    <string name="post_photo">照片</string>
+    <string name="post_post_updated">贴文已更新</string>
+    <string name="post_quotes">引述</string>
+    <string name="post_share_facebook_success">您的贴文已经在脸书上分享</string>
+    <string name="post_sharing">分享</string>
+    <string name="post_updating">上传中</string>
+    <string name="post_video">视频</string>
+    <string name="write_post_share_Instagram">Instagram</string>
+    <string name="write_post_share_Facebook">脸书</string>
+    <string name="social_sucess">成功</string>
+
+    <string name="share_instagram_not_share_text">您只能分享照片或视频</string>
+    <string name="share_no_instagram_app">在这台设备上没有安装Instagram</string>
+    <string name="share_no_twitter_app">在这台设备上没有安装推特</string>
+    <string name="whatsapp_have_not_been_installed">Whatsapp 还没有被安装</string>
+    <string name="wechat_have_not_been_installed">微信还没有被安装</string>
+    <string name="weibo_have_not_been_installed">微博还没有被安装</string>
+
+    <!-- Send A Gift page values -->
+    <string name="sendgift_no_choose_gift">请选择一个礼物</string>
+    <string name="sendgift_no_enough_bean">你没有足够的豆豆</string>
+    <string name="gift_receive_Received">收到</string>
+    <string name="gift_receive_Sent">已发送</string>
+    <string name="gift_has_been_sent_successfully">礼物已被成功发送</string>
+    <string name="gift_refill_more_dialog_title">宝石不足</string>
+    <string name="gift_title">礼物</string>
+    <string name="gift_refill_more_dialog_message">您想要购买更多吗</string>
+    <plurals name="gifts">
+        <item quantity="one">发送了一份%s！</item>
+        <item quantity="other">发送了%s</item>
+    </plurals>
+
+    <!-- Invite page values -->
+    <string name="invite_bold">邀请朋友</string>
+    <string name="share_your_referral_code">分享您的推荐码</string>
+    <string name="invite_phone_number_email">输入多位朋友的电邮</string>
+    <string name="invite_someone_to_appster">邀请您的朋友加入BeLive</string>
+    <string name="invite_your_referral_id">您的推荐码</string>
+    <string name="invite_not_input_email">请输入有效邮箱</string>
+    <string name="invite_send_to_self">您不能发送给您自己</string>
+    <string name="invite_sns_message">好东西要分享，有偿分享BeLive平台，这是我们的推荐码 - %s</string>
+    <string name="invite_mail_subject">BeLive推荐信</string>
+    <string name="intivite_friend_successful">邀请函已发送</string>
+    <string name="invite_friend_award">邀请您的朋友加入BeLive \n 您和您的朋友都将收到 :gem: 100</string>
+    <string name="invite_friend_enter_code">输入推荐码</string>
+    <string name="invite_friend_input_your_friend_referral_and_get_gem">输入您朋友的推荐码，并获得100:gem:</string>
+    <string name="invite_friend_please_input_referral_code">请输入推荐码</string>
+    <string name="invite_friend_refID_invalid">推荐码无效！</string>
+    <string name="invite_friend_referral_code">推荐码</string>
+    <string name="invite_friend_send">发送邀请</string>
+    <string name="invite_friend_you_entered_referral_code">您已输入推荐码</string>
+
+    <!-- notification -->
+    <string name="notification">通知</string>
+    <string name="notification_you">您</string>
+    <string name="notification_following">关注</string>
+    <string name="notification_no_notification">没有消息</string>
+
+    <!-- postcomment -->
+    <string name="comment">评论</string>
+
+    <!-- Streaming -->
+    <string name="app_fail_login_live_Stream">登录视频直播失败</string>
+    <string name="app_fail_get_config_amazon_live_Stream">获取直播配置失败</string>
+    <string name="number_here_view" formatted="false">%s观赏人数 / %s</string>
+    <string name="number_view">观赏者</string>
+    <string name="hint_name_your_stream">为您的直播视频取名</string>
+    <string name="hint_add_title">添加标题</string>
+    <string name="just_send_gift">发送了一份 %s!</string>
+    <string name="like_this">点赞</string>
+    <string name="low_network_message">您的网络连接不稳定，请使用WIFI 或者移步到高质量的网络环境</string>
+    <string name="record_instruction">发布您的视频，观众可以回看</string>
+    <string name="record_instruction_below_one_minute">记录并发布视频，内容必须长于一分钟</string>
+    <string name="delete_confirm_message">你确定要删除这个视频吗？</string>
+    <string name="delete_confirm_title">删除视频</string>
+    <string name="saved">保存</string>
+    <string name="deleted">已删除</string>
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+    <string name="stream_disclaimer">欢迎！任何发布与裸露，色情以及性行为，卖淫，赌博，吸烟，欺凌等一切非法内容的用户将被永久禁止使用我们的平台。</string>
+    <string name="stream_end_share_achievements">分享成就</string>
+    <string name="stream_end_stream_home_btn">主页</string>
+    <string name="stream_end_stream_likes_count">收到点赞</string>
+    <string name="stream_end_stream_profile_btn">个人资料</string>
+    <string name="stream_end_stream_stars_count">星星</string>
+    <string name="stream_end_stream_viewer_count">观赏者</string>
+    <string name="stream_network_unstable">直播视频网络不稳定，您想要等待吗</string>
+    <string name="stream_pause">主播稍后回来</string>
+    <string name="stream_share_facebook_success">您的直播视频已分享在脸书</string>
+    <string name="stream_share_twitter_success">您的直播视频已分享在推特</string>
+    <string name="stream_stars_from_fan">来自粉丝的星星</string>
+    <string name="streaming_live">直播</string>
+    <string name="streaming_recorded">录制</string>
+    <string name="streaming_recorded_live_toast">录制直播</string>
+
+    <!-- Trending -->
+    <string name="trending_this_week">本周</string>
+    <string name="trending_this_month">本月</string>
+    <string name="trending_all_time">一直</string>
+
+    <!-- Trim videos -->
+    <string name="trim_videos">剪接视频</string>
+    <string name="support_mp4">只支持MP4格式</string>
+    <string name="fail_to_load_video">加载视频失败</string>
+    <string name="reduce_videos_quality_process">优化视频大小</string>
+    <string name="please_wait">请等待</string>
+
+    <!-- Refill page values -->
+    <string name="refill_title">充值</string>
+    <string name="refill_menu">充值</string>
+    <string name="refill_balance">余额</string>
+    <string name="refill_invite_and_get">邀请并得到  &#032;&#032; &#032; &#032; &#032;  &#032;   2 &#032;</string>
+
+    <!-- Setting -->
+    <string name="setting_notifications">消息</string>
+    <string name="setting_notification_sound">消息声音</string>
+    <string name="setting_hide_message_details">隐藏详细信息</string>
+    <string name="setting_Searchable">可以搜索到我</string>
+    <string name="setting_Messaging">消息</string>
+    <string name="setting_Language">语言</string>
+    <string name="setting_Profile">个人资料</string>
+    <string name="setting_playtoken_connect">连接到 PlayToken</string>
+    <string name="setting_playtoken_connected">已连接到 PlayToken</string>
+    <string name="setting_Edit_Profile">编辑个人资料</string>
+    <string name="setting_blocked_list">屏蔽名单</string>
+    <string name="setting_Connect_to_Facebook">连接脸书</string>
+    <string name="setting_Support">支持</string>
+    <string name="setting_About_Us">关于我们</string>
+    <string name="setting_Terms_And_Conditions">条款和政策</string>
+    <string name="setting_Deactivate_Account">停用账号</string>
+    <string name="setting_confirm_Deactivate_Account">您想停用您的账号吗？</string>
+    <string name="setting_title_choose_language">选择一种语言</string>
+    <string name="setting_Disconnect_facebook">断开脸书连接</string>
+    <string name="setting_Do_you_disconnect_facebook">你想要断开脸书连接吗？</string>
+
+    <!-- Pocket -->
+    <string name="pocket_title">口袋</string>
+    <string name="pocket_Current_Balance">现有余额</string>
+    <string name="pocket_Beans">豆豆</string>
+    <string name="pocket_View_your_transaction_history">查阅您的交易历史记录</string>
+    <string name="pocket_USD">金子</string>
+    <string name="pocket_Date">日期</string>
+    <string name="pocket_Remark">备注</string>
+    <string name="pocket_Total">总共</string>
+    <string name="pocket_In">进/出</string>
+    <string name="pocket_DescripBteioan">描述日期</string>
+    <string name="pocket_Current">目前</string>
+    <string name="pocket_to">到</string>
+    <string name="pocket_start_date_over_current">开始时间不得早于现在</string>
+
+    <!-- Report -->
+    <string name="report_what_issue">举报原因</string>
+    <string name="report_sexual_content">性方面的内容</string>
+    <string name="report_violent">暴力或者令人厌恶的内容</string>
+    <string name="report_hateful">引起仇恨或者侮辱性的内容</string>
+    <string name="report_harmful">有伤害性的危险行为</string>
+    <string name="report_child">虐待儿童</string>
+    <string name="report_spam">滥发或者有误导性的内容</string>
+    <string name="report_infringes">侵害本人权益</string>
+    <string name="report_toast_message">举报已提交，我们查阅并处理您的举报内容</string>
+
+    <!-- Error values -->
+    <string name="invalid_credit_type">信用类型无效</string>
+    <string name="invalid_data">无效数据</string>
+    <string name="invalid_data_type">数据类型无效</string>
+    <string name="invalid_datetime">日期无效</string>
+    <string name="invalid_device_type">设备类型无效</string>
+    <string name="invalid_email_format">电邮格式无效</string>
+    <string name="invalid_follower_id">关注者账号无效</string>
+    <string name="invalid_login_credentials">无效登录凭证</string>
+    <string name="invalid_notification_status">无效消息状态</string>
+    <string name="invalid_owner_id">版权所有者账号无效</string>
+    <string name="invalid_post_id">贴文账号无效</string>
+    <string name="invalid_receiver_id">接收者账号无效</string>
+    <string name="invalid_referral_id">推荐账号无效</string>
+    <string name="invalid_report_user_id">举报者账号无效</string>
+    <string name="invalid_save_push_notification_id">推送通知账号无效</string>
+    <string name="invalid_user_id">无效账号</string>
+    <string name="invalid_user_role">用户角色无效</string>
+    <string name="can_not_create_comment">无法创建评论</string>
+    <string name="can_not_create_post">无法创建贴文</string>
+    <string name="can_not_delete_comment">无法删除评论</string>
+    <string name="can_not_delete_conversation">无法删除对话</string>
+    <string name="can_not_delete_post">无法删除贴文</string>
+    <string name="can_not_edit_comment">无法编辑评论</string>
+    <string name="can_not_send_email">无法发送邮件</string>
+    <string name="can_not_update_post">无法上传贴文</string>
+    <string name="Can_not_upload_media_content">无法上传媒体内容</string>
+    <string name="missing_account_number">丢失账号</string>
+    <string name="missing_bank_name">丢失银行名</string>
+    <string name="missing_branch_code">丢失支行代码</string>
+    <string name="missing_paypal_email">丢失贝宝电邮</string>
+    <string name="missing_required_data">丢朱需要的数据</string>
+    <string name="email_already_existed">电邮已存在</string>
+    <string name="email_has_already_been_verified">电邮已被认证</string>
+    <string name="email_has_been_used">电邮已经被使用</string>
+    <string name="email_have_not_been_installed">电邮还没有被安装</string>
+    <string name="email_is_missing">电邮丢失</string>
+    <string name="no_data_found">没有找到任何数据</string>
+    <string name="no_page_found">无法找到该页面</string>
+    <string name="no_post_found">贴文无法找到</string>
+    <string name="network_error">网络错误</string>
+    <string name="system_error">系统错误</string>
+    <string name="save_cashback_error">保存现金退款错误</string>
+    <string name="send_receive_gift_error">发送礼物错误</string>
+    <string name="model_state_error">模型状态错误</string>
+    <string name="parameter_missing">参数丢失</string>
+    <string name="account_deactivated_or_suspended">账号暂停或停用</string>
+    <string name="account_deactivate_or_invalid_email">账号停用或无效电邮</string>
+
+    <!--Time-->
+    <string name="time_just_now">刚刚</string>
+    <string name="time_a_minute_ago">1 分钟前</string>
+    <string name="time_an_hour_ago">1 小时前</string>
+    <string name="time_day_ago">1 天前</string>
+    <string name="time_a_week_ago">1 周前</string>
+    <string name="time_an_month_ago">1 个月前</string>
+    <string name="time_an_year_ago">1 年前</string>
+    <string name="time_minutes_ago">分钟前</string>
+    <string name="time_hours_ago">小时前</string>
+    <string name="time_yesterday">昨天</string>
+    <string name="time_days_ago">天前</string>
+    <string name="time_weeks_ago">周前</string>
+    <string name="time_month_ago">个月前</string>
+    <string name="time_year_ago">年前</string>
+
+    <!--Login Play Token -->
+    <string name="play_token_register">注册</string>
+    <string name="login_playtoken_please_input_your_username_">请注入您的用户名</string>
+    <string name="login_playtoken_please_input_your_password">请输入您的密码</string>
+    <string name="register_playtoken_username_range">要求用户名至少是 3 个字母，不超过 16 个字母</string>
+    <string name="register_playtoken_password_range">密码大于等于 6 个字节小于等于 15 个字节</string>
+    <string name="register_playtoken_re_enter_Email_hint">您的邮箱（可选）</string>
+    <string name="register_playtoken_re_enter_Referer_hint">推荐号码（可选）</string>
+    <string name="register_playtoken_re_enter_user_name_hint">您的用户名</string>
+    <string name="register_not_number">必须为数字</string>
+
+    <!-- Share live -->
+    <string name="share_live_whatsapp">WhatsApp</string>
+    <string name="share_live_email">邮件</string>
+    <string name="share_live_facebook">脸书</string>
+    <string name="share_live_instagram">Instagram</string>
+    <string name="share_live_others">其他</string>
+    <string name="share_live_share">分享</string>
+    <string name="share_live_twitter">推特</string>
+    <string name="share_live_wechat">微信</string>
+    <string name="share_live_weibo">微博</string>
+    <string name="share_with_friend">与朋友分享</string>
+
+    <!-- Wowza -->
+
+    <string name="tag_hot">热播</string>
+    <string name="tag_entertainment">娱乐</string>
+
+    <!-- Edit profile -->
+    <string name="edit_pro_avatar">头像</string>
+    <string name="edit_pro_id_name">用户名</string>
+    <string name="edit_pro_gender">性别</string>
+    <string name="edit_pro_biography">简述</string>
+    <string name="edit_pro_gender_male">男</string>
+    <string name="edit_pro_gender_female">女</string>
+    <!--<string name="edit_pro_gender_secret">保密</string>-->
+    <string name="edit_pro_birthday">生日</string>
+    <string name="edit_pro_save">保存</string>
+
+    <string name="button_send">发送</string>
+    <string name="error_auth_failed">认证失败</string>
+    <string name="not_enought_stars_pre">没有足够的</string>
+    <string name="not_enought_stars_post">可用</string>
+
+    <!-- IAppPay strings -->
+    <string name="iapppay_not_yet_processed">您之前的订单正在处理中，请稍候。</string>
+    <string name="iapppay_ss_orderid">请抓取屏幕截图，并向客户服务人员提供您的订单号码:&#160;</string>
+    <string name="iapppay_purchase_success">购买成功！</string>
+
+    <!--suggested frend list-->
+    <string name="friend_suggestion_title">推荐</string>
+    <string name="invite_friend">邀请朋友</string>
+    <string name="friend_on_belive">BeLive上的朋友</string>
+    <string name="txt_friend_invitation_suggestion">没有朋友？立刻邀请，每一个能获得 :gem: **100** :)</string>
+    <string name="txt_friend_invitation_suggestion_non_fb">您现在还没有朋友！\n 立刻邀请，每一个能获得 :gem: **100** :)</string>
+
+    <string name="we_are_under_maintenance">我们正在进行系统维护</string>
+    <string name="please_visit_us_later">请稍后进行访问</string>
+
+    <string name="maintenance_message">我们正在进行系统维护</string>
+    <string name="suggested">推荐</string>
+    <string name="skip">跳过</string>
+    <string name="follow">关注</string>
+    <!--<string name="nav_suggested_friend_list">朋友推荐</string>-->
+    <string name="enter_the_water_mask">输入文字</string>
+    <string name="btn_text_done">完成</string>
+
+    <string name="message_get_access_token">获取访问令牌。。。</string>
+    <string name="message_is_lived_now">正在直播</string>
+    <string name="message_joined">加入了</string>
+    <string name="message_followed">已关注%s！</string>
+    <string name="message_sent">发送了</string>
+    <string name="message_sent_a">发送了一份</string>
+    <string name="message_sent_a_item">发送了一份%s！</string>
+    <string name="message_received_end_message">收到结束消息</string>
+    <string name="message_check_network">检查网络。。。</string>
+    <string name="message_prepare_stream">准备直播。。。</string>
+    <string name="message_beauty_on">美颜模式</string>
+    <string name="message_beauty_off">素颜模式</string>
+    <string name="message_network_not_good">网络状况不佳</string>
+    <string name="message_select_cate">请为您的直播选择类别</string>
+
+    <string name="exchange_dialog_sure">确认</string>
+    <string name="btn_text_confirm">确认</string>
+    <string name="confirm_cashout">确认现金转账</string>
+    <string name="not_enought_stars">没有足够的星星</string>
+    <string name="stars_to_gems_exchange_have_added">已添加宝石</string>
+    <string name="exchange_confirm_title">您确定吗？</string>
+    <string name="insufficient_gold">金子不足</string>
+
+    <string name="string_block">屏蔽</string>
+    <string name="string_unblock">接通</string>
+
+    <!-- For Record Pic/Videos activity -->
+    <!--<string name="recording">录制中&#8230;</string>-->
+
+    <string name="create_profile">创建个人资料</string>
+    <string name="create_profile_btn_next">开始</string>
+    <string name="create_profile_skip">@string/skip</string>
+    <string name="create_profile_enter_email">输入你的邮箱地址</string>
+    <string name="create_profile_please_input_your_username">请注入您的用户名</string>
+    <string name="create_profile_please_input_email">请输入您的电邮</string>
+
+    <string name="live_trim_go_live">直播</string>
+    <!--<string name="live_trim_saved_video">保存视频</string>-->
+    <!--<string name="live_trim_record">录制</string>-->
+    <!--<string name="live_trim_not_recorded">没有录制</string>-->
+    <string name="not_data_following">你现在没有关注任何一位直播用户吗？请在这里查找最受欢迎的直播用户</string>
+    <string name="number_view_is_one">观赏者</string>
+    <string name="profile_following_title">关注</string>
+    <string name="profile_followers_title">关注者</string>
+
+    <string name="check_your_connection">检查您的网络链接并再次尝试</string>
+    <!--<string name="connection_settings_summary">为Wowza直播引擎指定链接设置</string>-->
+    <!--<string name="connection_settings_title">链接设置</string>-->
+    <string name="convert_to_gem_gem_on_hand">可用的宝石</string>
+    <string name="copy_this_text">复制文案</string>
+    <string name="create_account">创建账号</string>
+    <string name="display_name_required">请输入您的展示名</string>
+    <string name="cover_image_changed">封面图片已成功更改</string>
+    <string name="do_you_want_stop_record">你想要取消录制的视频吗？</string>
+    <string name="dont_have_paypal_account">没有贝宝账户账号？</string>
+    <string name="end_stream">结束直播流程</string>
+    <string name="error_start_stream">直播流程在刚开始时发生错误</string>
+    <string name="error_title">错误</string>
+    <string name="exchange_confirm_to">到</string>
+    <string name="exchange_oops">抱歉！</string>
+    <string name="exchange_success">成功！</string>
+    <string name="feature_will_be_coming_soon">功能即将投放使用</string>
+    <string name="friend_already_on_belive">朋友已在 BeLive平台</string>
+    <string name="friends_already_on_belive">朋友们已经在BeLive直播平台</string>
+    <string name="header_title_share_post" formatted="false">请查阅 %$2s 发布的直播</string>
+    <string name="header_title_share_stream_host" formatted="false">%s @%s\n我正在直播，快加入BeLive直播平台</string>
+    <string name="header_title_share_stream_viewer" formatted="false">%s @%s\n快来加入BeLive直播平台，分享快乐</string>
+    <string name="hot_network_is_low">直播者的网络信号微弱</string>
+    <string name="income_exchange_rate_tips">汇率提示</string>
+    <string name="income_gems_enable">您可以购买宝石作为礼物送给您最喜欢的主播，让他们注意到您，知道您是他们的头号粉丝（您可以到他们的个人页面或者直播流程那发送礼物）</string>
+    <string name="income_menu">收入</string>
+    <string name="income_start_are_ear">当您的粉丝送礼物给您，您将赚取星星。拥有越多星星，说明越受欢迎！这些星星可以转换为宝石，进而换做现金提现。</string>
+    <string name="income_start_received">可用星星</string>
+    <string name="income_start_to_cash">兑换成宝石</string>
+    <string name="income_start_to_gem">现金支出</string>
+    <string name="income_what_are_stars">什么是星星？</string>
+    <string name="income_what_are_gems">什么是宝石？</string>
+    <string name="leaderboard_there_are_no_activity">没有任何活动</string>
+    <string name="like_count">%s赞</string>
+    <string name="likes_count">%s次点赞</string>
+    <string name="likes_title">收到点赞</string>
+    <string name="live_stream_category">类别</string>
+    <string name="live_stream_ended">直播结束</string>
+    <string name="login_by_signing_up">您同意、访问和/或使用我们的服务，即代表您同意遵守我们的</string>
+    <string name="login_privacy_policy">隐私政策</string>
+    <string name="login_terms">使用条款</string>
+    <string name="login_and">和</string>
+    <string name="login_dot">。</string>
+    <string name="member_doesnot_want_to_receive_message">这位会员这次不想收取信息</string>
+    <string name="message_do_not_have_permission_create_stream">您的账号暂停使用，请联系BeLive团队获取更多的信息</string>
+    <string name="paypal_email">贝宝电邮</string>
+    <string name="paypal_firstname">名字</string>
+    <string name="paypal_lastname">姓氏</string>
+    <string name="paypal_mobile_num">手机号码</string>
+    <string name="picture">图片</string>
+    <string name="please_input_display_name">请输入您的展示名字</string>
+
+    <string name="prelive_notice">录制并发布视频，需要视频内容多于 1 分钟</string>
+    <string name="prelive_change_cover_image">更改封面图片</string>
+    <string name="recorded_stream_has_been_deleted">这段录制的直播已经被用户所有者删除</string>
+    <string name="register_begin">开始</string>
+    <string name="register_create_your_profile">创建您的个人资料</string>
+    <!--<string name="register_email_optional">电邮（可选）</string>-->
+    <!--<string name="register_referral">推荐码（可选）</string>-->
+    <string name="register_your_id">您的账号</string>
+    <!--<string name="register_your_display_name">您的展示名字</string>-->
+    <string name="register_your_bold">您的</string>
+    <string name="report_user">举报用户</string>
+    <string name="search_header_recent">最近</string>
+    <!--<string name="search_header_suggested">建议</string>-->
+    <string name="search_latest_live">最新的直播视频</string>
+    <string name="search_no_stream">当前没有直播视频</string>
+    <string name="search_no_users_found">无法找到该用户</string>
+    <!--<string name="search_title_explore">发现</string>-->
+    <string name="search_user">用户</string>
+    <string name="send_gift_combo">已发送%s</string>
+    <string name="share_end_result_message">查阅我在BeLive直播平台的结果</string>
+
+    <string name="sns_default_message">观赏这段超棒的BeLive直播推送#BeLiveSG</string>
+    <string name="sns_facebook_message">观赏超棒的 BeLive平台播放 #BeLiveSG http://belive.sg/fb</string>
+    <string name="stars_received">收到星星</string>
+    <string name="stars_to_gems_exchange_confirm_exchange">转换</string>
+    <string name="stars_to_gems_exchange_not_enough_gold">没有足够可使用的星星</string>
+    <string name="start_capturing_and_share_your_moments">开始记录分享您的生活瞬间</string>
+    <string name="started_xx_ago">开始%s</string>
+    <string name="string_mute">静音</string>
+    <string name="string_unmute">解除静音</string>
+    <string name="submit">提交</string>
+    <string name="text_copied">被复制的文案</string>
+    <string name="these_emails_has_been_blocked">这些电邮已经被屏蔽</string>
+    <string name="these_emails_has_been_invited">这些电邮无效</string>
+    <string name="these_emails_has_been_invalid">已向这些电邮用户发送邀请</string>
+    <string name="topfan_sent">已发送</string>
+    <string name="toppan_have_not_fan">空白</string>
+    <string name="toppan_title">粉丝排名</string>
+    <string name="user_has_been_suspended">该用户账户已被暂停</string>
+    <string name="upload_cover_photo">上传封面图片</string>
+    <string name="user_id_required">请输入您的账号</string>
+    <!--<string name="video_settings_summary">为视频流程规划设置</string>-->
+    <!--<string name="video_settings_title">视频流程设置</string>-->
+    <string name="view_count">%s次播放</string>
+    <string name="views_count">%s次播放</string>
+    <string name="view_all_for">查看所有%s个评论</string>
+    <string name="viewer_network_is_low">网络信号弱</string>
+    <string name="wall_feed">动态消息</string>
+    <string name="withdrawn_successfully">成功发送</string>
+
+    <string name="block_this_user">屏蔽此用户？</string>
+    <string name="unblock_this_user">对该为用户解除屏蔽</string>
+    <string name="block_confirmation_content">如果您屏蔽了此人，他/她就不能够浏览您的直播内容和帖文，也无法搜索到您。即使是您的粉丝，也不会收到关于您的任何通知讯息。</string>
+    <string name="unblock_confirmation_content">该用户将被允许查看您的信息和帖文，在搜索中找到您，并收到您的通知信息。</string>
+
+    <string name="you_did_not_receive_any_gift">你没有收到任何的礼物</string>
+    <string name="you_have_no_conversation">您没有任何对话</string>
+    <string name="your_post_has_delete">成功删除</string>
+    <string name="filter_is_invalid">无效滤镜</string>
+    <string name="media_type_is_invalid">媒体类型无效</string>
+    <string name="out_of_length_bound">超出长度限制</string>
+    <string name="message_content_missing">信息内容丢失</string>
+    <string name="display_name_is_missing">展示名字丢失</string>
+    <string name="dob_is_out_of_accepted_age_range">出生日期超出年龄范围</string>
+    <string name="not_exist">不存在</string>
+    <string name="data_has_been_deleted">数据已经被删除</string>
+    <string name="username_has_been_used">用户名已经被使用</string>
+    <string name="user_not_found">无该找到该用户</string>
+    <string name="transaction_info_not_found">无法找到交易信息</string>
+    <string name="update_fail">上传失败</string>
+    <string name="create_fail">创建失败</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="unauthorized">未授权</string>
+    <string name="user_rejected">用户拒绝</string>
+    <string name="not_in_leaderboard">不在排行榜</string>
+    <string name="self_communication">自我沟通</string>
+    <string name="account_authentication_problem">你的口令无效，请再次尝试登陆</string>
+    <string name="Media_content_type_is_not_support">媒体内容类型不支持</string>
+    <string name="Transaction_Error">交易错误</string>
+    <string name="Register_Xmpp_accrount_failed">注册XMPP 账号失败</string>
+    <string name="Referral_ID_already_exist">推荐账号已存在</string>
+    <string name="Email_has_been_used_with_another_facebook_id">另一户脸书用户已使用此电邮</string>
+    <string name="User_does_not_have_any_email">用户没有任何的电邮地址</string>
+    <string name="Error_Email_has_not_been_verified">电邮没有被认证</string>
+    <string name="Already_like_that_post">已经点赞贴文</string>
+    <string name="Stream_already_exists">直播已存在</string>
+    <string name="Request_cashback_fail">要求现金退款失败（需要重新尝试）</string>
+    <string name="User_turn_off_chat">用户关闭聊天功能</string>
+    <string name="Notification_not_belong_to_user">消息不属于用户</string>
+    <string name="Please_click_back_again_to_exit">如要退出，请再次点击</string>
+    <string name="no_internet_connection">确保您所在的环境有强的网络信号</string>
+    <string name="some_error_happen_please_try">发生错误，请稍后再次尝试</string>
+    <string name="start_stream_poor_connection">质量不佳的网络连接会影响到直播的质量，请确保良好的网络连接状态</string>
+    <string name="are_you_sure_you_want_to_end_this_stream">你确定要结束直播？</string>
+    <string name="message_do_you_want_to_delete_message">你想要删除信息吗？</string>
+    <string name="newly_registered_user_title">欢迎来到BeLive</string>
+    <string name="newly_registered_user">我们不容忍在社区展示有关裸露，色情以及性行为，卖淫，赌博，欺凌和吸烟等行为和内容。违规者将被永久禁止使用我们的平台</string>
+    <string name="please_contact_appsters_team">您的账号暂停使用，请联系BeLive团队将其重新启用</string>
+    <string name="all_fields_required">需要填写所有栏目</string>
+    <string name="enter_valid_paypal_email">请输入有效的贝宝电邮</string>
+    <string name="enter_valid_phone_number">请输入有效的手机号码</string>
+    <string name="message_stream_remove">这段直播内容已经被移除</string>
+    <string name="add_tag">添加标签</string>
+    <!--<string name="audio_settings_summary">指定音频流程的设置</string>-->
+    <!--<string name="audio_settings_title">音频流程设置</string>-->
+    <string name="blocked">已屏蔽</string>
+    <string name="blocked_screen_title">屏蔽名单</string>
+    <string name="btn_text_sure">当然</string>
+    <string name="btn_text_update">更新</string>
+    <string name="characters_range" formatted="false">请使用%s 和 %s 字节</string>
+    <string name="newsfeed_btn_video">视频</string>
+    <string name="videos_tag">视频</string>
+
+    <string name="chattime_today">今天</string>
+    <string name="chattime_yesterday">昨天</string>
+
+    <string name="stream_title_not_available">请为您的直播添加一个标题</string>
+    <string name="do_you_want_resume_previous_stream">您是否想要继续上次直播？</string>
+    <string name="resume">继续</string>
+
+    <string name="btn_post">发布</string>
+
+    <string name="stars_recommended">热门</string>
+
+    <string name="label_free">免费</string>
+    <string name="label_synthesis">文件合成中。。。</string>
+
+    <string name="formatter_dmy">yyyy年M月dd日</string>
+    <string name="formatter_chat_date">yyyy年M月dd日</string>
+    <string name="formatter_dob">dd/MM/yyyy</string>
+    <string name="formatter_wall_feed">dd MMM yyyy</string>
+    <string name="formatter_wall_feed_date">dd MMM</string>
+
+    <array name="expensive_gifts">
+        <item name="gift_lux_car">豪华跑车</item>
+        <item name="gift_supercar">超级跑车</item>
+        <item name="gift_mansion">别墅</item>
+        <item name="gift_watch">名牌手表</item>
+        <item name="gift_rose">玫瑰花束</item>
+        <item name="gift_ring">钻戒</item>
+        <item name="gift_teddy">泰迪熊</item>
+    </array>
+    <string name="shared_live_stream">已分享此直播！</string>
+</resources>

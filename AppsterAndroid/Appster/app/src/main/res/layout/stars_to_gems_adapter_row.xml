@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center|left"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/paddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/refill_gem_icon" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_Bean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="58585b"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:appFont="@string/font_HelveticaNeueRegular" />
+
+        <LinearLayout
+            android:id="@+id/start_change"
+            android:layout_width="110dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center|end"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/income_exchange_btn"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_gem"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_gift_currency" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/txt_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/image_gem"
+                android:text="233"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:appFont="@string/font_opensansemibold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/paddingBottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

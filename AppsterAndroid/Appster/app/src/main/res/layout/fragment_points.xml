@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lo_point_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_collapseMode="parallax"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_point_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ib_point_info"
+            android:layout_alignBottom="@+id/ib_point_info"
+            android:gravity="center"
+            android:text="@string/redeemable_points"
+            android:textColor="@color/color_6b6c6e"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/ib_point_info"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="-6dp"
+            android:layout_toEndOf="@+id/tv_point_title"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/income_qnmk_exchgrate" />
+
+        <ImageView
+            android:id="@+id/iv_total_point"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_point_title"
+            android:layout_alignTop="@+id/tv_total_point"
+            android:layout_alignBottom="@+id/tv_total_point"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/navi_icon_points_small" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_total_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_point_title"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_total_point"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_6b6c6e"
+            android:textSize="24sp"
+            tools:text="0" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshPoints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.appster.core.adapter.recyclerview.LoadMoreRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:includeFontPadding="false"
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appster.customview.CustomFontTextView
+    android:id="@+id/tvTreatRankTitle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableBottom="@drawable/treat_list_divider"
+    android:gravity="center"
+    android:textAllCaps="true"
+    android:textColor="@color/color_66fff5"
+    android:textSize="19sp"
+    app:appFont="@string/font_tekoregular"
+    tools:background="@color/background_black_80"
+    tools:text="This week's ultimate treat"
+    android:layerType="software"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"/>

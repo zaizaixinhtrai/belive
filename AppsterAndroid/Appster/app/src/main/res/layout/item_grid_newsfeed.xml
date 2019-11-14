@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/media_image_fl"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#E8E8E8">
+
+    <com.appster.layout.SquareImageView
+        android:id="@+id/mediaImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/content_desc"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvStreamType"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/home_btn_recorded"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:maxLines="1"
+        android:text="@string/newsfeed_btn_video"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:id="@+id/info_stream"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/home_gradient_tag"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvCategory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|bottom"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/tag_entertainment"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:letterSpacing="0.09"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:appFont="@string/font_opensanssemibold"
+            android:textSize="10sp" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom"
+            android:gravity="start|bottom"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:singleLine="true"
+            android:text="09:12:13"
+            app:appFont="@string/font_opensansbold"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+</FrameLayout>

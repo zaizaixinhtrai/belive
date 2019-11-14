@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="315dp"
+    android:layout_height="220dp"
+    android:background="@drawable/prize_bag_view_background"
+    android:paddingStart="20dp"
+    android:paddingBottom="25dp">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toRightOf="@+id/leftLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btClose">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvSendTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:text="@string/prize_bag_view_send_to"
+                android:textColor="#58585b"
+                android:textSize="13sp"
+                app:appFont="@string/font_opensanslight" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:appFont="@string/font_opensansregular"
+                tools:text="name" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:appFont="@string/font_opensansregular"
+
+                tools:text="email" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvShould"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:text="@string/prize_bag_view_should_receiver"
+                android:textColor="#6b6c6e"
+                android:textSize="10sp"
+                app:appFont="@string/font_opensanslight" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvBeliveEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:text="hello@belive.sg"
+                android:textColor="#6b6c6e"
+                android:textSize="10sp"
+                app:appFont="@string/font_opensansitalicsemibold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvPrizeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="#6b6c6e"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"
+            app:layout_constraintRight_toLeftOf="@+id/tvBeliveEmail"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            tools:text="Duct to Earth" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvPrizeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="#6b6c6e"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansregular"
+            app:layout_constraintRight_toLeftOf="@+id/tvBeliveEmail"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            tools:text="Duct to Earth" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_close_grey600_48dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

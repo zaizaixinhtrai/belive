@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/root_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center|top"
+              android:background="#f4f5f4"
+              style="?attr/themedKeyboardAvailableScreenStyle"
+              android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_without_menu" />
+
+    <include layout="@layout/screen_header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <include layout="@layout/user_profile_layout" />
+
+        <com.appster.customview.CustomFontEditText
+            android:id="@+id/edtUserId"
+            style="@style/user_profile_edittext_style"
+            android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+            android:drawableStart="@drawable/ic_user_id"
+            app:edt_drawable_start_width="27dp"
+            app:edt_drawable_end_width="16dp"
+            tools:drawableEnd="@drawable/ic_id_name_invalid"
+            android:hint="@string/register_your_id"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_invalid_user_id_warning"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:paddingStart="38dp"
+            android:paddingEnd="0dp"
+            android:text="@string/register_duplicated_id"
+            android:textSize="10sp"
+            android:textColor="@color/color_ff5167"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:appFont="@string/font_helvetica"/>
+
+        <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:id="@+id/edtUserDisplayName"-->
+        <!--style="@style/user_profile_edittext_style"-->
+        <!--android:drawableStart="@drawable/ic_user_username"-->
+        <!--android:hint="@string/register_your_display_name"-->
+        <!--android:visibility="invisible" />-->
+
+        <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:id="@+id/edtUserEmail"-->
+        <!--style="@style/user_profile_edittext_style"-->
+        <!--android:drawableStart="@drawable/ic_user_email"-->
+        <!--android:hint="@string/register_email_optional"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:visibility="invisible" />-->
+
+        <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:id="@+id/edtUserReferralCode"-->
+        <!--style="@style/user_profile_edittext_style"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:drawableStart="@drawable/ic_user_referral"-->
+        <!--android:hint="@string/register_referral"-->
+        <!--android:inputType="number"-->
+        <!--android:visibility="invisible" />-->
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.BottomButton"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/register_begin"
+        android:textSize="18sp"
+        app:appFont="@string/font_opensansbold"
+        tools:background="@drawable/selector_red_button_no_radius"/>
+
+</LinearLayout>

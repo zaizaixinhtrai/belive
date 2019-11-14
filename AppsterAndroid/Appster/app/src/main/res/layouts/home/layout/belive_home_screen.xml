@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background">
+
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_background"
+            android:orientation="vertical">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvMaintenanceMessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/red_button"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <com.appster.core.adapter.recyclerview.LoadMoreRecyclerView
+                android:id="@+id/rcvBeLiveShows"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/live_show_item_single" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/parentContainer"
+            android:layout_width="200dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="240dp"
+            android:visibility="invisible">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvWatchingNumber"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/whitebox"
+                android:gravity="center|start"
+                android:lines="2"
+                android:paddingStart="7dp"
+                android:paddingTop="8dp"
+                android:textColor="#000000"
+                app:appFont="@string/font_HelveticaNeueRegular" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/hiIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvShowDesc"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="hi_icon.json"
+                app:lottie_loop="true"
+                app:lottie_scale="0.3" />
+        </FrameLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lavMoreItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvShowDesc"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="scrollarrow.json"
+            app:lottie_loop="true"
+            app:lottie_scale="0.3"
+            tools:src="@drawable/ic_play_now" />
+
+        <Button
+            android:id="@+id/btnTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/home_try_again"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

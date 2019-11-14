@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:background="@android:color/black"
+        android:gravity="center" >
+
+        <com.apster.common.view.AspectRatioVideoView
+            android:id="@+id/videoview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/button_play_video"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:scaleType="center"
+        android:src="@drawable/playvideo" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:id="@+id/img_pause"
+        android:visibility="gone"
+        />
+
+
+    <!--
+        <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:id="@+id/videoview"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        
+        />
+    -->
+
+    <View
+        android:id="@+id/view_separate"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativelayout_video_view"
+        android:background="@color/LightGrey" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/view_separate" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_control_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linearlayout_seekbar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/button_trim"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/xml_button_trim" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/button_undo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                   android:layout_centerInParent="true"
+                    android:background="@drawable/xml_button_undo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/button_done"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/xml_button_done_video" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_choose_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Choose Video" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:background="@color/dim_background_dialog_90" >
+
+    <ImageView
+        android:id="@+id/img_glow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_glow_yellow"
+        />
+
+    <ImageView
+        android:id="@+id/img_treat_type"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_daily_treat_ultimate"/>
+
+    <ImageView
+        android:id="@+id/img_treat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_daily_treat_yellow"/>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_daily_treat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:appFont="@string/font_helveticaneuebold"
+        tools:text="@string/daily_treat_message"
+        android:layout_above="@id/img_treat"/>
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btn_open"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_treat"
+        android:textColor="@color/white"
+        android:letterSpacing="0.285"
+        android:textSize="14sp"
+        android:text="@string/open_it"
+        app:appFont="@string/font_opensansbold"
+        android:background="@drawable/selector_button_suggest"
+        tools:targetApi="lollipop"/>
+
+</RelativeLayout>

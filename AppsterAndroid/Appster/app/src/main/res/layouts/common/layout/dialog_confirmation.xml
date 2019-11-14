@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:minWidth="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundwhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="18dp">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        tools:text="Dialog title go here"
+        android:textColor="#58585b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:appFont="@string/font_opensansbold" />
+
+    <LinearLayout
+        android:id="@+id/llMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="25dp"
+        android:gravity="center"
+        tools:visibility="visible"
+        android:orientation="vertical">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="@string/block_confirmation_content"
+            android:lineSpacingExtra="3dp"
+            android:gravity="center"
+            android:textColor="#58585b"
+            android:textSize="13sp"
+            tools:visibility="visible"
+            app:appFont="@string/font_opensansregular" />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minWidth="135dp"
+            android:background="@drawable/selector_grey_button"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:letterSpacing="0.09"
+            android:text="@string/btn_text_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"
+            tools:targetApi="lollipop"/>
+
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minWidth="135dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_red_button"
+            android:letterSpacing="0.09"
+            app:appFont="@string/font_opensansbold"
+            android:text="@string/btn_text_ok"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:targetApi="lollipop"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+            android:background="@color/white"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paypal"
+            android:layout_gravity="center"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            />
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etFirstName"
+        style="@style/paypal_edittext_style"
+        android:maxLength="32"
+        android:hint="@string/paypal_firstname" />
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etLastName"
+        style="@style/paypal_edittext_style"
+        android:maxLength="64"
+        android:hint="@string/paypal_lastname"/>
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etPayPalEmail"
+        style="@style/paypal_edittext_style"
+        android:hint="@string/paypal_email"
+        android:maxLength="127"
+        android:inputType="textEmailAddress" />
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etMobileNumber"
+        style="@style/paypal_edittext_style"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/paypal_mobile_num"
+        android:inputType="number"
+        android:maxLength="19"/>
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:minWidth="135dp"
+        android:background="@drawable/income_exchange_btn"
+        android:letterSpacing="0.09"
+        app:appFont="@string/font_opensansbold"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"/>
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_paypal_account"
+        app:appFont="@string/font_opensansemibold"
+        android:textSize="13sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="35dp"/>
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btnCreatePayPalAccount"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:minWidth="135dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/income_exchange_btn"
+        android:letterSpacing="0.09"
+        app:appFont="@string/font_opensansbold"
+        android:text="@string/create_account"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
+</ScrollView>

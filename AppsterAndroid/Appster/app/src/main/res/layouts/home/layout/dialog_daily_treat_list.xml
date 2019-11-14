@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:background="@color/dim_background_dialog_90">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/daily_treats_list"
+        android:id="@+id/frameLayout2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvWeekTreatList"
+            android:layout_width="match_parent"
+            android:layout_height="415dp"
+            android:layout_marginBottom="15dp"
+            android:overScrollMode="never"
+            android:layout_gravity="bottom"
+            android:clipToPadding="false"
+            android:paddingTop="15dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+
+        <ImageView
+            android:id="@+id/ivBackToTreatMachine"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@color/app_background_color"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"/>
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+include ':BeLive'
+project(':BeLive').projectDir = new File('app')
+include ':libraries:librarypulltorefresh'
+include ':libraries:libArcMenuLayout'
+include ':libraries:photoview'
+include ':libraries:video-player-manager'
+include ':libraries:ucrop'
+include ':libraries:faceunity'
+include ':libraries:intro-core'

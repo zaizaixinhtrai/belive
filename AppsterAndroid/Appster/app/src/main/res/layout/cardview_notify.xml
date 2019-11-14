@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:paddingRight="5dp">
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/ivNotifyAvatar"
+        style="@style/ivUserStyle"
+        android:layout_centerVertical="true" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvNotifyUser"
+        style="@style/textUserStyle"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvNotifyTime"
+        android:layout_toRightOf="@+id/ivNotifyAvatar"
+        android:padding="5dp"
+        android:textColor="#5c5c5c"
+        app:appFont="@string/font_opensansregular" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvNotifyTime"
+        style="@style/textTimeStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="22.0.0"
+        android:textColor="#dfdfdf"
+        app:appFont="@string/font_opensansemibold" />
+
+    <ImageView
+        android:id="@+id/ivNotifyMessage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tvNotifyTime"
+        android:background="@drawable/oovoo_empty_avatar"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fm_Connect_to_Facebook"
+        style="@style/setting_linearlayout_style">
+
+        <TextView
+            android:id="@+id/txt_connect_face"
+            style="@style/setting_textview_style"
+            android:text="@string/setting_Connect_to_Facebook" />
+
+        <TextView
+            android:id="@+id/txt_choose_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/imv_arrow_language"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imv_arrow_language"
+            style="@style/setting_image_stype" />
+    </RelativeLayout>
+
+</LinearLayout>

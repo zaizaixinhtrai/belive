@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFB"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_trending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#FAFAFB"
+        android:divider="#FAFAFB"
+        android:dividerHeight="3dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/no_data_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/leaderboard_there_are_no_activity"
+        android:textColor="@color/grey_text_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

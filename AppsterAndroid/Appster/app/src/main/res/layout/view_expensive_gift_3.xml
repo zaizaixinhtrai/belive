@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center_horizontal|bottom"
+       tools:parentTag="RelativeLayout"
+       tools:background="#000">
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_marginTop="50dp"
+        style="@style/expensive_gift_avatar"
+        tools:src="@drawable/user_image_default"/>
+
+    <TextView
+        android:id="@+id/txt_display_name"
+        style="@style/expensive_gift_display_name"
+        tools:text="cheeruru"/>
+
+    <ImageView
+        android:id="@+id/img_gift_image_glow"
+        style="@style/expensive_gift_image"
+        android:layout_below="@id/img_avatar"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/img_gift_mansion_glow"/>
+
+    <ImageView
+        android:id="@+id/img_gift_image"
+        style="@style/expensive_gift_image"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="70dp"
+        android:layout_below="@id/img_avatar"
+        tools:src="@drawable/img_gift_mansion_white"/>
+
+    <ImageView
+        android:id="@+id/img_gift_avatar_sparkle"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_centerHorizontal="true"
+        android:scaleX="0"
+        android:scaleY="0"
+        tools:scaleX="1"
+        tools:scaleY="1"
+        tools:src="@drawable/bg_sparkle_small"/>
+
+    <ImageView
+        android:id="@+id/img_gift_image_sparkle"
+        style="@style/expensive_gift_image"
+        android:layout_below="@id/img_avatar"
+        android:layout_height="240dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        tools:scaleX="1"
+        tools:scaleY="1"
+        tools:src="@drawable/img_gift_sparkle_big"/>
+
+</merge>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+    <style name="header_title" parent="header_text_color">
+        <item name="android:textSize">@dimen/text_size_header_title</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">25</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="invitation_text" parent="clickable_ripple">
+        <item name="android:textColor">@color/color_bbbbbb</item>
+        <item name="appFont">@string/font_opensansregular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="drawable_clickable">top</item>
+    </style>
+
+    <!--ripple area-->
+    <style name="colorControlHighlightDark">
+        <item name="colorControlHighlight">@color/ripple_material_dark_appster</item>
+    </style>
+
+    <style name="colorControlHighlightLight">
+        <item name="colorControlHighlight">@color/ripple_material_light_appster</item>
+    </style>
+
+    <style name="SelectableItemThemeDark">
+        <item name="android:theme">@style/colorControlHighlightDark</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SelectableItemThemeLight">
+        <item name="android:theme">@style/colorControlHighlightLight</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="toolbar_button_ripple" parent="SelectableItemThemeLight" />
+
+    <style name="clickable_ripple" parent="SelectableItemThemeLight" />
+
+    <style name="clickable_ripple_xmas" parent="SelectableItemThemeLight" >
+        <item name="android:textColor">@color/font_color_white</item>
+        <item name="android:shadowColor">@color/color_005bbc</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">3</item>
+        </style>
+    <style name="red_button_ripple" parent="SelectableItemThemeDark">
+
+    </style>
+
+    <style name="daily_treat_share_options" parent="clickable_ripple">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="stream_send_comment_icon_style" parent="SelectableItemThemeLight">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="stream_bottom_icon_style" parent="SelectableItemThemeLight">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="bottom_navigation">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/height_bottom_bar</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <!--<item name="android:background">?android:attr/selectableItemBackground</item>-->
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+    <!--end ripple area-->
+</resources>

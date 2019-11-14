@@ -1,0 +1,1534 @@
+## 1.6.11 (June 02, 2019)
+  - update version name & version code
+  - updated xml and build gradle
+  - remove weibo login
+  - remove Alipay for IAP
+  - remove sharing with weibo/wechat
+  - remove weibo, weichat, alipay in gradle
+
+## 1.6.10 (April 05, 2019)
+  - update version 1.6.10
+  - Merge pull request #1547 from AppsterDeveloper/feature-remove-xmpp-for-trivia
+  - remove xmpp for trivia game
+  - Merge pull request #1545 from AppsterDeveloper/release-1.6.9
+
+## 1.6.9 (March 27, 2019)
+  - update version 1.6.9
+  - Merge pull request #1544 from AppsterDeveloper/feature-prevent-countries-using-app
+  - prevent some countries to use app
+  - Merge pull request #1542 from AppsterDeveloper/bug-prevent-create-group-via-notification
+
+## 1.6.8 (March 21, 2019)
+  - update version 1.6.8
+  - remove group chat created if enter via notification
+  - Merge pull request #1541 from AppsterDeveloper/feature-signalling-chat
+  - Merge pull request #1540 from AppsterDeveloper/bug-prevent-trivia-views-accesssibility
+  - added like count to handle for statistic
+  - implemented signalling for trivia
+  - added agora sig libs
+  - disable accessibility for trivia views
+  - Merge pull request #1538 from AppsterDeveloper/hotfix-1.6.5
+  - remove butterknife for trivia winner popup
+
+## 1.6.6 (March 15, 2019)
+  - update version 1.6.6
+  - remove butterknife for kotlin viewholders
+  - Merge pull request #1536 from AppsterDeveloper/bug-critical-crashlytic
+
+## 1.6.5 (March 14, 2019)
+  - update version 1.6.5
+  - check not null before reoder task
+  - resolve crash 5c188354f8b88c29633c8e44
+  - resolve crash 591d4fc4be077a4dcce0ac70
+  - resolve critical crash 5c459b59f8b88c296300cb5e
+  - Merge pull request #1534 from AppsterDeveloper/release-1.6.4
+
+## 1.6.4 (March 12, 2019)
+  - BeLive x Samsung (Special MB)
+
+## 1.5.10 (November 19, 2018)
+  - hot fix 1.5.9 for instagram login issue
+  - Bump version to 1.5.9
+
+## 1.5.9 (October 18, 2018)
+  - Login by phone: Can't see text box password when keyboard is open https://trello.com/c/l7KZBaTj
+  - Viewer End screen : Can't load image and direct wrong screen when user tap on button Profile https://trello.com/c/YyjYEST5
+  - Following/Unfollow status are not updated in "Friend on Belive" section of Suggestion screen after change from Facebook friend screen https://trello.com/c/iDI0OVOC
+  - End result screen: follow button work incorrectly https://trello.com/c/xaaxAQRZ
+  - Explore screen : Error UI when user search and delete character for text search https://trello.com/c/oAhshsgo (edited)
+  - separate Trivia Info API -> Info & Questions - Android https://trello.com/c/BB5KRDFO
+
+## 1.5.8 (October 01, 2018)
+  - update manifest
+  - create notification channel to assign push notification on android 8
+  - Merge pull request #1482 from AppsterDeveloper/release_v1.5.7
+  - release
+  - Merge pull request #1481 from AppsterDeveloper/1.5.7_changes_daily_login_lonus
+  - large space close
+  - update image
+  - Merge pull request #1480 from AppsterDeveloper/1.5.7_button_follow_not_enable_case_first_time_open_app
+  - Merge pull request #1479 from AppsterDeveloper/1.5.7_home_show_error_when_login_other_device
+  - Merge pull request #1478 from AppsterDeveloper/1.5.7_home_screen_error_animation
+  - Merge pull request #1477 from AppsterDeveloper/1.5.7_Can_not_change_cover_image_Android_8.0
+  - remove view
+  - edit error
+  - dismiss animation
+  - fix permission
+  - fix permixsion
+  - Merge pull request #1476 from AppsterDeveloper/release_1.5.6
+  - remove currency dots
+  - Merge pull request #1475 from AppsterDeveloper/1.5.6_stamps_feature
+  - Merge pull request #1473 from AppsterDeveloper/1.5.6_cashout_back_icon
+  - update new icon
+  - update icon
+  - open webview
+  - change version code
+  - Merge pull request #1472 from AppsterDeveloper/1.5.6_update_facebook_sdk
+  - change Event
+  - fix error referal code
+  - Merge pull request #1471 from AppsterDeveloper/1.5.6_push_notification_new_logo
+  - change icon
+  - update to 2.16.0
+  - Merge pull request #1470 from AppsterDeveloper/hotfix_1.5.5
+  - Merge pull request #1469 from AppsterDeveloper/1.5.5_button_in_balance_screen
+  - Merge pull request #1468 from AppsterDeveloper/1.5.5_turn_off_share_facebook_pre_stream
+  - disable log api
+  - add icon
+  - Merge pull request #1466 from AppsterDeveloper/1.5.5_add_country_code_for_api_header
+  - Merge pull request #1465 from AppsterDeveloper/1.5.5_promotion_code
+  - hide share facebook icon
+  - add header language for vietnamse
+  - edit UI if no have PromoCode
+  - Merge pull request #1464 from AppsterDeveloper/release_1.5.5
+  - delete string unused
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into release_1.5.5
+  - Merge pull request #1463 from AppsterDeveloper/1.5.5_refix_crash
+  - check if user null or empty
+  - add build code
+  - Merge pull request #1461 from AppsterDeveloper/1.5.5_crash_app_on_Viewer_top_fan_when_this_user_join_stream
+  - Merge pull request #1462 from AppsterDeveloper/1.5.5_change_string_vi
+  - change string
+  - change string
+  - edit string
+  - edit string
+  - edit string
+  - edit string
+  - add vietnamese string file
+  - remove string unused
+  - remove string unused
+  - remove string unused
+  - add username
+  - check if null string
+  - check if null or empty string
+  - Merge pull request #1460 from AppsterDeveloper/v.1.5.4
+  - release
+  - Merge pull request #1458 from AppsterDeveloper/1.5.4_master_brain_vn_trivia_show
+  - fix
+  - fix title text
+  - fix image
+  - add top winner image
+  - add string for viewer
+  - add vietnamees
+  - BeLive New App Logo - Android (#1459)
+  - [Android 8.0 and above] app will crash when host is android 8 and start video call (#1457)
+  - Display Friends on master brain homescreen - Android (#1455)
+  - Change text of Daily Treat claimed message (#1452)
+  - Feed: Should change text and function for case user create account and not follow any user before #1451
+  - Merge pull request #1453 from AppsterDeveloper/hotfix-1.5.3
+  - add image
+  - cancel request if not visible
+  - update version to 1.5.3
+  - changed agora kit for android 8
+  - show error message from server
+  - add new image for feed
+  - update stream id
+  - hide popup if no message
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into 1.5.3_display_friends_master_brain_homescreen
+  - set repeat get data
+  - add call api
+  - fix kotlin extention
+  - Merge pull request #1450 from AppsterDeveloper/1.5.3_crash_top_winner
+  - add model
+  - fix kotlin extention
+  - fix scroll to visible list friend
+  - add api get friend number
+  - add scroll
+  - Chat: Chat message align to left - Android only (#1449)
+  - Re-design of Live label - Android (#1448)
+  - Chat: Chat text box will be larger when user enter a new line - Android (#1447)
+  - add align right
+  - chagne align
+  - add new image live
+  - fix gravity bottom
+  - set max line in comment
+  - prevent down line first
+  - fix resize text box
+  - start 1.5.3
+  - Merge branch 'release-1.5.2' into develop
+
+## 1.5.3 (July 19, 2018)
+  - Fixed crash in Trivia Winner Popup https://trello.com/c/YdSmrHCo
+## 1.5.2 (July 09, 2018)
+  - Home: Time format need to be same as IOS https://trello.com/c/uinN88jN
+  - Winner list: Money is seen cutoff https://trello.com/c/kX64XsCe
+  - Change of Floating buttons - Android https://trello.com/c/97oKuHAv
+  - Check Upgrade FB API Version https://trello.com/c/kAFtHQh6
+  - Daily Treats Icon: Daily Treats Icon need to be changed in Left drawer menu - Android https://trello.com/c/7Pvw5fiy
+  - Masterbrain: Do not allow users to reselect the answer - Android https://trello.com/c/pZAve745
+  - [Trivia] reduce "delay" answer issue of "network delay" for Android https://trello.com/c/uzYldOaa
+  - Master Brain wallet - Android https://trello.com/c/NIu7STut
+
+## 1.5.1 (June 19, 2018)
+  - New Daily Login - Android https://trello.com/c/ydJoaVCJ
+  - Master Brain: Replace Incorrect UI to Network error https://trello.com/c/codEXk0g
+  - Reduce `LiveShows/Status` API calls https://trello.com/c/8TfyxsnV
+  - [Share] Include referral code in the share screen same like hq https://trello.com/c/QADxE0xN
+  - [1.5.1] [Search] Tapping area need to go to profile https://trello.com/c/vbweIxjx
+  - [1.5.0] Improvement Search screen refresh data https://trello.com/c/cCggRo6s
+  - Chat Spam Issue: Do not allow user to enter 3 times consecutive same words https://trello.com/c/Rj5EzfKG
+  - [1.4.19]End screen : Should be hide all pop up. https://trello.com/c/WEhtV69l
+
+## 1.5.0 (June 04, 2018)
+  - [Improvement] When questions popup, sound is too loud (client side) https://trello.com/c/vT6RtfcT
+  - New Search screen https://trello.com/c/MS1f2fuA
+  - New Home Screen https://trello.com/c/z7QMFf3E
+  - New Bottom Bar design https://trello.com/c/cFIIzPnq
+  - [Trivia] Include Countdown timer for HOST to know when the winner list will disappear - Android ONLY https://trello.com/c/lEHRo4o1
+
+## 1.4.19 (May 09, 2018)
+- Show error dialog for Answer for Android https://trello.com/c/G4wcRwVc
+- [Trivia] Host side display AFK message on viewer side https://trello.com/c/7yuDubbe
+- [Trivia] get 1 revive after 1st play for Android https://trello.com/c/99sry0ag
+- [Trivia] change starting timing of Trivia with OBS for Android https://trello.com/c/3zQ1aucB
+- [Trivia] change dialog message for removed stream for Android https://trello.com/c/HbK2VGTi
+- [Trivia] add referral analytics data for Android https://trello.com/c/nfbnhGRH
+- [Trivia] popup for Win for Android https://trello.com/c/4mSmAL25
+- [Trivia] get 1 revive after 1st play for Android https://trello.com/c/99sry0ag
+- [Trivia] add countdown timer animation on question view for Android https://trello.com/c/eJDC3V38
+- [Trivia] show profile for winners list, ranking when tap for Android https://trello.com/c/81Tc3q48
+- [Trivia] don't show popup for leaving live after finish Trivia for Android https://trello.com/c/bXWa9tjS
+- [Trivia] show revived count on the screen for Android https://trello.com/c/GLMf0dEg
+- [Trivia] add sound for selecting question for Android https://trello.com/c/hAJE1i6H
+- change share text on Trivia "revive" view for Android https://trello.com/c/kvqH9O9M
+- [v.1.4.17] Trivia Animation UI for Android https://trello.com/c/I4a5wEKT
+- [Trivia] make possible to send gift before Trivia for Android https://trello.com/c/LvzvSaPF
+- [Trivia] add transition animation for view popup for Android https://trello.com/c/5K27rVBx
+- [v.1.4.17] Trivia UI Color changes for Android https://trello.com/c/r1MjxDwf
+
+## 1.4.18 (May 3, 2018)
+  - Disable AFK message on Viewer side for Trivia (Android) https://trello.com/c/7yuDubbe
+
+## 1.4.17 (April 25, 2018)
+  - hide viwer list in Trivia Show (Android) https://trello.com/c/CB5HYUbS
+
+## 1.4.16 (March 31, 2018)
+  - avoiding use of multiple devices in the same time (Android) https://trello.com/c/dq7l7GT4
+  - Hide Facebook Friend Invite Button for Android https://trello.com/c/nOtoUMLN
+  - [Trivia] implement Sound & Vibration for Android https://trello.com/c/DGNeHkKm
+  - [Trivia] Add Finish waiting time parameter for Android https://trello.com/c/tIZn3RDN
+  - [Trivia] separate HTML files for STG and PRD for Android https://trello.com/c/5JC6IX1M
+  - [Trivia] re-send API request if network error occurred for Android https://trello.com/c/MKrfeDew
+  - [Trivia] reduce Like via xmpp request for Android https://trello.com/c/6dhuv0Zm
+  - Disable buying some gift items for Android https://trello.com/c/deNcIgpd
+  - End result screen text colour change to white Android https://trello.com/c/IEhgYLMm
+
+## 1.4.15 (March 20, 2018)
+  - Trivia Improvement part 2 (Android) https://trello.com/c/GohsHQ63 (Note: + added params for reivive check. + correct design for top trivia ranking)
+  - #1314 [1.4.9] Post: Should be allow user can be edit image before Post image https://trello.com/c/54Rz4Y6D
+  - "stop" button on profile view in live screen for Android https://trello.com/c/g5ZqY2W6
+  - Gesture: Disable Love gesture in live stream for Android https://trello.com/c/8lverJKC
+
+## 1.4.14 (March 07, 2018)
+- Disqualified behaviour https://trello.com/c/Yx0fnLDl
+- Rename Eliminated to Disqualified  https://trello.com/c/sbtBkWEF
+
+## 1.4.13 (March 02, 2018)
+- Trivia: Viewers Side for Android https://trello.com/c/ZwMmJyvS
+- Trivia: Host Side for Android https://trello.com/c/oE5wPwkE 
+
+## 1.4.12 (February 10, 2018)
+Release notes:
+- We should add camera icon and photo text in Register screen Android https://trello.com/c/MxVagpus
+- Livestream: Change of Gift Color for Android https://trello.com/c/lzAhnJot
+- Livestream popup: show "dialog" instead of "toast" when live was stopped by Admin Android https://trello.com/c/DP6s4wFf
+- #1305 Daily Gift Ranking in stream Android https://trello.com/c/3DZLwZFZ
+- New Gift: Implement New Gift Android https://trello.com/c/XvuGc93E
+- [Bug] We should add "x" button on Search bar, it helps to delete text fast and easily https://trello.com/c/vg83ppLw
+- #1309 support anonymous user on stream screen for Android https://trello.com/c/HrB8Iqx8
+- CNY Gift 888 gems. Android https://trello.com/c/6NM9sxME
+- show profile when user tap daily ranking profile icon for Android https://trello.com/c/nSfRbaoK
+- [1.4.10] Banners: Incorrect destination when tap on banners https://trello.com/c/vPbsNeYQ
+
+## 1.4.10 (January 24, 2018)
+- #1243 [1.4.9] Live : Tutorial should be show first before user touch on other thing. https://trello.com/c/OUt16dGK
+- #1255 [v1.4.9] Character "S" is cut off in History screen https://trello.com/c/ajMdaRYW
+- [1.4.9] Exchange Rewards : should be show 1 icon loading for 1 list ( current have 2 icon ) https://trello.com/c/6O23l8Km
+- #1233 [Bug] Should add title for popup when saving profile without selected gender https://trello.com/c/mZ1jvva5
+- [1.4.9] End screen : Button Profile not redirect correct screen when user go to stream by Push notification https://trello.com/c/FYJIvT1S
+- [1.4.9] Push : Logo Believe not show on Push notification . https://trello.com/c/Zwwjrb8G
+- [1.4.9] Post : Add option Block user ( follow IOS side ) https://trello.com/c/LFsamN5S
+- Incorrect error. We do not use "bean" https://trello.com/c/Y330fl3j
+- #1238 [Bug] Girdview profile does not update new avatar after user change new avatar https://trello.com/c/0Yn4fIxc
+- [V1.4.9][Bug] weird thing show when going to single page from gird view https://trello.com/c/XJmZ0XOu
+- #1254 Show phone status at top of the screen during stream Android https://trello.com/c/U8iCKzrq
+- [v1.4.0] Alignment: Alignment issue can be seen in the category selection screen using Galaxy Note 8 https://trello.com/c/tZqtk9EF
+- [1.4.9] Edit profile : Avatar not update in image profile with account don't have avatar before. https://trello.com/c/CWu47WHS
+- [v1.4.10] Profile: Missing a space between name and "is Live now" text in red header https://trello.com/c/7GHmiF1m
+- Amplitude Analytics: Remove test devices result https://trello.com/c/5IF03OKx
+- [1.4.9] Setting : Remove text " System " in word System Notifications https://trello.com/c/nINkz9YB
+- [v1.4.10] Android should not show creating-post notification in notification center https://trello.com/c/LZ4XC6Lc
+- [1.4.9] Quote Post : Should be return list in Profile when user add Quote post https://trello.com/c/OtHehdNn
+- #1273 [v1.4.10] Android device doesn't receive push notification of some activities https://trello.com/c/YxpBhqNs
+- Crashlytics Android https://trello.com/c/ypanntHO
+- [v1.4.9] End result: Tap on Profile button, app direct to home screen https://trello.com/c/dCgs0lAy
+- #1240 [V1.4.9] The same account but Android and iOS generate username differently when register new account https://trello.com/c/Z6ssRg7P
+- #1288 [Bug] User can not scroll up from gift tab in profile https://trello.com/c/9e6zaBoO
+- [v1.4.10] Live stream: Chat bar cover Like/Heart/Gift Icon Android https://trello.com/c/MVPRIAAx
+- #1246 [v1.4.9] End result screen: the background photo is not fit fullscreen https://trello.com/c/4MJdJ8Do
+- disable GoPlay Library & logic for Android https://trello.com/c/qaAlrcOn
+- #1269 calling feature: change guest layout to improve video quality Android https://trello.com/c/HqxqSZzQ
+- #1261 [1.4.9] Daily bonus : can open many Daily Treats in condition network low. https://trello.com/c/NTlfP0W2
+- #1266 [v1.4.10] Stream: gift animations are smaller than previous on 2K resolution screen https://trello.com/c/ET4ebscn
+
+## 1.4.9 (January 09, 2018)
+Release notes:
+- #1204 [1.4.8] Search: Auto open keyboard when user tap on Search bar https://trello.com/c/2FAPtKny
+- [v1.4.8] "Option" button displays duplicate popup when user double tap on this https://trello.com/c/VPQPyOO6
+- #1213 [v1.4.9] iOS host can not block android guest during in a call https://trello.com/c/CkGO9Vu0
+- Should be add alert confirm before delete comment. Android https://trello.com/c/jjK4B1fH
+- [v1.4.8] Sugguestions screen should be on TOP when user taps on PN https://trello.com/c/scmItE0F
+- #1216 Profile: Display gender icon on profile screen (Android) https://trello.com/c/xVx2ydGN
+- try to use 25, 30 FPS with galaxy device again https://trello.com/c/7Go98upw
+- [v1.4.9] Left menu: If user has no profile photo, left menu must show default photo https://trello.com/c/0wGXyKNy
+- #1211 Check for updates: In setting, add in an option to check for updates Android https://trello.com/c/8fTB1IXS
+- Auto detect FB Gender (Android) https://trello.com/c/sqCs60L8
+- Improvement on Registration Friends Invite Android https://trello.com/c/MrYiBcJy
+- Search Bar: Improvement on Invite friends Android https://trello.com/c/q0QGv8ZW
+- #1220 App Theme: Revert back to normal theme Android https://trello.com/c/QeJ91VNo
+- [1.4.8] Should not show pop up " network low " in End screen. https://trello.com/c/w5gsKDKw
+- implement OneSignal Push https://trello.com/c/lt5WDyFT
+
+## 1.4.8 (December 19, 2017)
+- don't show waiting screen with External camera live (OBS)  https://trello.com/c/6oAyPWz3
+- Host is able to end call while Guest is away
+- [1.4.8] Endscreen : Can't tap on Back or Follow button if tutorial not done https://trello.com/c/Pid2fzbH
+- [v1.4.8] Heads-up notification UI issue https://trello.com/c/wXxCc691
+- Calling feature: Allow user to see profile of the guest (Android) https://trello.com/c/Fwh7487G
+- In wallfeed, Host is able to delete the comment (Android) https://trello.com/c/EGJC4Fn2
+- [v1.4.5] no sound with Android Host after calling https://trello.com/c/hVtU8XiC
+- #1185 set amplitude event for daily login push (Android) https://trello.com/c/kjMJQlPm
+- Notification: Turn off/on system notification and Live notification (Android) https://trello.com/c/m0e3W7FR
+- cannot close keyboard when tap chat area in stream screen https://trello.com/c/KbPPHLtc
+- #1178 [Bug] Duplicate recorded after closing a LIVE https://trello.com/c/iW76oEpk
+- [1.4.5][IncomeHistory] Should be add text default " Nothing Here " when user don't have any transaction in this list . https://trello.com/c/MfICEgRI
+- [1.4.5] Android Host & Guest crashed after ending call https://trello.com/c/IUm2CBip
+- Android should not allow emoji in display name. https://trello.com/c/OIwM2lqL
+- Crashlytics (Android) https://trello.com/c/PY4Chy2p
+
+## 1.4.7 (December 08, 2017)
+  - fixed keyboard issue on some on screen button devices
+  - enable tap on list chat to hide keyboard for host
+  - update manifest 1.4.7
+
+## 1.4.6 (December 04, 2017)
+- #1160 BeLive UI: Christmas theme (Android) https://trello.com/c/Ytez6GQ4
+- #1158 Pre-live screen: Cover image need to enlarge and change text colour (Android) https://trello.com/c/PHzZRpGg
+- Order Now button: Able to change on Server Side (Android)  https://trello.com/c/pOjfRlNK
+- Profile screen: Set grid view as default (Android) https://trello.com/c/GoWRIe2J
+- Toast Message: 'Failed to create group chat' change to 'Connecting to chat room' (Android) https://trello.com/c/O9L21e27
+- follow user by click "follow us" on the banner (Android) https://trello.com/c/klCEd1Bm
+- #1165 Order now button: Tap on Order now button and message will appear on chat window (Android) https://trello.com/c/vXL1Y6Jl
+- Crash https://fabric.io/appster1110/android/apps/com.appster/issues/5a1fd3c561b02d480d9149a7
+- Crash https://fabric.io/appster1110/android/apps/com.appster/issues/5a23017a61b02d480dbe5f5c
+
+## 1.4.5 (November 23, 2017)
+- Crashlytics: Android https://trello.com/c/dtf1JRQJ
+- Amplitude event - EVENT_LOGIN_SNS_CLICK - phone https://trello.com/c/9icHBGT2
+- #1145 [v1.4.5][Bug][LoginPhoneNumber] Have error when tap on Back button of device when login by phone number. https://trello.com/c/J2YQjP21
+- #1153 [bug] cannot see chat area during input in live for Android 7 https://trello.com/c/V28Auvdy
+- #1136 Daily Login bonus (Android) + hide sns erea https://trello.com/c/4vaehjX6
+- improve "no bot" issue ( like no chat ) https://trello.com/c/11ZvcYYX
+- Pause button for recorded. (Android) https://trello.com/c/QTPKuKnh
+- [v1.4.4] Calling feature: Change text on dialog box https://trello.com/c/oKssn90W
+- apply link in profile text (Android) https://trello.com/c/t9JdgGjw
+- add stream URL in share contents on the End screen (Android) https://trello.com/c/TVUX0Zk1
+- End result: SNS has no response. https://trello.com/c/xbb6Q3tX
+- [v.4.4] SNS Share: Share photo on Instagram will cause app to crash (Android) https://trello.com/c/iginYyDt
+- Add in default message when enter stream (Android) https://trello.com/c/Tk55uh9i
+- [1.4.5][Calling Video][Bug] We not allow zoom in/out on Guest's camera. https://trello.com/c/WBDdewSD
+- -Toast Message: Failed to join group chat changed to 'Connecting to chat room'  https://trello.com/c/gvwEKlg4/
+
+## 1.4.4 (November 03, 2017)
+  - #1062 multiple live commerce items (Android) https://trello.com/c/JtAQcv5M
+  - improve chat issue for Android https://trello.com/c/7AnW4CYy
+  - Crashlytics: Crashes on crashlytics (For Android ONLY) https://trello.com/c/tikFY43b
+  - #1072 Login screen: SignIn with Phone number (SMS) (Android) https://trello.com/c/oxIa4GhS
+  - #1079 In app CashOut: Cashout (Android) https://trello.com/c/7Fz1Mera
+  - Cash out: Rename Cash out to Exchange Rewards (Android) https://trello.com/c/oRTsQYNX
+  - Notice "User Not Found" error is shown when tap on "Top Fans" https://trello.com/c/QkauCJjW
+  - hide live automatically except some countries (Android) https://trello.com/c/0FCDotkw
+  - Remove emoji characters on All of Share link (Android) https://trello.com/c/GAL6cQMo
+  - change "WALL FEED" to "FEED" in wall feed title (Android) https://trello.com/c/P0SoaV0n
+  - [1.4.1][Bug] Unable to turn off Beauty mode in Pre-Live screen https://trello.com/c/d9Bli6ZP
+  - [1.4.0][Bug] Tutorial should show with UI chat frame together https://trello.com/c/2uUrhGTf
+  - #994 [LIVE][v1.3.7] Android can not re-enter to the LIVE from host's profile after Host blocks then unblock that user https://trello.com/c/LgStYxva
+  - #1077 don't use "OnBoarding screen" for Android https://trello.com/c/o2YpjlH5
+  - [1.4.3][Bug] App crash when delete own recorded from wallfeed https://trello.com/c/toAMtyrc
+  - Convert stars to gems: Change it to similar to Cashout design. (Android) https://trello.com/c/e9pIgWZ4
+  - [1.4.1][REC] REC stream always show Fail to join group chat when user watch REC. https://trello.com/c/03LxRQrf
+
+## 1.4.2 (October 23, 2017)
+  - fixed tag categories not display fully
+
+## 1.4.1 (October 19, 2017)
+  - recorded doesn't have chat data (#1064)
+  - add reconnect logic after catch disconnect
+  - change "WALL FEED" to "FEED" in wall feed title (Android) (#1057)
+  - start 1.4.1
+  - Merge branch 'release-1.4.0' into develop
+  - change wall feed title
+
+## 1.4.0 (October 16, 2017)
+- Calling feature https://trello.com/c/xIWMbk5F
+- Improvement on End result screen https://trello.com/c/hGAyFV8Z
+- Added follow button popup appear during live stream (if you haven't follow the host) https://trello.com/c/dnkpmYg8
+- Improvement on suggestions screen (This is only for Android) https://trello.com/c/DHzftHN4
+5. Bug fixes
+
+
+## 1.3.10 (October 06, 2017)
+- Wallfeed: Notification red dot for Android https://trello.com/c/5lRltzcg
+- #1026 Registration screen: Auto input a valid username. If user enter invalid, error message will appear. (Android) https://trello.com/c/5QB5xxST
+- add amplitude event - like, comment https://trello.com/c/RMLypQtY
+- Explore screen: Facebook invite friends button available https://trello.com/c/qg0a71LE
+- Onboarding screen: Add a skip button (Android) https://trello.com/c/g2pT6C8A
+
+## 1.3.9 (October 05, 2017)
+- add amplitude evnet of registration
+
+## 1.3.8 (September 25, 2017)
+- Comment: Duplicate comment can be seen https://trello.com/c/K8oh07jf/
+- VIP text colour changes for Android https://trello.com/c/tDBJr42j/
+- Facebook invite friends button for Android https://trello.com/c/qg0a71LE/
+- Navigation: Bottom bar middle button is not responsive https://trello.com/c/xNMUCCya/
+- improve push notification issues for Android https://trello.com/c/fRKuPuYi/
+- New registration suggested screen for Android https://trello.com/c/NYXUZwGH/
+- "Not found Data" popup always show when user delete post from Girdview tab https://trello.com/c/CoUFchza/
+- update Branch io Android SDK to latest version due to Google Policy
+
+## 1.3.7 (September 15, 2017)
+Release notes:
+- #971 Stream: tap on screen to hide all, but the floating text icon and shop icon is not hiden https://trello.com/c/nwqkPn9q
+- Cover photo: Cover photo display in homepage (Android) https://trello.com/c/270sgPCe
+- #974 [Bug] Android_Some long recorded does not save history chat https://trello.com/c/vHRNuzT4
+- [Bug] Android_App should not show "redpoint" in profile tab after read new message from PN https://trello.com/c/vdHiREMu
+- [Profile][Bug] Image profile of item and cover image not update when user update image profile. https://trello.com/c/KDsa4geW
+- VIP : gift message doesn't have VIP icon when user reach VIP in the same time. https://trello.com/c/IzN99MiC
+- #976 Improvement of VIP Top Fan: If VIP joins, own user should see the VIP entering message https://trello.com/c/9AW8D6yA
+- #968 In App Tutorial: Live stream screen (Android) https://trello.com/c/7QXJUVyp
+- add live-commerce analytics for Android https://trello.com/c/2gN0F60w
+
+## 1.3.5 (August 31, 2017)
+- #940 Design for VIP (Top 1, 2, 3 Fans) Entering a Streamers Stream https://trello.com/c/QpfaIIfU
+- #941 Live commerce Part 1: A Shop button will appear in the Seller stream ONLY https://trello.com/c/e8TiSp83
+- Live commerce Part 2: Allow user to purchase real products during Live stream https://trello.com/c/iuUZl1Cr
+- Live stream chat: Remove overlay in chat if someone joined. https://trello.com/c/2SDZWrB2
+- merge ban feature to develop branch https://trello.com/c/jmZxX4JT
+- Analytics: Track how many click on our in app banner https://trello.com/c/kMmYS2aN
+- New Search v2 design logic. https://trello.com/c/5epgyueS
+- [PostDetail][Bug] Post VID have player is auto stretch when we refresh page. https://trello.com/c/56I0g1JZ
+- #949 Admin STOP the stream, client SHOULD NOT attempt to reconnect https://trello.com/c/YhLElbwE
+- #927 Live stream: Tapping on face sticker icon, take longer time to open https://trello.com/c/Heob7ofO
+- #898 [PrivateMessage][Bug] Avatar is showed then hidden when chating with a user who turn off Message https://trello.com/c/SHspD55n
+- [UI] Refill store: Gem did not update after purchased in refill store https://trello.com/c/N4JMSD9Y
+- change OnBoarding screen timing https://trello.com/c/ymJoEReK
+- #958 [LIVE][Bug] Stream: Turn on/off flash light but the flash light icon doesn't change https://trello.com/c/Ze5dd76j
+- Crashlytics: Top crashes for Android  https://trello.com/c/8JgMJl22
+
+## 1.3.4 (August 19, 2017)
+- Navigation: Switching from Profile to Home or Explore will cause the app to crash https://trello.com/c/g2gdE57a
+- #913 [gift] [improve] improve speed for sending gift combo https://trello.com/c/CriEEAQu
+- #862 track disconnecting live with crashlytics https://trello.com/c/Rf6C5DnM
+- #904 Onboarding screen https://trello.com/c/QXp81xiM
+- #915 Transition effect: Launch app -> splash screen -> FADE IN FADE OUT -> onboarding screen https://trello.com/c/GCVTug2y
+- when tap footer button, scroll to up https://trello.com/c/c6Y2mv7e
+- #906 [profile] [bug] user changed profile photo, own device unable to see new profile photo. https://trello.com/c/gVY8l7e8
+- #876 bot follow the host automatically https://trello.com/c/zfzm8IuU/
+- [wallfeed] [Bug] Wall feed should be refresh when user back to wall feed after search and follow friend https://trello.com/c/ELZeaEnS
+- [floating text] [improve] make floating text big for short message https://trello.com/c/fk22EDzc
+- [LIVE][Bug] Viewer _ App is closed when tap on close icon "x" in LIVE stream https://trello.com/c/g0KKMH9U
+- [Floating Text] [Bug] DONE button is hidden when typing Float text https://trello.com/c/v6XwydiZ
+- #895 [profile] [improve] Profile screen should be show text notify for user when post of profile this user is empty . https://trello.com/c/jM3ognPa
+- #388 [Push] [Bug] different behaviour for push notification redirection https://trello.com/c/1QofoYtR
+- #604 [Profile] [Bug] Profile: After save a stream, gridview doesn't refresh https://trello.com/c/JVSLmHTB
+- [Login][Bug] "ourTeams&Privacy" text should have white space between words https://trello.com/c/NVeWu8V3
+- #880 [PrivateMessage] [Bug] Incorrect popup UI when deleting private chat (conversation chat ) https://trello.com/c/Wtry4tuR
+- #375 [Like-live] [Bug] Missing heart animation when double tap on image post in single page https://trello.com/c/Yc4Rrfw4
+- #485 [Sign-in] [Bug] Try to sign in with facebook google deactivated account, Video at sign in screen will be paused https://trello.com/c/qPlG5I63
+- #492 [improve] URL detection: Use Chorme Custom Tabs and detect fb.com or belive.sg https://trello.com/c/D2TDa2pC
+- #196 [Wallfeed] [Bug] cannot turn on/off sound for first tap video screen on wallfeed https://trello.com/c/lXFvmxwH
+- #394 [notification] [Bug] Should show "No notification" or "Nothing here" when there is 0 notification text in Notification screen https://trello.com/c/CyjyDqCM
+
+## 1.3.3 (August 13, 2017)
+  - update app version 1.3.3
+  - fixed #901 [Face sticker] [Bug] Face sticker is reverse when using back camera
+
+## 1.3.2 (August 08, 2017)
+- change current viewers to total unique viewers in stream screen https://trello.com/c/RRl6ArmT
+- #782 [Bug] no action when user tap on "A commented on your stream" on NOTIFICATION https://trello.com/c/AHM4iZDW
+- [Bug] Can't post VID on some device. https://trello.com/c/qemJAfqt
+- #399 [improvement] Video REC user scroll to next in player is not smooth. https://trello.com/c/pOVbH6FG
+- #187 [Bug] Is the center button, a rotate, or a restart trim https://trello.com/c/RaJmNETH
+- #395 [Bug] App should retain previous screen when tap on Cancel button on Exit livestream popup https://trello.com/c/2hi4zePA
+- #178 [Bug] Follow/Following button should refresh after redirect from profile screen https://trello.com/c/dwOvGX6H
+- #819 add bell mark on profile of home footer https://trello.com/c/SnoBzcT4
+- #822 [Bug] Trim video: Minimun is 3 seconds, but I able to trim 2 seconds https://trello.com/c/bSKMDO6j
+- [Bug] Profile screen: Following not update until user pull to refresh screen  https://trello.com/c/U3bbwNbw
+- [Bug] App crash when enter chat conversation via private message SNS https://trello.com/c/lTHIlPXH
+- [Bug] Recorded Loops chat history https://trello.com/c/I0jh9Y8c
+- Homepage with "Edit profile" icon https://trello.com/c/RbeuZuwc
+- Post detail: app is in background, I still able to hear sound from a video https://trello.com/c/ISnfR60B
+- #519 Profile/Grid: Video's thumbnail is stretchy https://trello.com/c/sArBqc8S
+- #392 [Bug] App stucked in loading screen when network is weak https://trello.com/c/OMn0wrC0
+- #845 if username already exist, Android does not show message to indicate username exists. https://trello.com/c/QoM0F7v7
+- Admin: Create a separate API to change the suggested users that appear during the registration screen. https://trello.com/c/qEC8Eg3I
+- #655 [Bug] Live screen error UI when host use device have soft navigation and receive gift. https://trello.com/c/vA7qPE0Y
+- #826 Gesture: Insert love sign gesture Only for v1.3.1 https://trello.com/c/aBZiLQ3i
+- #850 [Bug] Android should detect tagging name for Post (video and post) https://trello.com/c/xUt1D8E2
+- #848 [Bug] Stream: there is a redundant white space in sent gift message https://trello.com/c/o0Asyb7T
+- #841 should not add count unread message from "Deactivated" or "Banned" user https://trello.com/c/IV302ESQ
+- show PLYATOKEN login button for only chinese language https://trello.com/c/MzG8lwmi/
+- Missing "Post" button https://trello.com/c/B5RLS3xv
+- [Bug] Tap on notification "A commented on your post", it will direct to single page with empty content https://trello.com/c/tMWCo27Y/
+- #828 Improvement on Text in Livestream screen https://trello.com/c/gyzF8lMQ
+- [Bug] No red point when send new private message to android https://trello.com/c/HyoL7NPd
+- #864 Improve Stream Float Text icon https://trello.com/c/LM3DnZ7B
+- change font-size and max characters of floating text https://trello.com/c/kP77ViiT
+- #424 [Bug] Profile screen: Duplicate record when user save stream. https://trello.com/c/6EXUtjiX
+- [Bug] App crash after trimming video https://trello.com/c/Vo2wXlpp
+- [Bug] Stream: chat section UI issue https://trello.com/c/Q9AQSJDN
+- [Bug] Stream: keyboard is opening, when I tap outside, keyboard should be closed instead of hide all controls https://trello.com/c/ree3guLB
+## 1.3.1 (July 25, 2017)
+  - update manifest
+
+## 1.3.0 (July 17, 2017)
+  - fixed https://trello.com/c/ZXjMAG0m
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/595f33c3be077a4dcc2ba1a1
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/594ab293be077a4dcc6efc10
+  - check there is any activities can handle picker intent before start activity fixed https://fabric.io/appster1110/android/apps/com.appster/issues/595395cbbe077a4dccb98fe5
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/595d0451be077a4dcc155ca3
+  - upgrade support library to 25.4.0 for https://issuetracker.google.com/issues/37114373
+  - catch google login bug https://fabric.io/appster1110/android/apps/com.appster/issues/5951f1e2be077a4dccaab380
+  - use string instead of parcelable https://fabric.io/appster1110/android/apps/com.appster/issues/595908a0be077a4dcceea45e
+  - user AppCompatSeekBar for recorded stream
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/595db5b1be077a4dcc1bc462
+  - remove _small prefix for loading user image
+  - fixed https://fabric.io/appster1110/android/apps/com.appster.staging/issues/5968736cbe077a4dcc88e529
+  - added home event fixed #811 (#812)
+  - update authpack license key from faceunity
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/5965f611be077a4dcc6e59a9
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/595fd5d6be077a4dcc336a1f
+  - fix crash if no browser support (#807)
+  - fixed #808 https://trello.com/c/Ghl81o6X (#809)
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/5940d68fbe077a4dcc198b80
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/5956853cbe077a4dccd78d89
+  - many icons is selected highlight
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/5954ede2be077a4dccc609b2
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/595252c3be077a4dccae48d9
+  - fixed https://fabric.io/appster1110/android/apps/com.appster/issues/59527ac6be077a4dccaff0a3
+  - [Bug] Unable to tap on "View all X comment" https://trello.com/c/JIhGeo7r
+- [Bug] Stream: duplicate text 'sent' in send gift message https://trello.com/c/fsinasyV
+- #758 [Bug] Changing animation for open up float text screen ( following iOS ) https://trello.com/c/M33DXOqc
+- #760 [Bug] Infinite loading on comment screen when scroll up https://trello.com/c/WZDZxCCx
+- Improvement of tagging feature. Tap on @User A will bring you to User A profile https://trello.com/c/9t9iwq2M
+- [Bug] Profile: Shouldn't have gift section in my profile https://trello.com/c/6BltorRd
+- [Bug] Live stream: List image show image of yourself. https://trello.com/c/Qk9yQQlu
+- #772 Stream: UI issue with keyboard https://trello.com/c/s31AYfU2
+- unable to see chat bar(chat,share,gift,like) after changing app https://trello.com/c/t7HsNzpI
+- #390 [Bug] Follow button in Endscreen is incorrect https://trello.com/c/QPO51epn
+- #770 sent a message to my Android, it does not show unread message count / red dot beside the chat https://trello.com/c/ylTQGfKF
+- [Bug] Android should show full icon (Watch icon ) when user with longname send Gift https://trello.com/c/BhNDsUMk
+- #243 [Bug] Stream: Missing last number of stars amount when it reach millions https://trello.com/c/vNZqohxW
+- #777 retry if KSY_STREAMER_ERROR_PUBLISH_FAILED after 5 times (15s cannot publish stream -> show end stream) https://trello.com/c/xAMSNM9w
+- [Bug] Stream: app crash randomly when tap on Sticker text https://trello.com/c/6zKU2vTi
+- Android Notification UI changed? https://trello.com/c/paIaDMhn
+- change network indicator threshold value for Android https://trello.com/c/c4Yint6B
+- Copy link icon in SNS https://trello.com/c/zp4NySMU
+- #726 [24/32] [Tagging feature]: Able to tag someone in wallfeed comment https://trello.com/c/x20azLNC
+- [Bug] Notification/Following: user's display name should be bolded https://trello.com/c/6nxFVizI
+- [Bug] Profile: Video is stretchy https://trello.com/c/AWHFvKfP
+- #793 [Bug] Info Popup show when user tapping on any area without avatar section in recorded https://trello.com/c/6IWWthRw
+- [Bug] No red point when user has new notification and during in APP https://trello.com/c/kvgEf7pv
+- #774 [Bug] Comment number should update to latest number after user tap back from comment screen https://trello.com/c/5UJFv944
+- [Bug] Can not direct to Profile screen when joining a LIVE from Category screen https://trello.com/c/Ghl81o6X
+- #184 [Bug] Problem sharing new video post from Library https://trello.com/c/cPIYTzUG
+- refreshing "Nearby" always shows network error "Check your connection and try again" https://trello.com/c/02ncWx9d
+- #721 Change of new UI in Home screen https://trello.com/c/6BbCPnxH
+- Crashlytics: Android https://trello.com/c/wMLSfcIl
+- #185 [Bug] Infinite connecting and Unable to upload (sharing) trimmed video on specific device: Minote 3,asus... https://trello.com/c/Iwle40Jp
+- Implementation for Face stickers https://trello.com/c/qLd3JTf3
+- [bug] [sub] cannot finish maintenance with some devices for Android https://trello.com/c/HCMbYwXC
+- #785 some part of Livestream text in chat is not shown fully in Android viewer https://trello.com/c/aHTq6IOU
+- [Task] Replace CameraPreview by KSYMediaEditorKit https://trello.com/c/dwNtji3d
+- incorrect face sticker position https://trello.com/c/ZXjMAG0m
+
+## 1.2.14 (June 26, 2017)
+  - reconnect if turn on wiffi
+  - reconnect if turn on wiffi
+  - change resolution to 720
+  - change resolution to 720
+  - [Bug] Profile screen: Duplicate record when user save stream.
+  - #736 fixed remain issues
+  - App crash randomly
+  - remove check notification
+  - fixed remain issues
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_duplicate_record
+  - fix Duplicate record
+  - should not allow Android Host tapping on "Done" button on keyboard to begin a new LIVE instead of tapping on "BELIVE"
+  - ignore done button on keyboard
+  - Live stream: Name alignment error for special character.
+  - increase tap on stream title sticker
+  - force text direction for private chat
+  - force text direction follow & following screen
+  - Display name should not allow over 16 digit.
+  - change regex
+  - Issue 736 - [20/20] Improvement: New suggestion page
+  - changed resouces & layouts for suggested friend screen
+  - resolve #736 apply paging
+  - #736 scrollable recommemded section
+  - changed font on suggestions screens
+  - replace logo for xxxhdpi
+  - Notification Bell: Tapping on who likes your stream should go to the person profile
+  - XMPP is not connected when join stream via notification
+  - Auto link textview
+  - fix Crash on Wallfeed
+  - method refactor
+  - replace logo for xxxhdpi
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_tap_notification_bell
+  - fixed connect XMPP
+  - fix Crash on Wallfeed
+  - add auto link for comment
+  - remove code
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into auto-link-textview
+  - clean code
+  - show toast if stream has clear
+  - Bug cannot finish maintenance screen
+  - issue 717 - get invite reward message from server side
+  - Issue 729 - Live stream: Name alignment error for special character.
+  - fixed #729
+  - set join group flag to false incase left room
+  - fixed #706 not received notification - only ignore notification if send from admin credit
+  - check maintaince of resume
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_cannot_finish_maintenance_screen
+  - change use auto link for some screens support hashtag & tagabel futher
+  - added autolink textview & refactor with android annotation
+  - get app configuration from remote server every time invite_screen or friend_suggestion_screen opened
+  - decrease tapped on stream text to 100milisecond
+  - Issue 731 - App crash when tapping on a LIVE from Hot category
+  - fixed #731
+  - End result screen: Follow button still display even user has followed
+  - Issue 729 - Live stream: Name alignment error for special character.
+  - fixed #729
+  - fix follow hot
+  - fix when pause
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_cannot_finish_maintenance_screen
+  - finish maintaince if done
+  - clean architecture on search screen
+  - Issue 722 -  implement h265 codec for Host Side for Android, iOS
+  - clean architecture on search screen
+  - changed build variants
+  - move reconnect group to after authen
+  - resolve #722
+  - fixed still see old logo for update
+  - Bug viewer cannot receive push notification in live screen
+  - Issue 704 - Wallfeed: Comment section is available for recorded stream.
+  - Merge branch 'develop' into issue_704
+  - Merge branch 'develop' into bug_viewer_cannot_receive_push_notification_in_live_screen
+  - Issue 717 - [improve] get invite reward message from server side.
+  - In-app browser: Taping on url open browser in app instead of phone browser
+  - Issue 709 - Live stream: Improvement of floating text
+  - Title in Wallfeed is bold for Android but not bold for IOS
+  - issue 706 - Android receive wrong notification
+  - start 1.2.14 version code 44
+  - Release 1.2.13
+  - - make text inside ** ** bold.
+  - call app_config api, store app_config
+  - prevnet open new task
+  - add custom tab
+  - update comment count
+  - sync comment from CommentActivity to WallfeedFragment
+  - - get comment detail - add a comment
+  - show comment icon if recorded stream
+  - rename FragmentWallFeed to WallFeedFragment
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_taping_on_url_open_browser_in_app
+  - merger code
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_viewer_cannot_receive_push_notification_in_live_screen
+  - Change event listenner
+  - add new browser
+  - show notification on viewer
+  - click on stream title to edit
+  - set font for post deatil
+  - Android receive wrong notification https://trello.com/c/hJA6CpvW/
+  - set normal stype
+
+## 1.2.13 (June 16, 2017)
+  - Issue 667 - if host got disconnected from network, should continue stream after network resume
+  - final chatgroup listener
+  - handle afk for new viewer if host afk
+  - set ping interval each 5 min to reduce kickout from server
+  - added ping manager & delivery manager
+  - plus previous duration after resume
+  - store sticker when resume
+  - clear all old message if user dont want to resume stream
+  - change reserve layout for viewers side
+  - changed watcher display logic
+  - remove un-use methods
+  - temp store chat messages
+  - fixed bot join & leave immediatelly
+  - change get recorded time duration
+  - smack 4.1.9 & rejoin room
+  - toast message in main theard
+  - changed some login for chat manager
+  - change layout to consistence with iOS
+  - handle join group error
+  - remove check user loop
+  - added subscription for chat instance
+  - host stream resume after force close
+  - remove previous listeners if reconnect xmpp
+  - added flags for xmpp status
+  - Issue 711 - Profile: app crash when tap on List View
+  - fixed #711
+  - added condition for display like in recorded stream
+  - Host_Star number does not show full number (such as: 12940, but Android show 1294 )
+  - added shadow & shorten username
+  - - shorten long display name in live stream - make shadow for combo number
+  - set wrap_content
+  - add Revenue Amplitude event for Android
+  - delete comment
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into gaku_dev
+  - fixed crash when tap on notification bell
+  - fixed crash when tap on notification bell
+  - add revenue event for Amplitude fixed #698
+  - revert missed fields
+  - remove [int] getTypeMessage method()
+  - remove Adwords event ( Android can link to Adwords without code )
+  - Issue sub category & changed version code to 43
+  - changed version code to 43
+  - fixed banner item cached
+  - fixed sub category not update
+  - fixed stream title not send if empty #657
+  - fixed viewers not get sticker when join
+  - fixed stream title not send if empty #657
+  - fixed sub category not update
+  - manage subscriptions
+  - stream title is always set at the center after editing.
+  - merge from develop
+  - stream title is always set at the center after editing.
+  - don't go HOME / End screen
+  - don't go HOME / End screen
+  - openfire: error handling for creating / join openfire room when it's failed for Android
+  - fix conflick
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_handle_join_openfire_room
+  - Merge branch 'develop' into memory_leaks
+  - Merge branch 'develop' into memory_leaks
+  - Task update app version
+  - VID cut-off few ms when playing video
+  - use 1 composite subscription for all
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_update_app_version
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_VID_cut_few_ms
+  - fix cut video
+  -  [Bug] Stream: XMPP is not connected if user enter stream via push notification
+  - Merge pull request #688 from AppsterDeveloper/issue-687
+  - fixed #687
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_XMPP_not_connected_if_via_push_notification
+  - remove file
+  - Add MVP Template
+  - add Amplitude, Crashlytics information
+  - Issue 657 -  Improvement of Live stream title 'sticker'
+  - - manage subscriptions in InviteFriendPresenter
+  - - manage subscriptions in NotifyFragment
+  - - manage subscriptions in FragmentWallFeed
+  - - manage subscriptions in BaseFragment - re-arrange lifecycle callback
+  - connect if via notification
+  - manage subscriptions in PostDetailActivity
+  - manage subscriptions in NotificationActivity
+  - manage subscriptions in Media player fragment
+  - manage subscriptions in RegisterActivity
+  - manage subscriptions in MainActivity
+  - manage subscriptions in BaseActivity
+  - manage subscriptions in Streaming Activity
+  - manage subscriptions in splash screen
+  - upgrade rxlint to 1.2
+  - - [stream title] text color is always white in composite dialog  - font style for edittext view
+  - colors options is over on devices which has soft navigation bar
+  - Merge branch 'develop' into issue_657
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_XMPP_not_connected_if_via_push_notification
+  - join via notification
+  - Revert new ui
+  - change itemdecoration
+  - sub category banner
+  - refactored gamingmodel
+  - new login logo
+  - fixed #666
+  - fix conflict
+  - Revert "New home ui - resolve #664 "
+  - save stream title for recorded stream
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into gaku_dev
+  - Set user info to Crashlytics fixed #679
+  - add stream events for Amplitude fixed #678
+  - Issue 675 - Pre Live screen: Input stream title is mandatory
+  - fixed #675
+  - Issue 673 - Login screen - change of title format
+  - changed logo on login screen
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_update_app_version
+  - catch job error exception
+  - tap on profile nav if save stream after live
+  - add token for Force Update Version
+  - Improve group chat adapter
+  - Able to mute viewers in the stream NOT only host.
+  - change color resource
+  - manage subsciption
+  - - chat group delegate adapter --> view  side --> done - add listeners
+  - chat group delegate adapter --> done at host side
+  - chat group delegate adapter
+  - New home ui - resolve #664
+  - changed tag margin
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_handle_join_openfire_room
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into able__mute_viewers
+  - set viewcount to stream
+  - added bg_category_tag
+  - handle error when create or join error
+  - change live and rec tag width to 40dp
+  - fixed #666
+  - check streamTitleSticker not null
+  - ignore multi api call
+  - correct arc layout animation
+  - changed formular for navigation bezier curve drawing
+  - update sticky pad layout pull request #651
+  - changed center button margin
+  - new login logo
+  - changed banner click for action type 2
+  - changed category detail title
+  - change topbar logo & category background
+  - added new resources
+  - added item decorator
+  - use title as categoryName for eventType =2
+  - completed implement new ui & actions
+  - add navigation selector drawable
+  - modified space navigation view supported selector drawable
+  - added space navigation view
+  - added StaggeredGridLayoutManager
+  - new home item layout
+  - change update conditions
+  - added categories view
+  - add category delegate & remove top categories text
+  - sub category banner
+  - refactored gamingmodel
+  - change get slug
+  - fixed issue 5934023dbe077a4dcca91e9d
+  - merge with hot fix 1.2.12
+  - Bug view count not increase
+  - Issue 657 - Improvement of Live stream title 'sticker'
+  - handle when user has kick by admin
+  - update version code to 41
+  - fixed maintenance jobs
+  - exclude evernote db files
+  - fixed crashlytic 5931ef3dbe077a4dcc98f346
+  - turn off increate view count
+  - - improve stream title ---> finished
+  - custom circular color item
+  - merger code develop
+  - add increase view count
+  - upgrade version code to 40
+  - fixed with findbugs on MediaplayerFragment
+  - fixed with findbugs on MediaplayerFragment
+  - upgrade version code to 35
+  - Issue 385 - [Bug] should stay in profile screen after view deleted recorded stream
+  - upgrade okhttp to 3.8.0
+  - fixed #385
+  - update gradle 2.3.2
+  - Issue 497 - [Bug] Delete a recorded in listview but go to girdview still appear
+  - - Delete a recorded in list view but it still in grid view - manage subscriptions
+  - [profile screen] Delete a recorded in list view https://trello.com/c/ul543122/
+  - fixed memory leak on login presenter
+  - issue 652 - [Bug] As a viewer, I still can hear stream's sound while I having a phone call
+  - still hear sound from streamer while calling https://trello.com/c/Z7f1vNgO/
+  - Issue 651 -  [Bug] Login Twitter show error popup
+  - Issue 469 - [Bug] "About us page" is different between iOS and Android
+  - issue 391 - [Bug] Viewer number of video post will be hidden when tapping on comment icon then tapping back button
+  - fixed #651
+  - fixed #469 - change about us url
+  - [profile -list]views count is hidden after coming back from comment activity
+  - Memory leaks viewer screen
+  - fix conficts
+  - Fix follow on post
+  - perform log into belive app by using google signin on staging build
+  - start 1.2.13
+  - Merge branch 'release-1.2.12' into develop
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_view_count_not_increase
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into fix_follow_on_post
+  - add dialog comfirm unfollow
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into fix_follow_on_post
+  - Add change follow status
+  - - remove debug-linh.keystore - disconnect from google after connecting successfully.
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into bug_view_count_not_increase
+  - add time for call api
+  - perform log into belive app by using google signin on staging build
+  - fix conflicts
+  - - add all subscriptions into compositesubscription in host side.
+  - - use clear() instead of unsubscribe() - upgrade rxLint
+  - remove global layout listener
+  - add debugCompile rxlint which helps to check potential rx bug automatically
+  - collected all subscription into subscription composite
+  - video controller fragment is leaked
+  - use unsubscribe instead of clear
+  - free callback in dismissing dialog
+  - use weak reference context
+  - use weak reference
+
+## 1.2.12 (May 31, 2017)
+  - - convert gem text to gem icon in invite screen
+  - serialize stream title
+  - hot fix - release 1.2.12
+  - - convert gem text to gem icon in invite screen - fix api link for retrofit 2.0
+  - endless delegate adapter
+  - apply diffutil
+  - Issue #630 - added auto scale text size & bugs fixed
+  - auto scale text size
+  - dialog fragment isn't fullscreen on xiaomi redmi note 3, samsung s4
+  - clear all job
+  - clear all job
+  - - remove live title's border, padding, margin - hide live title when tap on screen - make sticky layout behind AFK's layout
+  - remove weakreference on mediaplayer fragment
+  - observer error on main thread for debug build
+  - last letters are cut off, because cordinaters from ios is not consitent
+  - last letters are cut off, because cordinaters from ios is not consitent
+  - added debug db check
+  - disconnect XMPP if reconnect got errors
+  - remove space for markdown link in readme
+  - Added belive template
+  - - belive mvp template - update readme file
+  - issue #630 - ui issue
+  - - bottom controls is hide in pre-live screen
+  - - stream title is cut off 2 letters at the end when it's dragged to the right border of the screen.
+  - Issue 630 - add stream "text" in stream screen
+  - Sugessted friends screen text changed
+  - fix drag&drop, need to improve more
+  - remove itemchange animation for image cached issue
+  - change from beLive to BeLive
+  - - change max length of stream title to 24 letters - make stream title is single line
+  - call config api to show stream title or not
+  - add text shadow
+  - merge from develop
+  - merge from develop
+  - - add stream "text" in stream screen issue #630 <----- https://trello.com/c/SMjOR8t4/
+  - Fix maintenance
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into fix_maintenance
+  - add interval of periodic jobs is 15 minutes for Nougat
+  - fixed https://trello.com/c/eFiB1U3y
+  - add api, xmpp
+  - drag and drop in host side
+  - added proguard for evernote job
+  - Added maintenance screen
+  - update with develop branch
+  - fixed https://trello.com/c/yT2830f0 & update event banner
+  - changed text
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_maintenance_v3
+  - add shadow Color
+  - - modelize dialog fragment - water mark dialog
+  - fix show on live
+  - added regex match 12 uppercase chars for displayname check
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_maintenance_v3
+  - add onError handle for all Apis for issue 58cd03c60aeb16625b8a9a60 & 58e7a30d0aeb16625b5d22fa & 58e1d93b0aeb16625b2ce99a
+  - issue 606 - completed #606 [2 weeks] [Design] Suggested friend list
+  - fix start mode
+  - Merge branch 'develop' into feature/suggested_friend_list
+  - - separate suggested-friend list from friend-on-belive list - bug fixes
+  - use common string util to prevent boilerplate code #627
+  - Issue 626 - Live screen have error UI with user have display name long text on Android side.
+  - Issue 622 - recorded stream chat, unable to see "user joined"
+  - fixed #626
+  - add sart mode
+  - fixed #622
+  - merge code from develop
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_maintenance_v3
+  - Merge branch 'develop' into feature/suggested_friend_list
+  - fixed load-more recyclerview
+  - fixed load-more recyclerview
+  - load more.
+  - use BeLiveStreamer for easy to modify
+  - listen event
+  - add JobSchedule
+  - - load more java
+  - Issue 620 - Tap on the banner and will go to the category
+  - Issue 618 - Pre-live: "Be Live" button should not overlap with title
+  - fixed #620
+  - fixed #618
+  - Merge branch 'develop' into feature/suggested_friend_list
+  - - load more xml
+  - - didn't call facebook-friend-on-belive api - make begin button has ripple effect
+  - merge from develop branch
+  - added diffutil for adapter delegate
+  - added diffutil for adapter delegate
+  - show friend list on belive
+  - ignore end message for recorded stream
+  - Issue 614 - Stream/host side: Weird message's sent from Admin page
+  - fixed #614
+  - change filter lenght to 16 when regis new account
+  - remove navbar check for pre live stream
+  - fixed duplicate resource on xmpp
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_maintenance_v3
+  - Fixed video of video post can be seen in recorded post
+  - Issue #611 - In-app queryInventory error
+  - In-app queryInventory fixed #611
+  - In-app queryInventory error. fixed #611
+  - fixed https://trello.com/c/d6cgy84a
+  - prevent crash
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into fix_wallfeed
+  - fix wallfeed
+  - restrict maxlengh of username input
+  - Issue duplicate message - Live stream Duplicate message
+  - Issue 606 - following button is small beside host avatar in livestream
+  - make nested horizontal recyclerview smoother
+  - fixed issue #606 [viewer screen]follow button is small in samsung note 3
+  - prevent xmpp chat group multi-instances
+  - change registration screen ui
+  - -  empty item - set branch campaign, chanel
+  - add new type delegation adapter support diffutil
+  - complete friend-suggested screen
+  - Issue 602 - End stream screen: App crash when tap on save (not 100% reproducible)
+  - fixed #602
+  - New invite friend
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into new_invite_friend
+  - add file
+  - fix animation when logout
+  - add file
+  - add file
+  - add file
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into new_invite_friend
+  - fix animation when logout
+  - fix show keyboard
+  - #576 change bottom popup string
+  - Merge branch 'develop' into feature/suggested_friend_list
+  - Implement delegate adapter
+  - refactor search screen to use adapter delegate
+  - call api
+  - change resValue for TestMode branch.io
+  - update up stream
+  - new splash screen
+  - Simplify registration screen
+  - remove animation
+  - merge hotfix
+  - update upstream
+  - merge hotfix
+  - rename file
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into task_new_splash_screen
+  - edit string
+  - edit time show animation
+  - new request model
+  - save currentVersionCode
+  - fix input referral code
+  - Issue 594 - unable to see recorded chat message
+  - fixed #594
+  - Add new file animation
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into new_invite_friend
+  - edit show keyboard
+  - show line number inside Timber logs
+  - show line number inside Timber logs
+  - Issue 590 - [Bug] AFK doesn't work correctly
+  - fixed #590
+  - setup FriendSuggestionActivity FriendSuggestionAdapter, views
+  - fix input range referral
+  - Change range length input user id
+  - edit range length input user id
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into new_invite_friend
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into simplify_registration_screen
+  - change range value of user Id
+  - add new invite friend
+  - upgrade version name to 1.1.12
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into simplify_registration_screen
+  - space input id
+  - Issue 587 - refresh profile, it should show "k"
+  - fixed #587
+  - Issue 576 - Pre live screen: Set preview photo for live stream
+  - Remove sign in later option
+  - animate layout when keyboard showed
+  - Simplify registration
+  - changed #576 ui
+  - fixed #576
+  - remove sigin later
+  - Remove sign later
+
+## 1.2.11 (May 13, 2017)
+- #549 (2/2) [Bug] Viewer still see host in viewer list in livestream https://trello.com/c/hVlDHXjN
+
+- #561 [Bug] Gift tab display nothing when Guest goes to other profile https://trello.com/c/4BVRTrCo
+
+- #556 [Bug] Display "Guest joined" in chat section of live stream https://trello.com/c/Jy6nTrBF
+
+- #557 (1/2) [Implement] Android implement report post feature (iOS already implemented before ) https://trello.com/c/PEe1LCSx
+
+- (1/1) change "searchable" settings position https://trello.com/c/iX6QjiUs
+
+- #547 (3/3) [Bug] App should go to Home screen after tap on Home butotn on send livestream screen https://trello.com/c/mV7584FD
+
+- [Bug] Android should not change all url to “lowercase” because some url is case sensitive https://trello.com/c/KeLqQWsn
+
+- (72/72) (56) #505 [main] [Android] replace VXG to KSY Player to support h265 codec https://trello.com/c/cBuDD3V2
+
+- [main] [Android] #463 (0.5/0.5) change message of network indicator https://trello.com/c/l2u2FHjL
+
+- #377 [Bug] Android host able to see "joined" text when Admin press on Interactive Stream https://trello.com/c/CcuIRobP
+
+- #386 [Bug] App should direct to recorded stream when tap on "User like your stream" on Notification screen screen https://trello.com/c/uaWgsnQv
+
+- #387 [Bug] Android viewer unable to see "[Customer Service] joined" https://trello.com/c/79o2nQ5c
+
+- [Bug] App crash when i tap on "check in location" in create post https://trello.com/c/JDqVX7Ab
+
+- #389 [Bug] Android viewer got black screen when iOS host https://trello.com/c/FVE03WZy
+
+- #262 [Bug] App should close some popup/screen when livestreaming ended https://trello.com/c/wGRSRQlu
+
+## 1.2.10 (May 08, 2017)
+  - update manifest version 1.2.10
+  - change network message for viewer side
+  - improve API call
+  - added proguard adjust for release flavor #539
+  - Issue 539 - Adjust integration
+  - Crashlytic issue 590021e8be077a4dccec332b
+  - java.lang.RuntimeException: Font asset not found fonts/opensansbold.ttf https://fabric.io/appster1110/android/apps/com.appster/issues/590021e8be077a4dccec332b
+  - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.appster.Models.StreamPublisherModel.getUserImage()' on a null object reference https://fabric.io/appster1110/android/apps/com.appster/issues/58cd584e0aeb16625b8d6793
+  - fixed #539 Adjust - added google analytics
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into gaku_dev
+  - fixed #539 Adjust integration
+  - Crashlytic issue 58cf7e450aeb16625b9bb5c7
+  - java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0 https://fabric.io/appster1110/android/apps/com.appster/issues/58cf7e450aeb16625b9bb5c7
+  - java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState https://fabric.io/appster1110/android/apps/com.appster/issues/59059127be077a4dcc1bdcb7
+  - issue #507 - distinct duplicate message from iOS
+  - fixed #507 Android viewer will got "duplicate chat message "User joined" after resuming a live-stream https://trello.com/c/UbHNhunX/
+  - Issue 535 - cannot IM
+  - fixed #535
+  - improve API call
+  - Issue 506 - ui issue
+  - fixed #506 ui issue
+  - initialize data
+  - remove / char
+  - remove gpu lib
+  - Crashlytic issue 583659990aeb16625b37df1
+  - NullPointerException https://fabric.io/appster1110/android/apps/com.appster/issues/583659990aeb16625b37df13/
+  -  window leaked <--- handler
+  - remove gpu lib
+  - remove uppercase on event detail
+  - fixed #513 only allow follow 1 time/stream
+  - fixed #513 only allow follow 1 time/stream
+  - added ellipsize if event title lenght > 25 #504
+  - added ellipsize if event title lenght > 25 #504
+  - Issue 506 - remain issue with go to profile and block
+  - notification has a divider line.
+  - fixed issue no5 #506 - return to main if block current stream
+  - notification has a divider line.
+  - use event title from server #504
+  - use event title from server #504
+  - Issue 522 - Bug unmute user, user still unable to chat
+  - issue 502 - apply shadow for combo number
+  - fixed #522
+  - fixed sub issue no2 - no action when tap on own profile
+  - apply shadow for combo number (ex. x5!)
+  - add follow message on viewers side
+  - Issue 509 - show share message on live stream
+  - ignore share stream in recorded stream
+  - Issue 513 - show follow message on live stream
+  - ignore follow on recorded stream
+  - fixed #509
+  - fixed #513
+  - changed all message type to custom define interface
+  - Issue 501 - Notification title and big picture
+  - Issue 502 - Added shadow to chat text
+  - Issue 468 - Able to tap on notification like type
+  - Issue 508 - Recorded missing combo
+  - Issue 504 - event detail
+  - fixed #504
+  - fixed #508 Recorded stream: Combo gift message doesn't saved. It save individually send gift message https://trello.com/c/hWu5tUHY/
+  - add base presenter
+  - messages aren't shown
+  - resolved #502 Add shadow to chat text. https://trello.com/c/3Hhf6vc1/
+  - add clickable on profile image
+  - fixed #468
+  - make the image center inside
+  - don't resize push-image
+  - remove hardcode image url
+  - resolved #501 Able to upload picture for notification https://trello.com/c/VnbkM8pU/
+  - Add play url
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into issue_468
+  - configure branchio test-mode for staging and dev
+  - refactor models - remove unnecessary model classes
+  - refactor models
+  - change back to version code 30
+  - fixed crash issue 58fca91abe077a4dcccf48fa
+  - fixed crash issue 58fa1b14be077a4dccbb3cff
+  - fixed crash issue 58fc9aa5be077a4dcccec9b3
+  - Hotfix crash when scroll to load more
+  - change xml file name
+  - prevent IllegalStateException ks might be run during a measure & layout pass where you cannot change the RecyclerView data.              Any method call that might change the structure of the RecyclerView or the adapter contents should be postponed to the next frame.)
+  - java.lang.IndexOutOfBoundsException: Inconsistency detected. Invalid view holder adapter positionViewHolder
+  - open stream when click notification row
+  - start 1.2.9
+  - merged with release-1.2.8
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into issue_468
+  - configure branchio test-mode for staging and dev
+  - Open stream when click like
+  - add event click like tream
+  - Add check type
+  - Add type notification
+
+## 1.2.8 (April 24, 2017)
+  - fixed no confirmation popup when stream over 1min and delete
+  - remove join/leave event for admin
+  - minor bugs fixed
+  - Bugfix 462 - handle upper case of link detector
+  - Fix 462
+  - Crashlytic issue 58f098060aeb16625baa2bfd
+  - - fixed #481 SocialManager.java line 1209 https://trello.com/c/cI7ahi9l/
+  - Crashlytic issue 58f6e3100aeb16625bdc7a6a
+  - Bugfix 462 - Avoid trigger action when tap to copy on biology section
+  - remove function no need
+  - - fixed #482 PostDetailActivity.java line 1090 https://trello.com/c/Z1H7k5j5/
+  - fixed crashlytic 58f97149be077a4dccb4c558
+  - fix #462
+  - Fixed #462
+  - Bugfix for 464 - Auto refresh profile if lastime is streaming
+  - Issue 465 - Implement friendly share referral link
+  - Bugfix for 466
+  - minor bugfix #442
+  - change subject title when sharing via mail
+  - bugfixed #466
+  - Issue 463 - Show viewers network low text
+  - resolved #465 implement "share" features for Invite friend - merged from develop https://trello.com/c/Hn5NAlyk/
+  - Issue 462 - Added hyperlink detect & copy
+  - Bugfix issue 464
+  - Change netword indicatitor text
+  - Issue 473 - Improving entering stream speed
+  - bugfix for #464
+  - Issue 473 - Improving entering straem speed
+  - fix 462
+  - fix 462
+  - Invite a Friend - Referral ID section Wallfeed(Coment) Profile(Coment)
+  -  Profile - biology section
+  - Add able copy text
+  - detect link
+  - done hyper link
+  - able copy
+  - fix 462
+  - fix 462
+  - Issue 442 - Handle ban & stop stream from admin page
+  - close #442
+  - Issue 464 - Able to go to profile from streams for viewers
+  - Issue 470 - Able to receive notification if turn off on settings screen
+  - Issue 412 - Added more gifts animation
+  - zoomable live stream screen
+  - Invite a Friend - Referral ID section Wallfeed(Coment) Profile(Coment)
+  -  Profile - biology section
+  - close #464
+  - fixed #470
+  - Add able copy text
+  - detect link
+  - centralize the zoom ratio indicator
+  - disable manual focus feature
+  - make stream screen zoomable.
+  - make stream screen zoomable.
+  - done hyper link
+  - able copy
+  - fixed conflicts
+  - apply animation to teddy bear
+  - issue #457
+  - make animation for rose bouquet
+  - Apply diffutils
+  - use BaseDiffCallback<E> instead
+  - class's not found after packages name changed
+  - apply DiffUtils for home Screen
+  - change class name
+  - start 1.2.8
+  - fixed #457 Viewer list doesn't update when a user exit stream
+  - apply DiffUtils for home Screen
+  - change class name
+  - make animation for rose bouquet
+
+## 1.2.7 (April 17, 2017)
+  - lowercase package name, restruct packages
+  - dismiss prepare stream dialog if endstream layout showed
+  - lowercase all packages name
+  - Fixed 415
+  - lowercase package name
+  - enable clear list chat when scrub in recorded stream
+  - disable v2 signing & remove ucrop
+  - Issue 452
+  - fixed #452
+  - Issue 436
+  - Issue 435
+  - Issue 419
+  - fixed #436 & lint check
+  - fixed with sonar lint
+  - fixed #435
+  - fixed #419
+  - set size for gift image in chat box
+  - issue 433
+  - issue 434
+  - issue 443
+  - issue #428
+  - Issue 404
+  - Caused by java.lang.NullPointerException: Attempt to invoke interface method 'void com.appster.features.regist.h.a(java.lang.String, int)' on a null object reference
+  - Fixed 402
+  - Fixed 406
+  - java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState <------ dismiss() called after activity go to stoped sate
+  - changed last notify stream username
+  - improve beauty cam. change rosy ratio from 55% --> 45%
+  - NullPointerException at com.appster.activity.BaseActivity.getOutputMediaFileUri(BaseActivity.java:170)
+  - Fixed 404
+  - fix conflicts
+  - - change GIFT_IMAGE_SIZE from local to global - change final fields to static
+  - set size for gift image in chat box
+  - - change GIFT_IMAGE_SIZE from local to global - change final fields to static
+  - Issue 411
+  - Merge branch 'issue_411' of https://github.com/AppsterDeveloper/Android into issue_411
+  - delete wrong import
+  - Fixed #411
+  - Crash activity chat line 860
+  - issue 397
+  - issue 416
+  - issue 403
+  - issue 400
+  - Issue 423
+  - Issue #405
+  - Fixed #411
+  - fixed 58e7a30d0aeb16625b5d22fa
+  - set size for gift image in chat box
+  - fixed issue 587f373e0aeb16625b3d4cec
+  - fixed issue 58e203940aeb16625b2e0e5f
+  - fixed #400 Attempt to invoke virtual method 'void com.appster.layout.SquareImageView.setVisibility(int)' on a null object reference
+  - fixed issue 57aad097ffcdc0425060584f
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into crash_ActivityChat_line_860
+  - start sprint 1.2.7
+  - [Bug] Viewer android : XMPP just show both join in group chat not show real user join
+  - fixed #403 Attempt to invoke virtual method 'void com.appster.adapters.x.a(com.appster.message.ChatItemModelClass)' on a null object reference
+  - upgrade android studio to 2.3.1
+  - fixed #416 Fatal Exception: java.lang.ArrayIndexOutOfBoundsException            length=12; index=-1            com.appster.adapters.AdapterListWatcher.getItemAt             Raw Text
+  - fixed #397 Attempt to invoke virtual method 'int java.util.ArrayList.size()' on a null object reference
+  - fixed #405 Attempt to invoke virtual method 'void android.support.v7.widget.RecyclerView.smoothScrollToPosition(int)' on a null object reference - fixed Sonarlint warning
+  - hotfix-379 no title when sharing on viewer side
+  - hotfix-410
+  - fixed #410
+  - no title  when sharing on viewer side
+  - changed app config dependencies
+  - recontruct dependencies to more readable
+  - fixed #380
+  - Bumped version number to 1.2.6
+  - Release 1.2.6
+  - beauty cam make screen dark
+  - Fixed crash ActivityChat line 860
+
+## 1.2.6 (April 07, 2017)
+  -  add new line in whats app share message
+  - fixed #379 need to add new line in whats app share message
+  - change back to 1.2.6
+  - change version code & name
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into develop
+  - Merge branch 'hotfix/darkbeauty' into develop
+  - - beauty cam make screen dark (change frame rate from 24 to 15) - version name 1.2.5 - version code 24
+  - fixed padding bottom for host/viewer
+  - Issue 359
+  - fixed 370
+  - fixed 370
+  - fix #359  - change   sharing title  - change share icon
+  - Improve ux  on toolbar & clickable view (#368)
+  - check malform action when detach view
+  - improve check network method
+  - apply ripple for clickable views
+  - apply ripple for toolbar buttons
+  - show gift spam for host & viewer from xmpp
+  - Change gift spam (#364)
+  - Issue 359
+  - change new video login (#365)
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into change_gift_spam
+  - fixed #362
+  - change new video login
+  - add shadow to combo
+  - fix conflicts from develop
+  - fixed #355
+  - fix conficts from develop
+  - resolved #359 Implement share feature for Host in live stream for Android
+  - Fixed file
+  - Change text size and font
+  - apply ripple to buttons
+  - resolved #359 Implement share feature for Host in live stream for Android
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into change_gift_spam
+  - merger code from develop
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into change_gift_spam
+  - Change combo gift
+  - add force refresh for gift section on profile
+  - Issue 354 (#361)
+  - apply ripple to buttons
+  - Issue352 Stream/viewer side: shouldn't contain yourself in viewer list (#357)
+  - host side: call EndStream api many times (#358)
+  - start v1.2.5 sprint
+  -  hotfix-boldtext
+  - merged hotfix
+  - hotfix text not bold in gift message
+  - Release 1.2.4 (#353)
+  - Merge branch 'master' into release-1.2.4
+  - Merge pull request #302 from AppsterDeveloper/release-1.2.2
+  - Merge branch 'release-1.2.2'
+  - Merge branch 'master' into release-1.2.2
+  -  hot fixes
+
+## 1.2.4 (March 31, 2017)
+  - remove debugComplie
+  - Call API when open left menu
+  - fix #338 Missing case: 100145 stars => should show 100.1k
+  - Issue337 (#350)
+  - Issue 338 (#349)
+  - Issue 241 (#348)
+  - Fix edit icon show when tap home from profile
+  - Issue 342
+  - Issue 335
+  - issue 343
+  - fixed #343
+  - http://crashes.to/s/f64aced4dc0
+  - fixed #344
+  - fixed #342
+  - change to get country name instead of address
+  - get star and gem when go to notification page
+  - Fix Display Edit icon on Home screen after tap on Profile icon then tap Home
+  - Fix update gem on left menu
+  - - fix #335 insert  new line after the username text - close InputSteam
+  - construct CustomTypefaceSpan inside NewChatGroupAdapter instead of ViewHolder http://crashes.to/s/f64aced4dc0
+  - remove http loging interceptor
+  - Fatal Exception: java.lang.RuntimeException: Font asset not found fonts/opensansbold.ttf
+  - handle UnknowHostException & SocketTimeoutException for host/viewer network indicator
+  - handle network error when network is disconnect
+  - update AndroidManifest v1.2.4
+  - change init bitrate 1000, audio to stereo
+  - Stars from fans should always be increased and not reduce
+  - Change onActivityResult behavior
+  - Merge branch 'develop' of https://github.com/AppsterDeveloper/Android into issue_241
+  - Issue 329
+  - fix issue 329 stop stream by api server
+  - fix issue329 automatically reconnect
+  - Save TotalGoldFans from message
+  - Add TotalGoldFans
+  - improving error handing for saving live for Android
+  - improve bottom navigation
+  - KSY New beauty cam
+  - fixed #332
+  - don't show time, viewer, stars if can't get ended-stream data
+  - fix #329 improving error handing for saving live for Android
+  - fixed #331
+  - resolve #329 improving error handing for saving live for Android
+  - fixed #303
+  - changed tips message
+  - minor issues fixed
+  - fix turn on beauty by beauty button
+  - update with develop
+  - update with develop
+  - change beauty configs FILTER_PRO ginding 50%, whitening 25%, rosy 55%
+  - - add proguard - use rtmp from server instead of replacing
+  - - remove seekbar for filter option control. - use domain from gradle instead of hard code.
+  - merged from develop
+  - add beauty control(seekbars)
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into new_beauty_cam
+  - sound is more clearer. almost like the build's which without new beauty lib.
+  - - set voice volume to 3.0 - show upload speed on host side
+  - sound is little low but more clearer.
+  - - new beauty lib but sound isn't good.
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into new_beauty_cam
+  - sound is more clearer. almost like the build's which without new beauty lib.
+  - - set voice volume to 3.0 - show upload speed on host side
+  - sound is little low but more clearer.
+  - - new beauty lib but sound isn't good.
+  - [Bug] While streaming if the network is disconnected. Host/viewer can't end stream on Android side.
+  - fixed #303
+  - - improve bottom navigation - apply ripple - use butter knife to bind views - resize icons
+  - Issue 307
+  - Remove variable not used
+  - show ended tream when disconnect
+  - Do not allow "BeLive" as username, display name ( case-insensitive )
+  - show "cash out" button with API
+  -  refresh HOME screen when user come back to HOME for Android
+  - Issue 308
+  - remove appsteradmin joined
+  - remove appsteradmin joined
+  - Added AdWords, Facebook Ad
+  - resolve #290 Implement new beauty cam for Android as Gaku expected
+  - fixed #324
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into gaku_dev
+  - handle false case
+  - finish #321
+  - check isFragmentUIActive
+  - capture stream screen shot for cover.
+  - resolve #305 refresh HOME screen when user come back to HOME for Android
+  - Add delay show end stream when time out
+  - Add ischeckTimeOut
+  - refresh AppsterWebServices when deactive acount
+  - Refresh AppsterWebserviceAPI
+  - Adding header to all request
+  - no message
+  - remove / from watcher server link
+  - fix conflicts
+  - - add proguard - use rtmp from server instead of replacing
+  - - remove seekbar for filter option control. - use domain from gradle instead of hard code.
+  - merged from develop
+  - add beauty control(seekbars)
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into new_beauty_cam
+  - sound is more clearer. almost like the build's which without new beauty lib.
+  - - set voice volume to 3.0 - show upload speed on host side
+  - sound is little low but more clearer.
+  - - new beauty lib but sound isn't good.
+  -  update with develop
+  - do nothing when tap on reconnect dialog
+  - Change icon when tap left menu
+  - Change icon when tap left menu
+  - added AdWards, Facebook Ad Tracker
+  - filter endscreen to show wait dialog on viewer & ignore all error message if network disconnect on host
+  -  make instagram login dialog full screen
+  - Live stream warning message for Android
+  - Issue 304
+  - add stetho interceptors
+  - fix #306 Live stream warning message for Android
+  - fix #310 make instagram login dialog full screen.
+  - Change color silder when touch
+  - change color
+  - Fixed #304
+  - Merge branch 'develop' of github.com:AppsterDeveloper/Android into issue310
+  - make instagram login dialog full screen
+  - change to use app default dialog
+  - fixed crashlytic issues
+  - sound is more clearer. almost like the build's which without new beauty lib.
+  - - set voice volume to 3.0 - show upload speed on host side
+  - sound is little low but more clearer.
+  - - new beauty lib but sound isn't good.
+
+
+## 1.2.2 (March 20, 2017)
+
+
+
+## 1.2 (March 09, 2017)
+  - comment out toast message for debug
+  - remove interception feature #286
+  - remove interception feature
+  - open in app webview on setting screen
+  - ignore PLP_EOS on viewer side when live
+  - fixed #283
+  - remove divide 0
+  - fixed gift animation  #282
+  - fix #269 hide expensive gift if the stream was ended. - fade out animation
+  - fix #269 java.lang.IllegalStateException: Fragment already added: ExpensiveGiftDialog
+  - #270
+  - fix #269 animation for mansion
+  - call endstream before camera release resources
+  - added network error view on viewer side
+  - add show toast when error on host side
+  - Bug fixed for #271
+  - Merge remote-tracking branch 'origin/develop' into SonNguyenFixBug
+  - Fix show end stream If host force close the app
+  - Remove load user image API

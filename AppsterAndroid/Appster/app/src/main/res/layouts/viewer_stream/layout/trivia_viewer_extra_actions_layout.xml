@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTriviaExtraActionsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/trivia_padding"
+    android:paddingStart="@dimen/trivia_padding"
+    android:paddingTop="10dp"
+    android:visibility="gone"
+    tools:background="@color/background_black_80"
+    tools:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/btnTriviaTopWinner"
+        style="@style/clickable_ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_trivia_trophy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/btnTriviaHowToPlay"
+        style="@style/clickable_ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_trivia_how_to_play"
+        app:layout_constraintEnd_toEndOf="@+id/btnTriviaTopWinner"
+        app:layout_constraintStart_toStartOf="@+id/btnTriviaTopWinner"
+        app:layout_constraintTop_toBottomOf="@+id/btnTriviaTopWinner"
+        tools:visibility="visible"/>
+
+    <com.appster.customview.trivia.TriviaReviveView
+        android:id="@+id/triviaReviveView"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvReviveCountGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_get_revive"
+        android:gravity="center"
+        android:maxHeight="40dp"
+        android:maxWidth="115dp"
+        android:text="@string/trivia_get_revises"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:appFont="@string/font_helveticaneuebold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triviaReviveView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

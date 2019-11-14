@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="125dp"
+      android:layout_height="60dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:orientation="horizontal"
+                android:clipToPadding="false"
+      android:background="@drawable/bg_live_host_more_options">
+
+    <ImageButton
+        android:id="@+id/onOffBeauty"
+        style="@style/stream_bottom_icon_style"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_beauty_on"/>
+
+    <ImageButton
+        android:id="@+id/onOffFlash"
+        style="@style/stream_bottom_icon_style"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_flash_off"
+        android:alpha="0.5"
+        tools:visibility="visible"
+        android:layout_toEndOf="@+id/onOffBeauty"
+        android:layout_alignTop="@+id/onOffBeauty"/>
+</RelativeLayout>

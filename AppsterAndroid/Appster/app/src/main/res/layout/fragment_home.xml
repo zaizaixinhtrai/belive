@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_background"
+        android:orientation="vertical">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvMaintenanceMessage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/red_button"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <com.apster.common.view.PagerSlidingTabStrip
+            android:id="@+id/tabsNewHome"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/background_tabtrip"
+            android:layout_marginTop="2dp"
+            app:pstsIndicatorColor="?attr/themedTabIndicatorColor"
+            app:pstsShouldExpand="true"
+            app:pstsIndicatorWidth="20dp"
+            app:pstsTextDefaultColor="?attr/themedTabDefaultTextColor"
+            app:pstsTextSelectedColor="?attr/themedTabSelectedTextColor"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:selectedFont="@string/font_helveticaneuebold"
+            app:defaultFont="@string/font_helveticaneuebold"
+            app:tabSelectedTextSize="10"
+            app:tabTextSize="10"
+            app:tralling_space="0.28"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/most_pager_new_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/home_try_again"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</FrameLayout>

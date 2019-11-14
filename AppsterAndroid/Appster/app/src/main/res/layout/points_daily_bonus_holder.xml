@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/mystery_box_margin"
+    android:layout_marginEnd="@dimen/mystery_box_margin"
+    android:layout_marginBottom="@dimen/mystery_box_margin"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="@dimen/mystery_box_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contr_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ABAC">
+
+        <com.appster.customview.RoundRectCornerImageView
+            android:id="@+id/iv_thumb"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_box_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="start|top"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:appFont="@string/font_opensansbold"
+            app:layout_constraintStart_toEndOf="@+id/iv_thumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="203dp"
+            tools:text="Free mystery box" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_prize_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:text="@string/prize_list"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensanslight"
+            app:layout_constraintStart_toEndOf="@+id/iv_thumb"
+            app:layout_constraintStart_toStartOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintTop_toBottomOf="@id/tv_box_title"
+            tools:text="List prize" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_view_all_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:text="@string/view_all_next"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:appFont="@string/font_opensansbold"
+            app:layout_constraintEnd_toEndOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintTop_toTopOf="@+id/tv_prize_list" />
+
+        <HorizontalScrollView
+            android:id="@+id/hor_scroll_prize_list"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_thumb"
+            app:layout_constraintTop_toBottomOf="@+id/tv_prize_list">
+
+            <LinearLayout
+                android:id="@+id/lo_prize_list_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lo_price"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_mystery_price_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintStart_toStartOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintTop_toBottomOf="@+id/hor_scroll_prize_list"
+            app:layout_constraintVertical_bias="1">
+
+            <ImageView
+                android:id="@+id/iv_price_thumb"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/navi_icon_points_small"
+                android:visibility="gone" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:appFont="@string/font_opensansbold"
+                tools:text="10:10:10" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_thumb"
+            app:layout_constraintTop_toBottomOf="@+id/lo_price" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

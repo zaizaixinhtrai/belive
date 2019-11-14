@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_feed_height_stick_header"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingTop="5dp">
+
+    <FrameLayout
+        android:id="@+id/userImage_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_left_newsfeed"
+        android:background="@drawable/newfeed_imv_user_background">
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/userimage"
+            android:layout_width="@dimen/newfeed_user_image"
+            android:layout_height="@dimen/newfeed_user_image"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/content_desc" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/date_time_text"
+        android:layout_toRightOf="@+id/userImage_fl"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_dislayname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/item_feed_display_name"
+            android:textDirection="locale"
+            android:textSize="@dimen/item_feed_text_size_display_name"
+            android:textStyle="bold"
+            app:appFont="@string/font_opensansemibold"
+            tools:text="name" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#9b9b9b"
+            android:textSize="11sp"
+            app:appFont="@string/font_opensansregular"
+            tools:text="address" />
+    </LinearLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/date_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/margin_left_newsfeed"
+        android:gravity="right"
+        android:maxLines="1"
+        android:textColor="@color/item_feed_color_time"
+        android:textSize="@dimen/item_feed_text_size_time"
+        app:appFont="@string/font_opensansemibold"
+        tools:text="date_time_text" />
+
+
+</RelativeLayout>

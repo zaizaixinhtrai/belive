@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/clickable_ripple"
+              android:clickable="true"
+              android:clipToPadding="false"
+              android:orientation="vertical"
+              android:paddingBottom="12dp"
+              android:paddingTop="14dp">
+    <!--android:layout_marginTop="14dp"-->
+    <!--android:layout_marginEnd="22dp"-->
+    <!--android:layout_marginStart="23dp"-->
+    <com.appster.layout.SquareImageView
+        android:id="@+id/ivCategoryImage"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="23dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_bottom_nav_home"
+        />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingTop="6dp"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="10sp"
+        app:appFont="@string/font_HelveticaNeueRegular"
+        tools:text="This is title"/>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AuthCardItem"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    tools:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.appster.customview.SquaredFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+
+            <com.appster.layout.SquareImageView
+                android:id="@+id/userImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_default"
+                android:scaleType="centerCrop"/>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:background="?attr/themedLiveCategoryDrawable"
+                android:gravity="center_vertical"
+                android:letterSpacing="0.09"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="Entertainment"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:appFont="@string/font_HelveticaNeueRegular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:background="@drawable/bg_black75_gradient_login">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvStreamType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:background="?attr/themedLiveTagDrawable"
+                    android:gravity="center"
+                    android:minWidth="29dp"
+                    android:minHeight="18dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:appFont="@string/font_opensansemibold"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flBlur"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="?attr/themedLiveGradientDrawable"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvCurrentView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="6dp"
+                    android:drawablePadding="2dp"
+                    android:drawableStart="@drawable/ic_view_stats_small"
+                    android:gravity="center"
+                    android:text="10000"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:appFont="@string/font_opensansemibold"
+                    />
+
+            </FrameLayout>
+
+        </com.appster.customview.SquaredFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvDisplayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="top|center"
+                android:maxLines="1"
+                android:text="Mongabong"
+                android:textColor="@color/color_333333"
+                android:textDirection="locale"
+                android:textSize="10sp"
+                app:appFont="@string/font_HelveticaNeueRegular"/>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvStreamTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="top|center"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1"
+                android:maxLines="2"
+                android:paddingTop="2dp"
+                android:text="2017 make up Turorial, Tips &amp; Shortcuts 2017 make up Turorial, Tips &amp; Shortcuts Shortcuts 2017 make up Turorial, Tips &amp; "
+                android:textColor="?attr/themedLiveTitleTextColor"
+                android:textSize="12sp"
+                app:appFont="?attr/themedLiveTitleTextFont"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

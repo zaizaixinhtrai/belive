@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "446947229745",
+    "project_id": "appster-1064"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446947229745:android:ed745ed2a193bca7",
+        "android_client_info": {
+          "package_name": "com.appster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446947229745-bpekf2dhgkti6df4ufm1j3t5ev6b7t9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.staging",
+            "certificate_hash": "D7DEFE53D2AD48C2C7798C60739A81A64360F41C"
+          }
+        },
+        {
+          "client_id": "446947229745-7acjp6b1o0v93k9qqtk5mgf8i84e6d7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmZZMCr7H4RwFtMMJgOpX655_EHojxPM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

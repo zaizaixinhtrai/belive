@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6C97FF">
+
+    <ImageView
+        android:id="@+id/imvClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/icon_back_btn_cashout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imvCrashout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/cash_out_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvYourBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/cashout_your_balance"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:appFont="@string/font_questrialregular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvCrashout" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:appFont="@string/font_questrialregular"
+        app:autoSizeMaxTextSize="55sp"
+        app:autoSizeMinTextSize="40sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYourBalance"
+        tools:text="S$0" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:appFont="@string/font_questrialregular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCash"
+        tools:text="@string/minimum_for_cash" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCash">
+
+        <ImageView
+            android:id="@+id/btCashout"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cash_out_enabled"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imvHistory"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="17dp"
+            android:src="@drawable/cash_out_history"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

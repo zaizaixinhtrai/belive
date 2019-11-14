@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingEnd="12dp"
+    android:paddingStart="20dp">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvTransactionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_333333"
+        android:textSize="13sp"
+        app:appFont="@string/font_helveticaneuelight"
+        tools:text="21 Dec 2017" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvStarsDeducted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="12sp"
+        app:appFont="@string/font_helveticaneuelight"
+        tools:text="- :stars: 14454544,368" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvConvertedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="14sp"
+        app:appFont="@string/font_helveticaneuebold"
+        tools:text=":gem: 56565650" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="50dp">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pending"
+            android:textColor="@color/color_a9a9a9"
+            android:textSize="8sp"
+            android:visibility="invisible"
+            app:appFont="@string/font_helveticaneuebold"
+            tools:text="Pending" />
+
+        <ImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cashout_hist_pending" />
+    </FrameLayout>
+
+</LinearLayout>

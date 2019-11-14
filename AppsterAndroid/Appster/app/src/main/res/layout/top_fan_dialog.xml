@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_background"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <com.appster.customview.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/toppan_title"
+                android:textColor="#6b6c6e"
+                app:appFont="@string/font_opensansextrabold"
+                android:letterSpacing="0.09"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                tools:targetApi="lollipop"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/toppan_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:background="@color/dim_background_dialog">
+
+    <!--<ImageView-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:src="@drawable/topbar_belive_logo" />-->
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_daily_treat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/daily_treat_result_message"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:appFont="@string/font_helveticaneuebold" />
+
+    <FrameLayout
+        android:id="@+id/fmImageGift"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/img_glow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/ic_glow_red" />
+
+        <ImageView
+            android:id="@+id/img_sparkle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/img_gift_sparkle_big" />
+
+        <ImageView
+            android:id="@+id/img_gift"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/img_super_car_yellow" />
+    </FrameLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_gift_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:appFont="@string/font_helveticaneuebold"
+        tools:text="5" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:appFont="@string/font_helveticaneuebold"
+        tools:text="HeartHeartHeartHeartHeartHeartHeartHeartHeartHeart" />
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/daily_treat_share_message"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:appFont="@string/font_helveticamedium" />
+
+    <HorizontalScrollView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/border_daily_treat_share_box"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_share_belive"
+                style="@style/daily_treat_share_options"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/belive_icon" />
+
+            <ImageButton
+                android:id="@+id/btn_share_facebook"
+                style="@style/daily_treat_share_options"
+                android:src="@drawable/icon_share_facebook" />
+
+            <ImageButton
+                android:id="@+id/btn_share_instagram"
+                style="@style/daily_treat_share_options"
+                android:src="@drawable/icon_share_intagram" />
+
+            <ImageButton
+                android:id="@+id/btn_share_whatsapp"
+                style="@style/daily_treat_share_options"
+                android:src="@drawable/icon_share_whatsapp" />
+
+            <ImageButton
+                android:id="@+id/btn_share_twitter"
+                style="@style/daily_treat_share_options"
+                android:src="@drawable/icon_share_twitter" />
+
+            <ImageButton
+                android:id="@+id/btn_share_mail"
+                style="@style/daily_treat_share_options"
+                android:src="@drawable/icon_share_email" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--<com.appster.customview.CustomFontTextView-->
+    <!--android:id="@+id/txt_comeback_message"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="13sp"-->
+    <!--app:appFont="@string/font_HelveticaNeueRegular"-->
+    <!--tools:text="@string/daily_treat_reopen_in" />-->
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btn_go_to_bag"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/daily_treat_claim_button"
+        android:text="@string/go_to_bag"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansbold" />
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btn_back"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_stroke_30dp"
+        android:text="@string/back"
+        android:textColor="#ed4f68"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansbold" />
+
+</LinearLayout>

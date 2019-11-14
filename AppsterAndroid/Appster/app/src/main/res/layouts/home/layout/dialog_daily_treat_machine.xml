@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/dim_background_dialog_90">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/daily_treats_machine"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivCloseMachine"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:contentDescription="@null"
+            tools:src="@color/app_background_color"/>
+
+        <ImageView
+            android:id="@+id/ivShowTreatsList"
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="125dp"
+            android:contentDescription="@null"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="125dp">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvUltimatePrizeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:contentDescription="@null"
+                android:includeFontPadding="false"
+                tools:text="diamond ring"
+                android:textAllCaps="true"
+                android:textColor="@color/color_ffff06"
+                android:textSize="18sp"
+                app:appFont="@string/font_tekoregular"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline"/>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvUltimatePrizeAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:includeFontPadding="false"
+                tools:text=" x 10,000"
+                android:textAllCaps="true"
+                android:textColor="@color/color_ffff06"
+                android:textSize="12sp"
+                app:appFont="@string/font_tekoregular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/tvUltimatePrizeName"
+                app:layout_constraintTop_toTopOf="@+id/guideline"/>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvRemainDaysToReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                tools:text="7"
+                android:textColor="@color/color_ffff06"
+                android:textSize="23sp"
+                app:appFont="@string/font_tekomedium"
+                app:layout_constraintTop_toTopOf="@+id/guideline4"
+                app:layout_editor_absoluteX="93dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline5"/>
+
+            <com.appster.customview.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                tools:text="days"
+                android:textAllCaps="true"
+                android:textColor="@color/color_ffff06"
+                android:textSize="12sp"
+                app:appFont="@string/font_tekoregular"
+                app:layout_editor_absoluteY="20dp"
+                android:id="@+id/tvDayQuantity"
+                app:layout_constraintLeft_toLeftOf="@+id/tvRemainDaysToReset"
+                app:layout_constraintRight_toRightOf="@+id/tvRemainDaysToReset"
+                app:layout_constraintTop_toBottomOf="@+id/tvRemainDaysToReset"
+                android:layout_marginTop="-1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                android:layout_marginBottom="8dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_editor_absoluteY="79dp"
+                app:layout_editor_absoluteX="42dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="135dp"
+                app:layout_editor_absoluteY="59dp"
+                app:layout_editor_absoluteX="177dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4"
+                app:layout_constraintGuide_begin="4dp"
+                android:orientation="horizontal"
+                app:layout_editor_absoluteY="66dp"
+                app:layout_editor_absoluteX="42dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline5"
+                app:layout_constraintGuide_begin="94dp"
+                android:orientation="vertical"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvTreatsList"
+            android:layout_width="match_parent"
+            android:layout_height="322dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:listitem="@layout/daily_treat_item"
+            />
+
+
+        <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="325dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--tools:layout_editor_absoluteY="175dp"-->
+        <!--tools:layout_editor_absoluteX="20dp">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat1"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:contentDescription="@null"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline5"-->
+        <!--android:layout_marginTop="33dp"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat3"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline5"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--android:contentDescription="@null"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat2"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/ivTreat1"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline5"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--android:contentDescription="@null"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/ivTreat3"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--app:layout_constraintHorizontal_bias="0.444"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat4"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ivTreat1"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat6"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:contentDescription="@null"-->
+        <!--tools:layout_editor_absoluteY="128dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat5"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/ivTreat6"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ivTreat2"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/ivTreat4"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--app:layout_constraintHorizontal_bias="0.444"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat7"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ivTreat4"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat9"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ivTreat6"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivTreat8"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:paddingBottom="17dp"-->
+        <!--app:srcCompat="@drawable/ic_daily_treat_green"-->
+        <!--android:contentDescription="@null"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/ivTreat9"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/ivTreat7"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/ivTreat5"/>-->
+        <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline5"-->
+        <!--app:layout_constraintGuide_begin="2dp"-->
+        <!--android:orientation="horizontal"/>-->
+        <!--</android.support.constraint.ConstraintLayout>-->
+    </FrameLayout>
+</RelativeLayout>

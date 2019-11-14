@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/root"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/themedToolbarHeight"
+        android:background="?attr/themedToolbarDrawable"
+        android:paddingTop="?attr/themedToolbarPaddingTop"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:onClick="onClickBack"
+            android:src="?attr/themedToolbarBackIconDrawable"
+            style="@style/toolbar_button_ripple"/>
+
+        <ImageView
+            android:id="@+id/pageTitle"
+            android:layout_width="64dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            style="?attr/themedToolbarTitleStyle"
+            android:background="?attr/themedToolbarLogoDrawable"/>
+    </FrameLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        style="@style/header_title"
+        android:gravity="center"
+        app:appFont="@string/font_opensansextrabold"
+        tools:text="@string/phone_login_sigin_signup"
+        android:background="@color/phone_login_title_bg"
+        android:letterSpacing="0.15"
+        tools:targetApi="lollipop"/>
+</LinearLayout>

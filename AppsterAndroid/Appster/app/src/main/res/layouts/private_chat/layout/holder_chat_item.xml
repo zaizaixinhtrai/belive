@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/lo_date_chat_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_chat_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/color_dfdfdf"
+            android:textSize="13sp"
+            app:appFont="@string/font_opensansemibold"
+            tools:text="12/06/2015" />
+
+        <View
+            android:id="@+id/view_line_left"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_eeeeee" />
+    </LinearLayout>
+
+    <include layout="@layout/incoming_message" />
+
+    <include layout="@layout/outgoing_message" />
+
+</LinearLayout>

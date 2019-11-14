@@ -1,0 +1,231 @@
+{
+  "project_info": {
+    "project_number": "446947229745",
+    "firebase_url": "https://appster-1064.firebaseio.com",
+    "project_id": "appster-1064"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446947229745:android:ed745ed2a193bca7",
+        "android_client_info": {
+          "package_name": "com.appster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446947229745-j0dl3t33n0js7hi18v9tgg6kj2bc3e74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster",
+            "certificate_hash": "d7defe53d2ad48c2c7798c60739a81a64360f41c"
+          }
+        },
+        {
+          "client_id": "446947229745-ajoq72254sod1apr0ttlsa1vv2o9a87o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "446947229745-et783jrtr3ddqgal8bimef8m0tv1gct3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster",
+            "certificate_hash": "c29b10edf0446f5429ad12086343cc388a9f030e"
+          }
+        },
+        {
+          "client_id": "446947229745-vhd6sh1scregc2vakm8q8jfegahmdob1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster",
+            "certificate_hash": "f7819667ea3e09ee838633d9c53aa0a9db81cbe5"
+          }
+        },
+        {
+          "client_id": "446947229745-epgride8src48mjkmc5crlvo1i2mqikd.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "446947229745-7acjp6b1o0v93k9qqtk5mgf8i84e6d7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster",
+            "certificate_hash": "f7819667ea3e09ee838633d9c53aa0a9db81cbe6"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb2S3g-LCyF3MGogtpnPHbnUUHNGdvyKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446947229745-paofae3qcsqlmpv2f4uaqn7ph2k18gg2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appstersgipro"
+              }
+            },
+            {
+              "client_id": "446947229745-ajoq72254sod1apr0ttlsa1vv2o9a87o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446947229745:android:d92b4ba176262dad",
+        "android_client_info": {
+          "package_name": "com.appster.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446947229745-ajoq72254sod1apr0ttlsa1vv2o9a87o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "446947229745-jidmgrq03f49l9tqoa7pd6eel2ia7dom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.staging",
+            "certificate_hash": "511bf16da213d144b4f0e60e49df85461a21f009"
+          }
+        },
+        {
+          "client_id": "446947229745-f3cveb830kd11sqko65e4kf8eh3pvtmb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.staging",
+            "certificate_hash": "f7819667ea3e09ee838633d9c53aa0a9db81cbe5"
+          }
+        },
+        {
+          "client_id": "446947229745-16roqtc68ei28fmkbm0eidpck5piq3rf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.staging",
+            "certificate_hash": "c29b10edf0446f5429ad12086343cc388a9f030e"
+          }
+        },
+        {
+          "client_id": "446947229745-bpekf2dhgkti6df4ufm1j3t5ev6b7t9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.staging",
+            "certificate_hash": "5a646e1594150d4e1fd74782be2799fabd923a10"
+          }
+        },
+        {
+          "client_id": "446947229745-epgride8src48mjkmc5crlvo1i2mqikd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb2S3g-LCyF3MGogtpnPHbnUUHNGdvyKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446947229745-paofae3qcsqlmpv2f4uaqn7ph2k18gg2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appstersgipro"
+              }
+            },
+            {
+              "client_id": "446947229745-ajoq72254sod1apr0ttlsa1vv2o9a87o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446947229745:android:355281ede53a8d85",
+        "android_client_info": {
+          "package_name": "com.appster.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446947229745-ajoq72254sod1apr0ttlsa1vv2o9a87o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "446947229745-rcahcuo2rapamup3k7cm2f5fsp21ibid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.dev",
+            "certificate_hash": "f7819667ea3e09ee838633d9c53aa0a9db81cbe5"
+          }
+        },
+        {
+          "client_id": "446947229745-1k8mechvcl0e4fgeg7fk169nqs69en3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appster.dev",
+            "certificate_hash": "c29b10edf0446f5429ad12086343cc388a9f030e"
+          }
+        },
+        {
+          "client_id": "446947229745-epgride8src48mjkmc5crlvo1i2mqikd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb2S3g-LCyF3MGogtpnPHbnUUHNGdvyKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446947229745-paofae3qcsqlmpv2f4uaqn7ph2k18gg2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appstersgipro"
+              }
+            },
+            {
+              "client_id": "446947229745-ajoq72254sod1apr0ttlsa1vv2o9a87o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

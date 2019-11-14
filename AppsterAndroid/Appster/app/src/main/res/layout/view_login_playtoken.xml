@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_playTokenUserName"
+        style="@style/register_playtoken_editext"
+        android:hint="@string/user_name_or_email" />
+
+    <TextView
+        android:id="@+id/txt_playTokenUserNameInvali"
+        style="@style/register_playtoken_textview_inval"
+        android:layout_below="@+id/edit_playTokenUserName"
+        android:text="@string/login_playtoken_please_input_your_username_"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edit_playTokenPassWord"
+        style="@style/register_playtoken_editext"
+        android:layout_below="@+id/txt_playTokenUserNameInvali"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/txt_playTokenPassWordInvali"
+        style="@style/register_playtoken_textview_inval"
+        android:layout_below="@+id/edit_playTokenPassWord"
+        android:text="@string/login_playtoken_please_input_your_password"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_playTokenPassWordInvali"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegisterPlayToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_token_register" />
+
+        <Button
+            android:id="@+id/btnLoginPLayToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_slider" />
+    </LinearLayout>
+
+</RelativeLayout>

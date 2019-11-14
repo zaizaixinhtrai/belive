@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?><!-- suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appster"
+    android:installLocation="auto"
+    android:versionCode="100"
+    android:versionName="1.6.12">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <permission
+        android:name="${applicationId}.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.youtube" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="com.pack.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!-- oovoo sdk permission for video chat -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".AppsterApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_config"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity
+            android:name=".flashscreen.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <data android:scheme="@string/appsterschema" />
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="belivesg" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- AppLink config -->
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="http://join.belive.sg"
+                    android:pathPrefix="/383520674976649871"
+                    android:scheme="https" />
+                <data
+                    android:host="http://join.belive.sg"
+                    android:pathPrefix="/vMYO"
+                    android:scheme="https" /> <!-- Live App link -->
+                <data
+                    android:host="http://link.belive.sg"
+                    android:pathPrefix="/1MYO"
+                    android:scheme="https" /> <!-- Test App link -->
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".main.MainActivity"
+            android:configChanges="layoutDirection|locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".features.login.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".features.login.phoneLogin.phoneSignInSignUp.PhoneSignInSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.login.phoneLogin.phoneSignUp.PhoneSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.login.phoneLogin.newPassword.PhoneSignInNewPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.login.phoneLogin.signIn.PhoneSignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.login.phoneLogin.fogotPassword.PhoneSignInForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".comments.CommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".features.edit_profile.ActivityEditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".features.blocked_screen.BlockedUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".post.ActivityPostMedia"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.messages.chat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".features.messages.chat.MediaViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".features.setting.SettingActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".webview.ActivityViewWeb"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trending.ActivityTrending"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".refill.ActivityRefill"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ActivityFollow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".features.invite_friend.InviteFriendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".features.banner_detail.BannerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pocket.ActivityPocket"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".pocket.ActivityBeans"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.notification.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9b0b92e603421279da5e43954d5224648698b03e" />
+
+        <activity
+            android:name=".activity.MediaPlayerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activity.ViewImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.messages.MessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.appster" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.ApptersGCMListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.AppsterInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.GCMIntentServices"
+            android:exported="false" />
+
+        <service
+            android:name=".services.RefreshFollowerListService"
+            android:exported="false" />
+        <service
+            android:name=".services.OneSignalNotificationService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PostDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giftreceive.GiftStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.income.IncomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.income.gem_exchange.StarsToGemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TopFanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.user_liked.StreamLikedUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.regist.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.stream.StreamingActivityGLPlus"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".features.friend_suggestion.FriendSuggestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.maintenance.MaintenanceActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".services.InternalMessageReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".InstallReferralReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".features.receivers.IncomingBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="@string/authority"
+            android:exported="false" />
+
+        <activity
+            android:name=".features.income.cashout.CashoutActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- branch io -->
+
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="@bool/branchIoTestMode" /> <!-- Set to true to use Branch_Test_Key -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="@string/branch_key" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="@string/branch_key_test" />
+
+        <activity android:name=".features.category_detail.CategoryDetailActivity" />
+        <activity
+            android:name="com.appster.features.edit_video.RecordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.appster.features.edit_video.FileImportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name="com.appster.features.edit_video.EditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".features.onboarding.OnBoardingActivity"
+            android:theme="@style/OnboardingScreenTheme" />
+        <activity
+            android:name="com.appster.features.fb_friends.FacebookFriendSuggestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.income.history.TransactionHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.contacts.ContactFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.social_invite_friend.SocialInviteFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.home.triviaRanking.TopTriviaRankingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.appster.features.income.masterBrainWallet.MasterBrainCashoutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.appster.features.prizeBag.PrizeBagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.appster.features.prizeBag.redemption.RedemptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".features.points.prizelist.PrizeListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".webview.WebViewWithToolBarActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

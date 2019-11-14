@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/linNewsFeed"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/view_stick_header_wall_post"
+        >
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_newsfeed">
+
+        <com.appster.customview.SquaredFrameLayout
+            android:id="@+id/media_image_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/rl_TextureVideoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <com.ksyun.media.player.KSYTextureView
+                    android:id="@+id/textureVideoView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+            <com.appster.layout.SquareImageView
+                android:id="@+id/mediaImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_desc"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/play_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/playvideo"
+                android:contentDescription="@string/content_desc"
+                tools:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/progressVideo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_live"
+                android:layout_width="@dimen/width_button_live"
+                android:layout_height="@dimen/height_button_live"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/home_btn_recorded"
+                android:text="@string/newsfeed_btn_video"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/onOffVolume"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/volume_off"/>
+        </com.appster.customview.SquaredFrameLayout>
+
+        <com.appster.customview.autolinktextview.AutoLinkTextView
+            android:id="@+id/tv_content_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_left_newsfeed"
+            android:layout_marginRight="@dimen/margin_left_newsfeed"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            android:linksClickable="true"
+            android:paddingLeft="2dp"
+            android:textColor="@color/item_feed_display_name"
+            android:textSize="@dimen/item_feed_text_size_content_post"
+            android:visibility="gone"
+            app:appFont="@string/font_opensanslight"
+            tools:text="Content"
+            />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ln_action_group"
+        layout="@layout/view_action_like_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/media_image_fl"
+        >
+    </include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_newsfeed"
+        android:layout_marginRight="@dimen/margin_left_newsfeed"
+        android:background="@color/item_feed_line_background"/>
+
+    <com.appster.customview.autolinktextview.AutoLinkTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_action_group"
+        android:layout_marginLeft="@dimen/margin_left_newsfeed"
+        android:layout_marginRight="@dimen/margin_left_newsfeed"
+        android:layout_marginTop="@dimen/item_feed_top_comment"
+        android:inputType="textMultiLine"
+        android:text="title"
+        android:textColor="@color/item_feed_display_name"
+        android:textSize="@dimen/item_feed_text_size_display_name"
+        android:textStyle="bold"
+        app:appFont="@string/font_opensansemibold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_newsfeed"
+        android:layout_marginTop="@dimen/item_feed_top_comment"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLikeCount"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_heart_like_25dp_selected"
+            android:visibility="gone"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="230 like"
+            android:textColor="@color/item_feed_color_time"
+            android:textSize="@dimen/item_feed_text_size_time"
+            app:appFont="@string/font_opensansemibold"
+            />
+
+        <ImageView
+            android:id="@+id/imgViewCount"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_view_count"
+            android:visibility="gone"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_view_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="230 view"
+            android:textColor="@color/item_feed_color_time"
+            android:textSize="@dimen/item_feed_text_size_time"
+            android:visibility="gone"
+            app:appFont="@string/font_opensansemibold"
+            />
+    </LinearLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/view_more_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/margin_left_newsfeed"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="@string/view_more"
+        android:textColor="@color/item_feed_color_time"
+        android:textSize="@dimen/item_feed_text_size_time"
+        android:textStyle="bold"
+        app:appFont="@string/font_opensansbold"
+        />
+
+    <LinearLayout
+        android:id="@+id/commentListLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_left_newsfeed"
+        android:paddingEnd="@dimen/margin_left_newsfeed"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

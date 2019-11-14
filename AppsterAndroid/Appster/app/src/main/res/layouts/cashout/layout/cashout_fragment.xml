@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eeeeee"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/income_gradient_background"
+        android:gravity="center"
+        android:minHeight="140dp"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="30dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/icon_gift_currency"
+                />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvUserCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="0"
+                tools:text="1043"
+                android:textColor="#333333"
+                android:textSize="42sp"
+                app:appFont="@string/font_helveticaneuelight"/>
+        </LinearLayout>
+
+        <com.appster.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/income_start_received"
+            android:textColor="#9c9c9c"
+            android:textSize="13sp"
+            app:appFont="@string/font_helveticaneuebold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.appster.customview.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/convert_to_gem_gem_on_hand"
+                android:textColor="#9c9c9c"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:appFont="@string/font_helveticaneuebold" />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/refill_gem_icon" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvAvailableGems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="7500"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:appFont="@string/font_HelveticaNeueRegular" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvWithdrawnRates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@android:color/white"
+        android:dividerHeight="0dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="invisible"/>
+
+</LinearLayout>

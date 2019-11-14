@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_view_stream_ended_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/end_stream_user_image_capacity">
+
+    <ImageView
+        android:id="@+id/ivStreamOwnerAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:alpha="0.1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:onClick="endStreamClick"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.appster.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:letterSpacing="0.08"
+            android:text="@string/live_stream_ended"
+            android:textAllCaps="true"
+            android:textColor="#58585B"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:appFont="@string/font_opensansbold" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:text="00:00:00"
+            android:textColor="#58585B"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:appFont="@string/font_opensansemibold" />
+
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/userHotsImage"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/end_result_gradient"
+            android:padding="14dp" />
+
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/go_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/ended_stream_profile_button"
+            android:letterSpacing="0.09"
+            android:stateListAnimator="@null"
+            android:text="@string/ended_stream_profile"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingRight="15dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.appster.customview.CustomFontTextView
+                        android:id="@+id/score_on_stream_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:textColor="#58585b"
+                        android:textSize="@dimen/text_size_like_count_ended_stream"
+                        android:textStyle="bold"
+                        app:appFont="@string/font_opensansbold" />
+
+                    <!--<com.appster.customview.CustomFontTextView-->
+                    <!--android:id="@+id/thou_score"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/stream_end_stream_thousand"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="22sp"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:visibility="gone" />-->
+                </LinearLayout>
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stream_end_stream_viewer_count"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/text_size_count_ended_stream"
+                    app:appFont="@string/font_opensansbold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.appster.customview.CustomFontTextView
+                        android:id="@+id/like_received_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:textColor="#58585b"
+                        android:textSize="@dimen/text_size_like_count_ended_stream"
+                        android:textStyle="bold"
+                        app:appFont="@string/font_opensansbold" />
+
+                    <!--<com.appster.customview.CustomFontTextView-->
+                    <!--android:id="@+id/thou_like"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/stream_end_stream_thousand"-->
+                    <!--android:textColor="#58585b"-->
+                    <!--android:textSize="22sp"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:appFont="@string/font_opensansbold" />-->
+                </LinearLayout>
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stream_end_stream_likes_count"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/text_size_count_ended_stream"
+                    app:appFont="@string/font_opensansbold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.appster.customview.CustomFontTextView
+                        android:id="@+id/gift_received_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#58585b"
+                        android:textSize="@dimen/text_size_like_count_ended_stream"
+                        android:textStyle="bold"
+                        app:appFont="@string/font_opensansbold" />
+
+                    <!--<com.appster.customview.CustomFontTextView-->
+                    <!--android:id="@+id/thou_gift"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/stream_end_stream_thousand"-->
+                    <!--android:textColor="#58585b"-->
+                    <!--android:textSize="22sp"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:appFont="@string/font_opensansbold" />-->
+                </LinearLayout>
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stream_end_stream_stars_count"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/text_size_count_ended_stream"
+                    app:appFont="@string/font_opensansbold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/btnFollow"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.BeLive"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/ended_stream_hot_delete_button"
+            android:letterSpacing="0.09"
+            android:text="@string/ended_stream_follow"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/go_back_stream_end"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.BeLive"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ended_stream_viewer_back_btn"
+            android:text="@string/ended_stream_back"
+            android:textColor="#FF5167" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

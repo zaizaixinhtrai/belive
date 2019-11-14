@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="335dp"
+    android:layout_height="470dp"
+    android:layout_gravity="center"
+    android:background="@drawable/trivia_dialog_border_view_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ibClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+
+        android:src="@drawable/ic_trivia_dialog_close"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@drawable/trivia_scrollbar_thumb"
+        android:scrollbarTrackVertical="@drawable/trivia_scrollbar_track"
+        />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trivia_share_ref_text_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="13dp"
+        android:paddingTop="20dp"
+        android:text="@string/share_referral_code"
+        android:textColor="@color/color_ffe548"
+        android:textSize="14sp"
+        app:appFont="@string/font_ralewayextrabold"/>
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/trivia_share_ref_bg"
+                          android:paddingEnd="15dp"
+                          android:paddingStart="15dp"
+                          android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llShareItemContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+</LinearLayout>

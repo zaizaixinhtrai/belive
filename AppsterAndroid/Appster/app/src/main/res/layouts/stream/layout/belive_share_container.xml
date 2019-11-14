@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="6"
+    android:orientation="horizontal"
+    android:paddingEnd="50dp"
+    android:paddingStart="50dp"
+    tools:showIn="@layout/belive_pre_live_stream_container">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tt_location"
+        style="@style/belive_share"
+        android:drawableTop="@drawable/icon_belive_share_location" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tt_facebook"
+        style="@style/belive_share"
+        android:drawableTop="@drawable/icon_belive_share_facebook"
+        android:visibility="gone" />
+
+    <!--<com.appster.customview.CustomFontTextView-->
+    <!--android:drawableTop="@drawable/icon_belive_share_instagram"-->
+    <!--android:id="@+id/txt_instagram"-->
+    <!--style="@style/belive_share"/>-->
+
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_whatsapp"
+        style="@style/belive_share"
+        android:drawableTop="@drawable/icon_belive_share_whatsapp"
+        android:visibility="gone" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_twitter"
+        style="@style/belive_share"
+        android:drawableTop="@drawable/icon_belive_share_twitter" />
+
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_email"
+        style="@style/belive_share"
+        android:drawableTop="@drawable/icon_belive_share_email"
+        android:visibility="gone" />
+
+
+</LinearLayout>

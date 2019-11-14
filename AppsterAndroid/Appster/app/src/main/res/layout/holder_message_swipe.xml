@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.appster.layout.recyclerSwipeUtil.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="@dimen/chat_list_btn_delete"
+        android:layout_height="@dimen/chat_list_btn_delete"
+        android:layout_gravity="end"
+        android:background="@drawable/delete_message" />
+
+    <LinearLayout
+        android:id="@+id/lo_left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingStart="0dp"
+        android:paddingEnd="2dp">
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/newfeed_imv_user_background">
+
+            <com.appster.customview.CircleImageView
+                android:id="@+id/iv_user_mage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_perform_history_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textDirection="locale"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="MARY" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textDirection="locale"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                tools:text="Image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_notification_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A29FA0"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="10:45AM" />
+
+            <TextView
+                android:id="@+id/tv_total_message"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/message_total"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.appster.layout.recyclerSwipeUtil.SwipeLayout>

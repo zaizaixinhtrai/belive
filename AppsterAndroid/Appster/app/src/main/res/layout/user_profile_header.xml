@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_user_profile_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="228dp">
+
+        <ImageView
+            android:id="@+id/img_dim_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_noavatar_nearby" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_user_profile_header"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="26dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp">
+
+                <com.appster.customview.GenderedCircleImageView
+                    android:id="@+id/_profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_profile_gradient"
+                    android:padding="5dp"
+                    android:src="@drawable/user_image_default"
+                    app:genderIconWidth="20dp"
+                    app:genderIconHeight="20dp"
+                    app:genderPosition="rightBottom"
+                    app:genderIconMarginRelativeVertical="4dp"
+                    app:genderIconMarginRelativeHorizon="4dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/_profile_image"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.appster.customview.CustomFontTextView
+                            android:id="@+id/txt_display_name"
+                            android:textDirection="locale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:appFont="@string/font_opensanssemibold" />
+
+                        <com.appster.customview.CustomFontTextView
+                            android:id="@+id/txt_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="1dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#9c9c9c"
+                            android:textSize="12sp"
+                            app:appFont="@string/font_opensanssemibold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_follow"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_profile_follow"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                </LinearLayout>
+
+                <com.appster.customview.autolinktextview.AutoLinkTextView
+                    android:id="@+id/txt_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_user_name"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/_profile_image"
+                    android:ellipsize="end"
+                    android:linksClickable="true"
+                    android:maxLines="4"
+                    android:textDirection="locale"
+                    android:text=""
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensanssemibold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:weightSum="4">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/followersCountText"
+                    style="@style/profile_follower_stype"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingEnd="@dimen/profile_padding_follower_layout"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    app:appFont="@string/font_opensansbold" />
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/followingCountText"
+                    style="@style/profile_follower_stype"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    app:appFont="@string/font_opensansbold" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_top_fans"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <com.appster.customview.CustomFontTextView
+                        android:id="@+id/giftCountText"
+                        style="@style/profile_follower_stype"
+                        android:layout_marginStart="1.5dp"
+                        app:appFont="@string/font_opensansbold"
+                        tools:text="14k" />
+
+                    <ImageView
+                        android:id="@+id/img_top_fan_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_profile_top_fan_arrow"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <com.appster.customview.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/img_top_fan3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/img_top_fan_arrow"
+                        android:visibility="gone"
+                        tools:src="@drawable/user_image_default"
+                        tools:visibility="visible" />
+
+                    <com.appster.customview.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/img_top_fan2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="6dp"
+                        android:layout_toStartOf="@id/img_top_fan3"
+                        android:visibility="gone"
+                        tools:src="@drawable/user_image_default"
+                        tools:visibility="visible" />
+
+                    <com.appster.customview.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/img_top_fan1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="6dp"
+                        android:layout_toStartOf="@id/img_top_fan2"
+                        android:visibility="gone"
+                        tools:src="@drawable/user_image_default"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:weightSum="4">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/txt_follower_title"
+                    style="@style/profile_follower_title"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="10.5dp"
+                    android:text="@string/followers"
+                    app:appFont="@string/font_opensanssemibold" />
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/txt_following_title"
+                    style="@style/profile_follower_title"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="0.5dp"
+                    android:text="@string/following"
+                    app:appFont="@string/font_opensanssemibold" />
+
+                <com.appster.customview.CustomFontTextView
+                    style="@style/profile_follower_title"
+                    android:layout_weight="2"
+                    android:text="@string/stream_stars_from_fan"
+                    app:appFont="@string/font_opensanssemibold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/profile_tab_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnTabGrid"
+            style="@style/profile_image_button"
+            android:src="@drawable/ic_profile_bar_grid_selected" />
+
+        <ImageButton
+            android:id="@+id/btnTabList"
+            style="@style/profile_image_button"
+            android:src="@drawable/ic_profile_bar_list" />
+
+        <ImageButton
+            android:id="@+id/btnTabGift"
+            style="@style/profile_image_button"
+            android:src="@drawable/ic_profile_bar_gift"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnChat"
+                style="@style/profile_image_button"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/ic_profile_bar_message" />
+
+            <TextView
+                android:id="@+id/notificationMessage"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bedges_background"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

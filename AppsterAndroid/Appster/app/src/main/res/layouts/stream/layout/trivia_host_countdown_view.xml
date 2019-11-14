@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/triviaCountDownView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_trivia_host_countdown"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvCountDownStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:appFont="@string/font_HelveticaNeueRegular"
+        tools:text="Face time in" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvTriviaCountDownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        app:appFont="@string/font_helveticaneuebold"
+        app:autoSizeMaxTextSize="65sp"
+        app:autoSizeMinTextSize="40sp"
+        tools:text="12" />
+</LinearLayout>

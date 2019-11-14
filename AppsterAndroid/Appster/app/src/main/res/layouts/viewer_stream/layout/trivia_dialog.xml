@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/alert_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/trivia_dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.appster.customview.trivia.TriviaTimer
+        android:id="@+id/countDownTimer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:appFont="@string/font_ralewaybold"
+        tools:text="Dialog title go here" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:appFont="@string/font_ralewayreg"
+        tools:text="@string/block_confirmation_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/cancel"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_grey_trivia_button"
+            android:gravity="center"
+            android:letterSpacing="0.09"
+            android:maxHeight="40dp"
+            android:minWidth="135dp"
+            android:text="@string/btn_text_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/color_cccccc"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"
+            tools:targetApi="lollipop" />
+
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/ok"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_pink_trivia_button"
+            android:letterSpacing="0.09"
+            android:minWidth="135dp"
+            android:text="@string/btn_text_ok"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--<size android:width="140dp"-->
+    <!--android:height="35dp" />-->
+    <gradient
+        android:angle="270"
+        android:centerColor="#fc4f4f"
+        android:centerX="0.5"
+        android:centerY="0.2"
+        android:endColor="#c10000"
+        android:startColor="#c10000"
+        android:type="linear" />
+
+    <corners android:radius="17dp" />
+
+</shape>
+
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="120">-->
+
+    <!--&lt;!&ndash;<item android:state_pressed="true">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<shape>&ndash;&gt;--><!--&lt;!&ndash;<size android:width="140dp" android:height="35dp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<solid android:color="#c10000" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</shape>&ndash;&gt;--><!--&lt;!&ndash;</item>&ndash;&gt;-->
+
+    <!--<item>-->
+
+    <!--<shape>-->
+
+    <!--&lt;!&ndash;<size android:width="140dp"&ndash;&gt;--><!--&lt;!&ndash;android:height="35dp" />&ndash;&gt;--><!--<gradient android:angle="270" android:centerColor="#fc4f4f" android:centerX="0.5" android:centerY="0.2" android:endColor="#c10000" android:startColor="#c10000" android:type="linear" />-->
+
+    <!--<corners android:radius="17dp" />-->
+
+    <!--</shape>--><!--</item>--><!--</selector>-->

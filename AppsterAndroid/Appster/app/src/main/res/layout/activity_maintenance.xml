@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.appster.customview.VideoViewMoreScreenLogin
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/tv_info"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/icon_maintenance" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:letterSpacing="0.09"
+        android:text="@string/we_are_under_maintenance"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansbold" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvMaintenanceMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/please_visit_us_later"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:appFont="@string/font_opensansemibold" />
+
+    <ImageView
+        android:layout_width="275.5dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/belivesg_logo" />
+
+</RelativeLayout>

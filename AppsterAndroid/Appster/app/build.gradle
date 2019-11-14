@@ -1,0 +1,644 @@
+import com.android.builder.core.DefaultManifestParser
+
+import java.util.function.BooleanSupplier
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+//        classpath "net.ltgt.gradle:gradle-errorprone-plugin:0.0.13"
+    }
+}
+/*
+plugins {
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin' version '0.8.1'
+}*/
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'io.fabric'
+apply from: '../build-config/gradle-quality.gradle'
+//apply plugin: 'net.ltgt.errorprone'
+
+kapt {
+    generateStubs = true
+    mapDiagnosticLocations = true
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    google()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('Production_KeyStore.jks')
+            storePassword "123456"
+            keyAlias "appsters"
+            keyPassword "123456"
+            v2SigningEnabled false
+        }
+        debug {
+            storeFile file("debug-keystore.jks")
+            storePassword "123456"
+            keyAlias "debug-keystore"
+            keyPassword "123456"
+            v2SigningEnabled false
+        }
+    }
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        manifestPlaceholders = [facebook_app_id: ""]
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        externalNativeBuild {
+            ndkBuild {
+                arguments "NDK_APPLICATION_MK:=src/main/jni/Application.mk"
+            }
+        }
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+
+        manifestPlaceholders = [
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: "90214027250"
+        ]
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    flavorDimensions "belive"
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+//            jniDebuggable false
+//            renderscriptDebuggable true
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [facebook_app_id: "1692857094271471"]
+
+            proguardFile 'proguard-rules.pro'
+            proguardFile 'proguard-androidannotations.pro'
+            proguardFile 'proguard-guava.pro'
+            proguardFile 'proguard-google-play-services.pro'
+            proguardFile 'proguard-google-analytics.pro'
+            proguardFile 'proguard-butterknife-7.pro'
+            proguardFile 'proguard-rx-java.pro'
+            proguardFile 'proguard-square-okhttp3.pro'
+            proguardFile 'proguard-square-retrofit2.pro'
+            proguardFile 'proguard-square-okio.pro'
+            proguardFile 'proguard-support-design.pro'
+            proguardFile 'proguard-support-v7-appcompat.pro'
+            proguardFile 'proguard-support-v7-cardview.pro'
+            proguardFile 'proguard-gson.pro'
+            proguardFile 'proguard-fabric-twitter-kit.pro'
+            proguardFile 'proguard-facebook.pro'
+            proguardFile 'proguard-facebook-stetho.pro'
+            proguardFile 'proguard-eventbus-3.pro'
+            proguardFile 'proguard-android-gif-drawable.pro'
+            proguardFile 'proguard-javacv.pro'
+            proguardFile 'proguard-smack.pro'
+            proguardFile 'proguard-wowza.pro'
+            proguardFile 'proguard-ksy.pro'
+//            proguardFile 'proguard-twiter4j.pro'
+//            proguardFile 'proguard-adjust.pro'
+            proguardFile 'proguard-evernote-job.pro'
+            proguardFile 'proguard-agora.pro'
+            proguardFile 'proguard-branchio.pro'
+            proguardFile 'proguard-onesignal.pro'
+            proguardFile 'proguard-glide.pro'
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            jniDebuggable true
+            proguardFile 'proguard-rules.pro'
+            proguardFile 'proguard-androidannotations.pro'
+            proguardFile 'proguard-guava.pro'
+            proguardFile 'proguard-google-play-services.pro'
+            proguardFile 'proguard-google-analytics.pro'
+            proguardFile 'proguard-butterknife-7.pro'
+            proguardFile 'proguard-rx-java.pro'
+            proguardFile 'proguard-square-okhttp3.pro'
+            proguardFile 'proguard-square-retrofit2.pro'
+            proguardFile 'proguard-square-okio.pro'
+            proguardFile 'proguard-support-design.pro'
+            proguardFile 'proguard-support-v7-appcompat.pro'
+            proguardFile 'proguard-support-v7-cardview.pro'
+            proguardFile 'proguard-gson.pro'
+            proguardFile 'proguard-fabric-twitter-kit.pro'
+            proguardFile 'proguard-facebook.pro'
+            proguardFile 'proguard-facebook-stetho.pro'
+            proguardFile 'proguard-eventbus-3.pro'
+            proguardFile 'proguard-android-gif-drawable.pro'
+            proguardFile 'proguard-javacv.pro'
+            proguardFile 'proguard-smack.pro'
+            proguardFile 'proguard-wowza.pro'
+            proguardFile 'proguard-ksy.pro'
+//            proguardFile 'proguard-twiter4j.pro'
+//            proguardFile 'proguard-adjust.pro'
+            proguardFile 'proguard-evernote-job.pro'
+            proguardFile 'proguard-agora.pro'
+            proguardFile 'proguard-branchio.pro'
+            proguardFile 'proguard-glide.pro'
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+    }
+    productFlavors {
+        def ENDPOINT = "API_ENDPOINT"
+        def ENDPOINTXMPP = "END_POINTXMPP"
+        def ENDPOINTLIVESTREAM = "END_POINTLIVESTREAM"
+        def ENDPOINTWOWZAHOSTIP = "WOWZA_HOST_IP"
+        def ENDPOINTWOWZAWEBHOSTIP = "WOWZA_WEB_HOST_IP"
+        def GOCODERSDK = "GOCODERSDK"
+        def AWS_S3_SERVER_LINK = "AWS_S3_SERVER_LINK"
+        def NAME_USER_DEFAULT_XMPP = "NAME_USER_DEFAULT_XMPP"
+        def PASS_WORD_USER_DEFAULT_XMPP = "PASS_WORD_USER_DEFAULT_XMPP"
+        def CHECK_NETWORK_UPLOAD_SPEED = "CHECK_NETWORK_UPLOAD_SPEED"
+
+        def ADJUST_APP_TOKEN = "ADJUST_APP_TOKEN"
+        def ADJUST_DEBUG = "ADJUST_DEBUG"
+        def PLAYTOKEN_APP_GUID = "PLAYTOKEN_APP_GUID"
+        def PLAYTOKEN_APP_DEBUG = "PLAYTOKEN_APP_DEBUG"
+        def TRIVIA_HOW_TO_PLAY = "TRIVIA_HOW_TO_PLAY"
+        def TRIVIA_HOW_TO_PLAY_VI = "TRIVIA_HOW_TO_PLAY_VI"
+        def TRIVIA_REVIVE_DESC = "TRIVIA_REVIVE_DESC"
+        def TRIVIA_REVIVE_DESC_VI = "TRIVIA_REVIVE_DESC_VI"
+        def APP_TYPE = "APP_TYPE"
+
+        stag {
+            applicationId "com.appster.staging"
+            flavorDimensions "belive"
+            buildConfigField "String", ENDPOINT, "\"https://stagingapi.belive.sg/\""
+            buildConfigField "String", ENDPOINTXMPP, "\"stagingxmpp.appsters.net\""
+            buildConfigField "String", ENDPOINTLIVESTREAM, "\"http://streaming.appsters.net/api/v1\""
+//            buildConfigField "String", ENDPOINT, "\"http://172.18.10.248:8090\""
+            buildConfigField "String", "AMPLITUDE", "\"b3c7ee75ac8390db1e2f16cf748fcbff\""
+            buildConfigField "String", "GCM_SENDER_ID", "\"446947229745\""
+            buildConfigField "String", "IAP_KEY64BIT", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo2NZAd+cGmqaw6+Q4LjGCnYA80zHt/CbRwvjnCrSy0xNGLTXmX6t3KMfNxwvtscg+kD1ERxj9IZIunWNHHPkfN6OjWNOrH/+20C8vRs/+Et1UCf2X64qWtKU27dGuyOis2NxJ9NncPyj8zcKvd6UM0FJQL0t60RxaAJEhsWiz+xjksijjhVQIALVIidy8vKlTeVHP5pFi2SuI8vMiIcBZzJeNtPU23CWP+wfeFfsmcmOkSmvKiskKx/GJax8JQCzKPf54J9S9lrcuqznHBat4dJc63dX/8AygoQqwkpnbLmgL3TW4skwndI2eraLKPpIAg48jgBBDB2WVcn9jjLlKQIDAQAB\""
+            buildConfigField "String", ENDPOINTWOWZAHOSTIP, "\"stgwowza.belive.sg\""
+            buildConfigField "String", ENDPOINTWOWZAWEBHOSTIP, "\"stgwowza.belive.sg:8080\""
+            buildConfigField "String", GOCODERSDK, "\"GSDK-4542-0000-CC04-E998-23EC\""
+            buildConfigField "String", AWS_S3_SERVER_LINK, "\"http://appsters-clients.s3-ap-southeast-1.amazonaws.com/\""
+            buildConfigField "String", CHECK_NETWORK_UPLOAD_SPEED, "\"http://stgwowza.belive.sg:8080/api/monitor/Appsters_recording/\""
+            buildConfigField "String", TRIVIA_HOW_TO_PLAY, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/how-to-play/howtoplay.html\""
+            buildConfigField "String", TRIVIA_REVIVE_DESC, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/revive-description/revivedescription.html\""
+            buildConfigField "String", TRIVIA_REVIVE_DESC_VI, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/revive-description/vn_revivedescription.html\""
+            buildConfigField "String", TRIVIA_HOW_TO_PLAY_VI, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/how-to-play/vn_howtoplay.html\""
+            minSdkVersion rootProject.ext.android.minSdkVersion
+            targetSdkVersion rootProject.ext.android.targetSdkVersion
+            resValue "string", "app_name", "StgBeLive"
+            resValue "string", "app_id", "1949087085315136"
+            resValue "string", "agora_app_id", "0d1ca1df6ee04bca9fac4f27a4b9e264"
+            resValue "string", "authority", "com.facebook.app.FacebookContentProvider1949087085315136"
+            resValue "string", "appsterschema", "appstersschemastag"
+            buildConfigField "String", NAME_USER_DEFAULT_XMPP, "\"guest\""
+            buildConfigField "String", PASS_WORD_USER_DEFAULT_XMPP, "\"guest@123\""
+
+            resValue "string", "branchIoDebugMode", "true"
+            resValue "bool", "branchIoTestMode", "true"
+            buildConfigField "boolean", ADJUST_DEBUG, "true"
+            buildConfigField "String", ADJUST_APP_TOKEN, "\"vb8qkyw1y0hs\""
+            buildConfigField "String", PLAYTOKEN_APP_GUID, "\"c8cd1d67-53cc-4067-b737-0e8ecd08a251\""
+            buildConfigField "boolean", PLAYTOKEN_APP_DEBUG, "true"
+            buildConfigField "String", APP_TYPE, "\"\""
+
+            manifestPlaceholders = [onesignal_app_id: "9e3c56e7-8813-415f-91fb-04288c968466"]
+        }
+
+        dev {
+            applicationId "com.appster.dev"
+            flavorDimensions "belive"
+            buildConfigField "String", ENDPOINT, "\"https://devapi.belive.sg/\""
+            buildConfigField "String", ENDPOINTXMPP, "\"stagingxmpp.appsters.net\""
+            buildConfigField "String", ENDPOINTLIVESTREAM, "\"http://streaming.appsters.net/api/v1\""
+//            buildConfigField "String", ENDPOINT, "\"http://172.18.10.248:8090\""
+            buildConfigField "String", "AMPLITUDE", "\"b3c7ee75ac8390db1e2f16cf748fcbff\""
+            buildConfigField "String", "GCM_SENDER_ID", "\"446947229745\""
+            buildConfigField "String", "IAP_KEY64BIT", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo2NZAd+cGmqaw6+Q4LjGCnYA80zHt/CbRwvjnCrSy0xNGLTXmX6t3KMfNxwvtscg+kD1ERxj9IZIunWNHHPkfN6OjWNOrH/+20C8vRs/+Et1UCf2X64qWtKU27dGuyOis2NxJ9NncPyj8zcKvd6UM0FJQL0t60RxaAJEhsWiz+xjksijjhVQIALVIidy8vKlTeVHP5pFi2SuI8vMiIcBZzJeNtPU23CWP+wfeFfsmcmOkSmvKiskKx/GJax8JQCzKPf54J9S9lrcuqznHBat4dJc63dX/8AygoQqwkpnbLmgL3TW4skwndI2eraLKPpIAg48jgBBDB2WVcn9jjLlKQIDAQAB\""
+            buildConfigField "String", ENDPOINTWOWZAHOSTIP, "\"stgwowza.belive.sg\""
+            buildConfigField "String", ENDPOINTWOWZAWEBHOSTIP, "\"stgwowza.belive.sg:8080\""
+            buildConfigField "String", GOCODERSDK, "\"GSDK-F942-0003-CED6-BCC3-C024\""
+            buildConfigField "String", AWS_S3_SERVER_LINK, "\"http://appsters-clients.s3-ap-southeast-1.amazonaws.com/\""
+            buildConfigField "String", CHECK_NETWORK_UPLOAD_SPEED, "\"http://stgwowza.belive.sg:8080/api/monitor/Appsters_recording/\""
+            buildConfigField "String", TRIVIA_HOW_TO_PLAY, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/how-to-play/howtoplay.html\""
+            buildConfigField "String", TRIVIA_REVIVE_DESC, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/revive-description/revivedescription.html\""
+            buildConfigField "String", TRIVIA_REVIVE_DESC_VI, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/revive-description/vn_revivedescription.html\""
+            buildConfigField "String", TRIVIA_HOW_TO_PLAY_VI, "\"https://s3-ap-southeast-1.amazonaws.com/appsters-clients/trivia/how-to-play/vn_howtoplay.html\""
+            minSdkVersion rootProject.ext.android.minSdkVersion
+            targetSdkVersion rootProject.ext.android.targetSdkVersion
+            resValue "string", "app_name", "DEV_BeLive"
+            resValue "string", "app_id", "1949087085315136"
+            resValue "string", "agora_app_id", "0d1ca1df6ee04bca9fac4f27a4b9e264"
+            resValue "string", "authority", "com.facebook.app.FacebookContentProvider1949087085315136"
+            resValue "string", "appsterschema", "appstersschemastag"
+            buildConfigField "String", NAME_USER_DEFAULT_XMPP, "\"guest\""
+            buildConfigField "String", PASS_WORD_USER_DEFAULT_XMPP, "\"guest@123\""
+
+            resValue "string", "branchIoDebugMode", "true"
+            resValue "bool", "branchIoTestMode", "true"
+            buildConfigField "boolean", ADJUST_DEBUG, "true"
+            buildConfigField "String", ADJUST_APP_TOKEN, "\"vb8qkyw1y0hs\""
+            buildConfigField "String", PLAYTOKEN_APP_GUID, "\"c8cd1d67-53cc-4067-b737-0e8ecd08a251\""
+            buildConfigField "boolean", PLAYTOKEN_APP_DEBUG, "true"
+            buildConfigField "String", APP_TYPE, "\"\""
+
+            manifestPlaceholders = [onesignal_app_id: "9e3c56e7-8813-415f-91fb-04288c968466"]
+        }
+        prod {
+            applicationId "com.appster"
+            flavorDimensions "belive"
+            buildConfigField "String", ENDPOINT, "\"https://api.belive.sg/v2/\""
+//            buildConfigField "String", ENDPOINT, "\"https://stagingapi.belive.sg/\""
+            buildConfigField "String", ENDPOINTXMPP, "\"52.220.41.116\""
+            buildConfigField "String", ENDPOINTLIVESTREAM, "\"http://prodstream.appsters.net/api/v1\""
+            buildConfigField "String", "AMPLITUDE", "\"fdfb6f9459bd4158d83c233db524aabf\""
+            buildConfigField "String", "GCM_SENDER_ID", "\"446947229745\""
+            buildConfigField "String", "IAP_KEY64BIT", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo2NZAd+cGmqaw6+Q4LjGCnYA80zHt/CbRwvjnCrSy0xNGLTXmX6t3KMfNxwvtscg+kD1ERxj9IZIunWNHHPkfN6OjWNOrH/+20C8vRs/+Et1UCf2X64qWtKU27dGuyOis2NxJ9NncPyj8zcKvd6UM0FJQL0t60RxaAJEhsWiz+xjksijjhVQIALVIidy8vKlTeVHP5pFi2SuI8vMiIcBZzJeNtPU23CWP+wfeFfsmcmOkSmvKiskKx/GJax8JQCzKPf54J9S9lrcuqznHBat4dJc63dX/8AygoQqwkpnbLmgL3TW4skwndI2eraLKPpIAg48jgBBDB2WVcn9jjLlKQIDAQAB\""
+            buildConfigField "String", ENDPOINTWOWZAHOSTIP, "\"wowza.belive.sg\""
+            buildConfigField "String", ENDPOINTWOWZAWEBHOSTIP, "\"wowza.belive.sg:8080\""
+            buildConfigField "String", GOCODERSDK, "\"GSDK-4542-0000-CC04-E998-23EC\""
+            buildConfigField "String", AWS_S3_SERVER_LINK, "\"http://production-appsters-clients.s3-ap-southeast-1.amazonaws.com/\""
+            buildConfigField "String", CHECK_NETWORK_UPLOAD_SPEED, "\"http://wowza.belive.sg:8080/api/monitor/Appsters_recording/\""
+            buildConfigField "String", TRIVIA_HOW_TO_PLAY, "\"https://s3-ap-southeast-1.amazonaws.com/production-appsters-clients/trivia/how-to-play/howtoplay.html\""
+            buildConfigField "String", TRIVIA_REVIVE_DESC, "\"https://s3-ap-southeast-1.amazonaws.com/production-appsters-clients/trivia/revive-description/revivedescription.html\""
+            buildConfigField "String", TRIVIA_REVIVE_DESC_VI, "\"https://s3-ap-southeast-1.amazonaws.com/production-appsters-clients/trivia/revive-description/vn_revivedescription.html\""
+            buildConfigField "String", TRIVIA_HOW_TO_PLAY_VI, "\"https://s3-ap-southeast-1.amazonaws.com/production-appsters-clients/trivia/how-to-play/vn_howtoplay.html\""
+            minSdkVersion rootProject.ext.android.minSdkVersion
+            targetSdkVersion rootProject.ext.android.targetSdkVersion
+            resValue "string", "app_name", "BeLive"
+            resValue "string", "app_id", "1692857094271471"
+            resValue "string", "agora_app_id", "fd1a3adcc19a4a19948920e3cb0f7bac"
+            resValue "string", "authority", "com.facebook.app.FacebookContentProvider1692857094271471"
+            resValue "string", "appsterschema", "appstersschema"
+            buildConfigField "String", NAME_USER_DEFAULT_XMPP, "\"guest\""
+            buildConfigField "String", PASS_WORD_USER_DEFAULT_XMPP, "\"guest@123\""
+
+            resValue "string", "branchIoDebugMode", "false"
+            resValue "bool", "branchIoTestMode", "false"
+            buildConfigField "boolean", ADJUST_DEBUG, "false"
+            buildConfigField "String", ADJUST_APP_TOKEN, "\"vb8qkyw1y0hs\""
+            buildConfigField "String", PLAYTOKEN_APP_GUID, "\"496ce49d-1414-4635-8995-2b76417d4679\""
+            buildConfigField "boolean", PLAYTOKEN_APP_DEBUG, "false"
+            buildConfigField "String", APP_TYPE, "\"\""
+
+            manifestPlaceholders = [onesignal_app_id: "f8d020d5-d0d9-4638-98f9-15d61c58bceb"]
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def manifestParser = new DefaultManifestParser(android.sourceSets.main.manifest.srcFile, new BooleanSupplier() {
+                @Override
+                boolean getAsBoolean() {
+                    return true
+                }
+            }, null)
+            outputFileName = new File(outputFileName.replace(".apk", "-" + manifestParser.getVersionName() + ".apk"))
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+//            jniLibs.srcDir 'src/main/libs'
+            jni.srcDirs = [] //disable automatic ndk-build call
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        pickFirst 'lib/armeabi-v7a/libHDACEngine.so'
+        pickFirst 'lib/armeabi-v7a/libagora-rtc-sdk-jni.so'
+        pickFirst 'lib/armeabi-v7a/libagora-sig-sdk-jni.so'
+        pickFirst 'lib/armeabi-v7a/libagora-crypto.so'
+        pickFirst 'lib/armeabi-v7a/libksyapm.so'
+        pickFirst 'lib/armeabi-v7a/libksylive.so'
+        pickFirst 'lib/armeabi-v7a/libvideoprp.so'
+        pickFirst 'lib/arm64-v8a/libHDACEngine.so'
+        pickFirst 'lib/arm64-v8a/libagora-rtc-sdk-jni.so'
+        pickFirst 'lib/arm64-v8a/libagora-sig-sdk-jni.so'
+        pickFirst 'lib/arm64-v8a/libagora-crypto.so'
+        pickFirst 'lib/arm64-v8a/libksyapm.so'
+        pickFirst 'lib/arm64-v8a/libksylive.so'
+        pickFirst 'lib/arm64-v8a/libvideoprp.so'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+//    useLibrary 'org.apache.http.legacy' // needed for apache library in android build tool 23
+
+    configurations {
+
+        all*.exclude group: 'org.bytedeco', module: 'javacpp-presets'
+        all*.exclude group: 'xpp3', module: 'xpp3'
+    }
+// Optimize the size of APK when using alot Native lib
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'armeabi-v7a'
+//            universalApk false
+//        }
+//    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/layouts',
+                           'src/main/res/layouts/register',
+                           'src/main/res/layouts/home',
+                           'src/main/res/layouts/common',
+                           'src/main/res/layouts/stream',
+                           'src/main/res/layouts/viewer_stream',
+                           'src/main/res/layouts/private_chat',
+                           'src/main/res/layouts/liked_screen',
+                           'src/main/res/layouts/blocked_screen',
+                           'src/main/res/layouts/cashout',
+                           'src/main/res/layouts/luckywheel',
+                           'src/main/res/layouts/banner_detail',
+                           'src/main/res/layouts/ksy_media_editor_kit',
+                           'src/main/res/layouts/onboarding',
+                           'src/main/res/layouts/friend_suggestion',
+                           'src/main/res/layouts/transaction_history',
+                           'src/main/res/layouts/login',
+                           'src/main/res/layouts/home',
+                           'src/main/res/layouts/fb_friend_suggestion',
+                           'src/main/res/layouts/contacts',
+                           'src/main/res/layouts/social_friend_invite']
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+}
+
+dependencies {
+    def appDependencies = rootProject.ext.appDependencies
+    def testDependencies = rootProject.ext.testDependencies
+    testImplementation(testDependencies.junit)
+    testImplementation(testDependencies.mockito)
+    testImplementation(testDependencies.assertj)
+    androidTestImplementation(testDependencies.supportAnnotations)
+    androidTestImplementation(testDependencies.testRunner)
+    implementation(
+            appDependencies.design,
+            appDependencies.supportv4,
+            appDependencies.appcompatv7,
+            appDependencies.okhttp,
+            appDependencies.multidex,
+            appDependencies.eventbus,
+            appDependencies.smackTCP,
+            appDependencies.smackAndroidExperimental,
+            appDependencies.smackSASLProvider,
+//            appDependencies.picasso,
+
+            appDependencies.fastVideoView,
+            appDependencies.rxJava,
+
+            appDependencies.timber,
+            appDependencies.stetho,
+            appDependencies.textLayoutBuilder,
+//            appDependencies.adjust,
+            appDependencies.shortvideosdk,
+            appDependencies.lottie
+
+
+    )
+//    kapt appDependencies.butterknifeComplier
+    annotationProcessor appDependencies.butterknife
+    implementation appDependencies.butterknife
+
+    //implementation(appDependencies.glide)
+    implementation(appDependencies.glide + '@aar') {
+        transitive = true
+    }
+    kapt appDependencies.glideAnnotationProcessor
+    implementation(appDependencies.glideOkHttp3Integration) {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+        exclude group: 'com.github.bumptech.glide', module: 'glide'
+    }
+    implementation files('libs/agora-rtc-sdk.jar')
+    implementation files('libs/agora-sig-sdk.jar')
+    implementation files('libs/videoprp.jar')
+    implementation files('libs/libksysv.jar')
+
+    //    implementation(appDependencies.design) {
+
+    //        exclude group: 'com.android.support', module: 'support-v4'
+
+    //        exclude group: 'com.android.support', module: 'support-compat'
+
+    //        exclude group: 'com.android.support', module: 'support-core-ui'
+
+    //    }
+    implementation(appDependencies.cardview)
+
+    implementation(appDependencies.retrofit) {
+        // exclude Retrofit’s OkHttp peer-dependency module and define own module import
+        exclude module: 'okhttp'
+        exclude module: 'rxjava'
+    }
+    implementation(appDependencies.retrofitGson) {
+        exclude module: 'retrofit'
+    }
+    implementation(appDependencies.retrofitRxAdapter) {
+        exclude module: 'rxjava'
+        exclude module: 'retrofit'
+    }
+    implementation(appDependencies.loggingInterceptor) {
+        exclude module: 'okhttp'
+    }
+    implementation(appDependencies.okhttpUrlConnection) {
+        exclude module: 'okhttp'
+    }
+    implementation(appDependencies.playServicesGCM) {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    implementation(appDependencies.playServicesAuth) {
+        exclude module: 'play-services-basement'
+        exclude module: 'play-services-base'
+    }
+    implementation(appDependencies.playServicesAnalytics)
+    implementation(appDependencies.firebase)
+    implementation project(':libraries:librarypulltorefresh')
+    implementation project(':libraries:libArcMenuLayout')
+    implementation(project(':libraries:ucrop')) {
+        exclude group: 'com.android.support'
+        exclude module: 'okhttp'
+    }
+
+    //    implementation files('libs/isoparser-1.0.7.1.jar')
+
+    //    implementation files('libs/aspectjrt-1.7.3.jar')
+    implementation(project(':libraries:photoview')) {
+        exclude group: 'com.android.support'
+    }
+    api(appDependencies.facebookSDK) {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'cardview-v7'
+        exclude group: 'com.android.support', module: 'customtabs'
+    }
+    implementation(appDependencies.crashlytics) {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+        transitive = true
+    }
+
+    // Optional for XMPPTCPConnection
+    implementation(appDependencies.smackAndroidExtensions) {
+        exclude group: 'org.igniterealtime.smack', module: 'smack-core'
+        exclude group: 'de.measite.minidns', module: 'minidns-hla'
+    }
+    implementation 'de.measite.minidns:minidns-hla:0.2.2'
+    implementation(appDependencies.twitterSDK) {
+        transitive = true
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'io.fabric.sdk.android'
+        exclude module: 'gson'
+        exclude module: 'converter-gson'
+        exclude module: 'okhttp'
+        exclude module: 'retrofit'
+    }
+    implementation(appDependencies.amplitudeSDK) {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+
+    //rxjava
+    implementation appDependencies.rxAndroid
+    implementation appDependencies.rxBinding
+    implementation appDependencies.rxPermissions
+    implementation(project(':libraries:video-player-manager')) {
+        exclude group: 'com.android.support'
+    }
+    implementation(appDependencies.customtabs) {
+        exclude group: 'com.android.support'
+    }
+    implementation(appDependencies.androidjob) {
+        exclude group: 'com.android.support'
+    }
+    implementation(appDependencies.stethoOkhttp) {
+        exclude group: 'com.squareup.okhttp3'
+        exclude group: 'com.facebook.stetho'
+    }
+
+    //    implementation(appDependencies.shortvideojava) {
+
+    //        exclude group: 'com.android.support'
+
+    //    }
+
+    //add leakcanary
+    debugImplementation(
+            appDependencies.leakCanary,
+            appDependencies.rxLint
+    )
+    releaseImplementation(appDependencies.leakCanaryNoOp)
+    testImplementation(testDependencies.leakCanaryNoOp)
+    implementation files('libs/GoogleConversionTrackingSdk-2.2.4.jar')
+    implementation(appDependencies.branchio) {
+        exclude module: 'answers.shim'
+        exclude module: 'support-annotations'
+    }
+
+    // GToken
+
+    //    implementation(appDependencies.playground_belive) {
+
+    //        exclude group: 'com.android.support', module: 'appcompat-v7'
+
+    //        exclude group: 'com.android.support', module: 'support-v4'
+
+    //        exclude group: 'com.google.android.gms'
+
+    //        exclude group: 'com.google.firebase'
+
+    //        exclude group: 'io.reactivex'
+
+    //        exclude group: 'com.squareup.retrofit2'
+
+    //        exclude group: 'com.squareup.okhttp3'
+
+    //
+
+    //    }
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    debugImplementation(appDependencies.debugdb)
+    implementation(project(':libraries:faceunity')) {
+        exclude group: 'com.android.support'
+    }
+    implementation(project(':libraries:intro-core')) {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.onesignal:OneSignal:3.10.8'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    //Dagger
+    implementation(
+            appDependencies.dagger,
+            appDependencies.daggerAndroid,
+            appDependencies.daggerAndroidSupport
+    )
+    kapt appDependencies.daggerCompiler
+    kapt appDependencies.daggerAndroidProcessor
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+    implementation 'net.danlew:android.joda:2.9.9.4'
+
+    implementation(appDependencies.room)
+    kapt appDependencies.roomProcessor
+
+}
+
+//checkstyle {
+//    toolVersion = "6.7"
+//}
+//preBuild.dependsOn('checkstyle')
+apply plugin: 'com.google.gms.google-services'
+
+

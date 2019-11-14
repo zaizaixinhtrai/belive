@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/background_dim_stream">
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/clickable_ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_text_done"
+        android:textColor="@color/white"/>
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textSize="21sp"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:maxLength="@integer/stream_title_max_length"
+        android:background="@color/transparent"
+        android:textColor="@color/white"
+        android:imeOptions="actionDone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:appFont="@string/font_opensansbold"
+        tools:text="Title here"
+        android:editable="true"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/ll_color_palette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:gravity="center">
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>

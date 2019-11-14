@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/start_live_view"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:background="#64000000">
+
+    <LinearLayout
+        android:id="@+id/ll_title_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="120dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:weightSum="1">
+
+        <com.appster.customview.BubbleSpeechTutorialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:isStandAloneView="true"
+            android:text="@string/prelive_cover_tip"
+            android:gravity="center"/>
+
+        <com.appster.customview.SquaredFrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:animateLayoutChanges="true">
+
+            <com.appster.layout.SquareImageView
+                android:id="@+id/ivStreamCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/white_border_view_radius_5"/>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvUploadCoverPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_prelive_cover_gradient"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/upload_cover_photo"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:appFont="@string/font_opensansregular"
+                />
+        </com.appster.customview.SquaredFrameLayout>
+
+        <com.appster.customview.CustomFontEditText
+            android:id="@+id/edt_stream_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/hint_add_title"
+            android:imeOptions="actionDone"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"
+            android:shadowColor="#aa000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            app:appFont="@string/font_opensanssemibold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/bg_gradient_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/txt_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/live_stream_category"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:appFont="@string/font_opensanssemibold"/>
+
+            <ImageView
+                android:id="@+id/img_category_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_prelive_category_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkbtn_external_cam"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="External Camera for Admin"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkbtn_trivia"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Trivia Show"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_and_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="87dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/bottom_bar"
+            layout="@layout/belive_share_container"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/startStreamBtn"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5.0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_red_button"
+            android:letterSpacing="0.15"
+            android:text="@string/live_trim_go_live"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:appFont="@string/font_opensansbold"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvPreliveNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:shadowColor="#aa000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/prelive_notice"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensanssemibold"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fm_blure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone"/>
+
+</FrameLayout>

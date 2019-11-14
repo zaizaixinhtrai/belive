@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/lo_prize"
+        android:layout_width="@dimen/prize_header_image_height"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingTop="7dp">
+
+        <com.appster.customview.RoundRectCornerImageView
+            android:id="@+id/iv_prize_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prize_header_image_height"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/prize_list_header"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_image_default"
+            app:radius="7dp" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_prize_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/prize_list_textview"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingTop="18dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:appFont="@string/font_opensansbold"
+            tools:text="Tickets to London" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tv_prize_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/prize_list_textview"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:appFont="@string/font_opensanslight"
+            tools:text="Tickets to London" />
+
+    </LinearLayout>
+</LinearLayout>

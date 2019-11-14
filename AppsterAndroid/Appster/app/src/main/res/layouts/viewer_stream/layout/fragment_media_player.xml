@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d0d"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:keepScreenOn="true"
+    tools:background="@color/white"
+    tools:context="com.appster.features.stream.viewer.MediaPlayerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:foregroundGravity="clip_horizontal|clip_vertical">
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/player_surface_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:foregroundGravity="clip_horizontal|clip_vertical"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:ignore="true">-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <FrameLayout
+            android:id="@+id/subCameraContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/subCameraPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/playerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ksyun.media.player.KSYTextureView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <me.yifeiyuan.library.PeriscopeLayout
+            android:id="@+id/periscope"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            android:minHeight="50dp" />
+
+        <com.appster.features.stream.CameraHintView
+            android:id="@+id/camera_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/user_hot_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+        <include
+            android:id="@+id/llStreamingToppanel"
+            layout="@layout/viewer_live_top_panel" />
+
+
+        <com.appster.customview.StickyPadFrameLayout
+            android:id="@+id/fl_sticky_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_marginBottom="200dp"
+            android:paddingStart="@dimen/sticky_layout_margin_start"
+            android:paddingEnd="@dimen/sticky_layout_margin_end" />
+
+        <include
+            android:id="@+id/lo_point"
+            layout="@layout/viewer_points_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel" />
+
+        <include
+            layout="@layout/trivia_viewer_extra_actions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lo_point" />
+
+        <include
+            layout="@layout/live_extra_actions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lo_point"
+            android:layout_marginBottom="200dp" />
+
+        <ViewStub
+            android:id="@+id/vsLuckywheel"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout="@layout/stream_lucky_wheel" />
+
+        <!--</LinearLayout>-->
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvMaintenanceMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/maintenance_message"
+            android:textColor="#f05c56"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:appFont="@string/font_opensansbold"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_stream_upload_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:text="network speed"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/vIncomingCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-10dp"
+            android:minWidth="150dp"
+            android:minHeight="46dp" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibCloseStream"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/live_stream_horizontal_listview"
+        android:layout_gravity="end"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:src="@drawable/icon_live_exit" />
+
+    <ViewStub
+        android:id="@+id/vsSubPlayer"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_gravity="top|start"
+        android:layout="@layout/sub_player_layout" />
+
+    <ViewStub
+        android:id="@+id/vsSubScreen"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_gravity="top|start"
+        android:layout="@layout/sub_camera_layout" />
+
+    <ViewStub
+        android:id="@+id/vsHostSubScreen"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_gravity="top|start"
+        android:layout="@layout/vid_host_cam_layout" />
+    <!--<include-->
+    <!--layout="@layout/sub_player_layout"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="160dp"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_marginBottom="200dp"-->
+    <!--/>-->
+    <ViewStub
+        android:id="@+id/vsTriviaWinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/trivia_winner_view" />
+
+    <LinearLayout
+        android:id="@+id/llBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.appster.customview.GiftComboGroupView
+            android:id="@+id/ll_gift_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="26dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentsList"
+            style="@style/stream_chat_group_style" />
+
+        <include
+            android:id="@+id/viewer_live_bottom_panel"
+            layout="@layout/viewer_live_bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_pause_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_pause_gradient"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tv_pause_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="@string/stream_pause"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:appFont="@string/font_opensansemibold" />
+
+    <com.appster.customview.trivia.TriviaView
+        android:id="@+id/triviaView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="invisible" />
+
+    <ViewStub
+        android:id="@+id/vsEndStream"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/video_view_stream_ended_container"
+        android:layout="@layout/fragment_media_player_ended_layout" />
+
+    <TextView
+        android:id="@+id/tvNetworkError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/boder_text_background_80"
+        android:text="@string/network_error"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/view_time_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        tools:ignore="true" />
+
+    <!--<com.appster.customview.ExpensiveGift-->
+    <!--android:id="@+id/rl_expensive_gift"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="bottom"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="#64000000"-->
+    <!--android:paddingBottom="56dp"-->
+    <!--android:visibility="invisible"/>-->
+</FrameLayout>

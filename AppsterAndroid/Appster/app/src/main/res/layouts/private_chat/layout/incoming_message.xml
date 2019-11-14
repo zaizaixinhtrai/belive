@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/holder_chat_item">
+
+    <LinearLayout
+        android:id="@+id/lo_sender_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="10dp">
+
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/ivSenderUserImage"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:contentDescription="@string/content_desc"
+            android:padding="2.5dp"
+            tools:src="@drawable/user_image_default" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.appster.customview.autolinktextview.AutoLinkTextView
+                android:id="@+id/tvSenderMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/color_5c5c5c"
+                android:textDirection="locale"
+                android:textSize="13sp"
+                app:appFont="@string/font_opensansregular"
+                tools:text="Far far away, behind the world mountains, far from countries Vokalia and Consonantia" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSenderImageMessage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/chat_left_bg"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivSenderVideoIndicator"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/playvideo"
+                    android:contentDescription="@string/content_desc"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvSenderMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/color_dfdfdf"
+                android:textSize="13sp"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="10:30AM" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</merge>

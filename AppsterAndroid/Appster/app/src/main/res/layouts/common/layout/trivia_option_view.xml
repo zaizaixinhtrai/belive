@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/pgView"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:max="100"
+        android:background="@drawable/trivia_option_selector"
+        android:progressDrawable="@drawable/trivia_state_normal"/>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvOptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:paddingEnd="27dp"
+        android:paddingStart="27dp"
+        app:appFont="@string/font_questrialregular"
+        android:textColor="@color/color_58585b"
+        android:textSize="21sp"
+        tools:text="200 million"/>
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvChosenNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/color_9b9b9b"
+        app:appFont="@string/font_HelveticaNeueRegular"
+        android:textSize="14sp"
+        tools:text="160"/>
+</FrameLayout>

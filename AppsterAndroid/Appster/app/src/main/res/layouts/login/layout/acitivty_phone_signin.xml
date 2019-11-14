@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              tools:context=".features.login.phoneLogin.BasePhoneSignInActivity">
+
+    <com.appster.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/phone_login_message_has_account"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@color/new_text_grey"
+        app:appFont="@string/font_helveticaneuelight"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/signin_signup_content_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="5dp"
+            app:appFont="@string/font_helveticaneuebold"
+            android:textSize="14sp"
+            android:textColor="@color/color_888888"
+            tools:text="SG +65"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_arrow_down"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1.5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            app:appFont="@string/font_helveticaneuelight"
+            android:textSize="14sp"
+            android:textColor="@color/color_888888"
+            android:text="|"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/edt_phone_number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:minWidth="180dp"
+            android:textColor="@color/color_888888"
+            android:textSize="18sp"
+            app:appFont="@string/font_helveticaneuelight"
+            android:textColorHint="@color/color_d8d8d8"
+            android:hint="@string/phone_number_hint"
+            android:inputType="phone"
+            tools:text="098789898898"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/signin_signup_content_width"
+        android:layout_height="1px"
+        android:background="@color/color_d8d8d8" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <com.appster.customview.CustomFontEditText
+            android:id="@+id/edt_password"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="45dp"
+            android:textColor="@color/color_333333"
+            android:textSize="18sp"
+            app:appFont="@string/font_helveticaneuelight"
+            android:maxLength="@integer/max_password_length"
+            android:textColorHint="@color/color_d8d8d8"
+            android:hint="@string/password_hint"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:drawablePadding="30dp"
+            app:edt_drawable_width="15dp"
+            tools:drawableEnd="@drawable/ic_wrong"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_show_hide_password"
+            style="@style/clickable_ripple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/selector_show_hide_password"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/signin_signup_content_width"
+        android:layout_height="1px"
+        android:background="@color/user_name_text_color" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/phone_signin_incorrect_password"
+        app:appFont="@string/font_helveticaneuelight"
+        android:textSize="10sp"
+        android:textColor="@color/user_name_text_color"
+        android:visibility="invisible"
+        tools:visibility="visible"/>
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btn_signin"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.BeLive"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/selector_red_button_radius_20"
+        android:letterSpacing="0.09"
+        android:text="@string/phone_signin"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:enabled="false"/>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/clickable_ripple"
+        android:layout_marginTop="30dp"
+        android:text="@string/forgot_password"
+        android:textSize="13sp"
+        android:textColor="@color/forgot_password"
+        app:appFont="@string/font_helveticaneuebold"/>
+
+</LinearLayout>

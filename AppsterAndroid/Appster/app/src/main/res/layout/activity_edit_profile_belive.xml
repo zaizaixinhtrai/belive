@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/themedKeyboardAvailableScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_toolbar" />
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:isScrollContainer="false">-->
+
+    <LinearLayout
+        android:id="@+id/ll_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            style="@style/edit_profile_item_group"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <com.appster.customview.CustomFontTextView
+                style="@style/edit_profile__item_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/edit_pro_avatar"
+                app:appFont="@string/font_opensanssemibold" />
+
+            <com.appster.customview.CircleImageView
+                android:id="@+id/upload_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/main_menu_btnshape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_image_default" />
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/edit_profile_item_group"
+            android:weightSum="3">
+
+            <com.appster.customview.CustomFontTextView
+                style="@style/edit_profile__item_title"
+                android:layout_gravity="start|top"
+                android:layout_weight="1"
+                android:text="@string/edit_pro_display_name"
+                app:appFont="@string/font_opensanssemibold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="12dp"
+                android:paddingTop="0dp">
+
+                <com.appster.customview.CustomFontEditText
+                    android:id="@+id/display_name"
+                    style="@style/edit_profile_editext"
+                    android:hint="@string/edit_pro_display_name"
+                    android:maxLength="16"
+                    app:appFont="@string/font_opensanssemibold" />
+
+                <View style="@style/edit_profile_divider_editext" />
+
+                <TextView
+                    android:id="@+id/txt_display_name_letter_count"
+                    style="@style/edit_profile_text_count"
+                    android:text="0/16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_profile_item_group"
+            android:weightSum="3">
+
+            <com.appster.customview.CustomFontTextView
+                style="@style/edit_profile__item_title"
+                android:layout_gravity="start|top"
+                android:layout_weight="1"
+                android:text="@string/edit_pro_id_name"
+                app:appFont="@string/font_opensanssemibold" />
+
+            <com.appster.customview.CustomFontTextView
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end"
+                android:text="\@"
+                android:textColor="#bbbbbb"
+                android:textSize="17sp"
+                app:appFont="@string/font_opensanssemibold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="3dp">
+
+                <com.appster.customview.CustomFontEditText
+                    android:id="@+id/user_name_et"
+                    style="@style/edit_profile_editext"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789"
+                    android:hint="@string/user_name"
+                    android:maxLength="16"
+                    android:nextFocusDown="@+id/display_name"
+                    android:textAllCaps="false"
+                    app:appFont="@string/font_opensanssemibold" />
+
+                <View style="@style/edit_profile_divider_editext" />
+
+                <TextView
+                    android:id="@+id/txt_id_name_letter_count"
+                    style="@style/edit_profile_text_count"
+                    android:text="0/16" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_profile_item_group"
+            android:layout_marginTop="0dp"
+            android:focusable="false"
+            android:paddingTop="14dp"
+            android:weightSum="3">
+
+            <com.appster.customview.CustomFontTextView
+                style="@style/edit_profile__item_title"
+                android:layout_gravity="start|top"
+                android:layout_weight="1"
+                android:text="@string/edit_pro_gender"
+                app:appFont="@string/font_opensanssemibold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="0dp"
+                android:paddingStart="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_gender_male"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_gender_select_states"
+                        android:duplicateParentState="true"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_gender_male" />
+
+                    <com.appster.customview.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:text="@string/edit_pro_gender_male"
+                        android:textColor="@color/text_color_gender_states"
+                        android:textSize="12sp"
+                        app:appFont="@string/font_opensanssemibold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_gender_female"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_gender_select_states"
+                        android:duplicateParentState="true"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_gender_female" />
+
+                    <com.appster.customview.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:text="@string/edit_pro_gender_female"
+                        android:textColor="@color/text_color_gender_states"
+                        android:textSize="12sp"
+                        app:appFont="@string/font_opensanssemibold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_profile_item_group"
+            android:layout_marginTop="0dp"
+            android:paddingTop="24dp"
+            android:weightSum="3">
+
+            <com.appster.customview.CustomFontTextView
+                style="@style/edit_profile__item_title"
+                android:layout_gravity="start|top"
+                android:layout_weight="1"
+                android:text="@string/edit_pro_biography"
+                app:appFont="@string/font_opensanssemibold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="12dp">
+
+                <com.appster.customview.CustomFontEditText
+                    android:id="@+id/edt_status"
+                    style="@style/edit_profile_editext"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_pro_quote_hind"
+                    android:maxLength="80"
+                    app:appFont="@string/font_opensanssemibold" />
+
+                <View style="@style/edit_profile_divider_editext" />
+
+                <TextView
+                    android:id="@+id/txt_status_letter_count"
+                    style="@style/edit_profile_text_count"
+                    android:text="0/80" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_profile_item_group"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="0dp"
+            android:weightSum="3">
+
+            <com.appster.customview.CustomFontTextView
+                style="@style/edit_profile__item_title"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/edit_pro_birthday"
+                app:appFont="@string/font_opensanssemibold" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="12dp">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/edit_dob"
+                    style="@style/edit_profile_editext"
+                    android:hint="@string/edit_pro_dbo"
+                    android:padding="4dp"
+                    app:appFont="@string/font_opensanssemibold" />
+
+                <View
+                    style="@style/edit_profile_divider_editext"
+                    android:layout_marginTop="0dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+</LinearLayout>

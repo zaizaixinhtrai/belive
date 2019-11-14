@@ -1,0 +1,21 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="120">
+
+    <item android:state_pressed="true">
+
+        <shape>
+
+            <solid android:color="#d9d9d9" />
+
+        </shape>
+    </item>
+
+    <item>
+
+        <shape>
+
+            <corners android:radius="7dp" />
+            <solid android:color="#eee" />
+
+        </shape>
+    </item>
+</selector>

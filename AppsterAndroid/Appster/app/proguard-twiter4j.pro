@@ -1,0 +1,3 @@
+-dontwarn twitter4j.**
+-keep  class twitter4j.conf.PropertyConfigurationFactory
+-keep class twitter4j.** { *; }

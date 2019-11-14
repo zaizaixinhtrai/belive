@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:orientation="horizontal"
+              android:background="@color/color_f5f5f5"
+              android:gravity="center"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvCamera"
+        style="@style/chat_item_text"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/icon_chat_camera"
+        android:text="@string/chat_camera"/>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvPhoto"
+        style="@style/chat_item_text"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/icon_chat_picture"
+        android:text="@string/picture"
+        />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvVideo"
+        style="@style/chat_item_text"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/icon_chat_video"
+        android:text="@string/chat_video"
+        />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvGift"
+        style="@style/chat_item_text"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/icon_chat_gift"
+        android:text="@string/chat_gift"
+        />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/chat_media_popup_shadow"/>
+
+</LinearLayout>

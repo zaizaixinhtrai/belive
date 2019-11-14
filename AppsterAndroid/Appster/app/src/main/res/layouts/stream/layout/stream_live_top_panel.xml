@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlStreamingToppanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="18dp"
+    android:paddingStart="0dp"
+    android:layout_marginTop="35dp">
+
+    <include
+        android:id="@+id/llLiveVideoOwner"
+        layout="@layout/stream_widget_owner_info" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hlvCustomList"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/live_stream_horizontal_listview"
+        android:layout_gravity="center"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/llLiveVideoOwner"
+        android:overScrollMode="never" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignStart="@+id/llLiveVideoOwner"
+        android:layout_below="@+id/llLiveVideoOwner"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_corner_small"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:drawableEnd="@drawable/ic_stats_arrow"
+        app:drawable_end_height="13dp"
+        app:drawable_end_width="8dp"
+        android:drawableStart="@drawable/ic_stars_currency"
+        app:drawable_start_height="13dp"
+        app:drawable_start_width="13dp"
+        app:appFont="@string/font_opensansemibold" />
+
+    <com.appster.customview.GiftRankingGroupView
+        android:id="@+id/grv_ranking"
+        style="@style/giftRankingGroupViewStyle"
+        android:layout_toEndOf="@id/txt_stars"
+        android:layout_below="@+id/llLiveVideoOwner"
+        />
+</RelativeLayout>

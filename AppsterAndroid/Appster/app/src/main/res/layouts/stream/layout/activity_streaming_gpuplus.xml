@@ -1,0 +1,364 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flStreamContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d0d"
+    tools:context=".features.stream.StreamingActivityGLPlus">
+
+    <RelativeLayout
+        android:id="@+id/flLiveContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <me.yifeiyuan.library.PeriscopeLayout
+            android:id="@+id/periscope"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            android:minHeight="50dp" />
+
+        <com.appster.features.stream.CameraHintView
+            android:id="@+id/camera_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ViewSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <include
+                layout="@layout/belive_pre_live_stream_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--</FrameLayout>-->
+
+            <ViewStub
+                android:id="@+id/view_stub_preLive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/pre_live_category_container" />
+
+        </ViewSwitcher>
+
+        <include
+            android:id="@+id/llStreamingToppanel"
+            layout="@layout/stream_live_top_panel" />
+
+        <TextView
+            android:id="@+id/txt_stream_upload_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            tools:text="network speed"
+            tools:visibility="visible" />
+
+        <ViewStub
+            android:id="@+id/vsSubPlayer"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout="@layout/sub_player_layout" />
+
+        <com.appster.customview.StickyPadFrameLayout
+            android:id="@+id/fl_sticky_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_marginBottom="200dp"
+            android:paddingStart="@dimen/sticky_layout_margin_start"
+            android:paddingEnd="@dimen/sticky_layout_margin_end"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/trivia_host_extra_actions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_marginBottom="200dp"
+            android:paddingStart="@dimen/sticky_layout_margin_start"
+            android:paddingTop="10dp"
+            android:paddingEnd="@dimen/sticky_layout_margin_end">
+
+            <FrameLayout
+                android:id="@+id/lo_point"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/btn_point"
+                    style="@style/clickable_ripple"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_point_live" />
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tv_user_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:minWidth="25dp"
+                    android:minHeight="11dp"
+                    android:paddingStart="2.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingEnd="2.5dp"
+                    android:paddingRight="2.5dp"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="8sp"
+                    app:appFont="@string/font_opensansemibold"
+                    tools:text="9">
+
+                    <aapt:attr name="android:background">
+
+                        <shape android:shape="rectangle">
+
+                            <solid android:color="#ff5268" />
+
+                            <corners android:radius="5dp" />
+                        </shape>
+                    </aapt:attr>
+                </com.appster.customview.CustomFontTextView>
+
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/btn_live_title"
+                style="@style/clickable_ripple"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lo_point"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_float_text_40dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btn_live_shop"
+                style="@style/clickable_ripple"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_live_shop"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_notification_network"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@+id/btn_live_shop"
+                android:layout_alignEnd="@+id/btn_live_shop"
+                android:layout_marginTop="4dp"
+                android:animateLayoutChanges="true"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvNetworkSlow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_live_network_low"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/hot_network_is_low"
+                    android:textColor="#f05c56"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:appFont="@string/font_opensansbold"
+                    app:drawable_height="18dp"
+                    app:drawable_width="18dp"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--<include layout="@layout/faceunity_choose"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/llStreamingToppanel"/>-->
+
+        <ImageButton
+            android:id="@+id/ibCloseStream"
+            style="@style/SelectableItemThemeDark"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/live_stream_horizontal_listview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="35dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:src="@drawable/icon_live_exit" />
+
+        <LinearLayout
+            android:id="@+id/llBottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentsList"
+                style="@style/stream_chat_group_style" />
+
+            <include
+                android:id="@+id/stream_live_bottom_panel"
+                layout="@layout/stream_live_bottom_panel"
+                android:layout_width="match_parent"
+                android:layout_height="54dp" />
+
+        </LinearLayout>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvMaintenanceMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStreamingToppanel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/maintenance_message"
+            android:textColor="#f05c56"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:appFont="@string/font_opensansbold"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/triviaCountDownView"
+        layout="@layout/trivia_host_countdown_view"
+        android:layout_width="105dp"
+        android:layout_height="95dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="87dp"
+        android:visibility="gone" />
+
+    <ViewStub
+        android:id="@+id/vsTriviaWinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="26dp"
+        android:layout="@layout/trivia_winner_view" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <com.appster.customview.GiftComboGroupView
+        android:id="@+id/ll_gift_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="200dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="26dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp" />
+
+    <com.appster.customview.trivia.TriviaView
+        android:id="@+id/triviaView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        tools:visibility="invisible" />
+
+    <ViewStub
+        android:id="@+id/vsEndStream"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/video_view_stream_ended_container"
+        android:layout="@layout/live_stream_view_stream_ended_container" />
+
+    <com.appster.customview.StateProgressbar
+        android:id="@+id/stateProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:visibility="gone"
+        app:indicatorTextSize="12sp"
+        app:maxProgress="1000"
+        app:progress="0"
+        app:progressThickness="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/spinwheelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/streamPreview"
+            android:layout_width="@dimen/stream_minor_screen_width"
+            android:layout_height="@dimen/stream_minor_screen_height"
+            android:layout_gravity="center_horizontal" />
+
+        <ViewStub
+            android:id="@+id/vsLuckywheel"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout="@layout/stream_lucky_wheel" />
+    </LinearLayout>
+</FrameLayout>

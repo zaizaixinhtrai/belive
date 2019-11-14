@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="true"><!-- To restore to false when bug is fixed by Android team -->
+
+        <!-- This FrameLayout is needed ONLY IF sticky headers are used, in order to
+             display the refresh circle on the top of sticky_header_layout.
+             If you need to drag items, SwipeRefreshLayout must be disabled! -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/noDataView"
+        layout="@layout/layout_no_data_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- Custom EmptyView for RV when empty-->
+    <!--<include layout="@layout/layout_no_data_following"/>-->
+
+    <!-- Custom ProgressBar (at the moment not used) -->
+    <!--<include layout="@layout/progress_bar"/>-->
+
+    <!-- FastScroller Layout must be at the end of ViewHierarchy
+         in order to be displayed at the top of every views -->
+    <!--<include layout="@layout/fast_scroller"/>-->
+
+
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_search_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:foreground="?android:selectableItemBackground"
+    android:paddingEnd="17dp"
+    android:paddingStart="17dp">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_tapbar_of_search"
+        android:background="@drawable/fragment_home_rlt_search"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/img_search"
+        android:gravity="start|center"
+        android:paddingStart="15dp"
+        android:text="@string/search_title"
+        android:textColor="#adadad"
+        android:textSize="13sp"
+        app:appFont="@string/font_questrialregular"
+        app:drawable_start_height="20dp"
+        app:drawable_start_width="20dp" />
+
+</FrameLayout>

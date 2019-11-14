@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appster.customview.RippleBackground
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rippleBackground"
+    android:layout_width="68dp"
+    android:layout_height="68dp"
+    android:layout_gravity="center"
+    app:rb_color="#0099CC"
+    app:rb_duration="2000"
+    app:rb_radius="17dp"
+    app:rb_rippleAmount="1"
+    app:rb_scale="2"
+    >
+    <com.appster.customview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/civAvatar"
+        android:src="@drawable/ic_live_host_follow"/>
+
+</com.appster.customview.RippleBackground>

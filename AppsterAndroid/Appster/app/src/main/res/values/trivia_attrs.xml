@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TriviaTimer">
+        <attr name="tickTextSize" format="dimension" />
+        <attr name="tickRingThickness" format="dimension" />
+        <attr name="tickDotRadius" format="dimension" />
+        <attr name="tickTextColor" format="color" />
+        <attr name="tickEmptyRingColor" format="color" />
+        <attr name="tickFillRingColor" format="color" />
+        <attr name="tickMiddleColor" format="color" />
+        <attr name="tickText" format="string" />
+        <attr name="tickMoveCounterClockwise" format="boolean" />
+        <attr name="tickAutoFitText" format="boolean" />
+        <attr name="tickOneRoundCircleDuration" format="integer"/>
+        <attr name="tickCircleDuration" format="enum">
+            <enum name="minute" value="0"/>
+            <enum name="total_time" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/color_ffd3d2" />
+            <size
+                android:height="20dp"
+                android:width="20dp" />
+            <corners android:radius="@dimen/trivia_option_view_radius" />
+        </shape>
+    </item>
+    <item android:id="@android:id/background"
+          android:left="2dp"
+          android:top="2dp"
+          android:right="2dp"
+          android:bottom="2dp">
+        <shape>
+            <solid android:color="#FFF" />
+            <size
+                android:height="20dp"
+                android:width="20dp" />
+            <corners android:radius="@dimen/trivia_option_view_radius" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress"
+          android:left="2dp"
+          android:top="2dp"
+          android:right="2dp"
+          android:bottom="2dp">
+        <clip>
+            <layer-list>
+                <item>
+                    <color android:color="#00000000" />
+                </item>
+                <item>
+                    <shape>
+                        <solid android:color="@color/color_ff6155" />
+                        <corners android:radius="@dimen/trivia_option_view_radius" />
+                    </shape>
+                </item>
+            </layer-list>
+        </clip>
+    </item>
+</layer-list>

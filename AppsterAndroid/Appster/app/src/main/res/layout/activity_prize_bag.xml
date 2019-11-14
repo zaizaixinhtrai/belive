@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvNoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/prize_bag_noti_text"
+        android:textColor="#6b6c6e"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansregular" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyListPrize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvNoti"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="15dp"
+        android:background="#EEEEEE"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/prize_text_nodata"
+        android:textColor="#bbbbbb"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:appFont="@string/font_opensansregular" />
+
+</RelativeLayout>

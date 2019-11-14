@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white_border_view_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.appster.customview.SquaredFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivUserProfileImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_image_default" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvWatcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/watch_from_browser_user"
+                android:maxWidth="240dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                app:appFont="@string/font_opensansbold"/>
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvBan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/string_ban"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="Ban"
+                tools:visibility="visible" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/string_stop"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="Stop"
+                tools:visibility="visible" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvHideUnhide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/string_hide"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:appFont="@string/font_opensansemibold"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/black_top_down_gradient"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvBlockOrReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/string_block"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="Block"
+                tools:visibility="visible" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvMute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:shadowColor="#aa000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/string_mute"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="Mute"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvCloseDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/icon_live_exit"
+                android:gravity="end"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/llStatsContainer"
+            android:layout_gravity="bottom"
+            android:background="@drawable/home_gradient_tag"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:visibility="visible">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvNumFollower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:shadowColor="#aa000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensansbold" />
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#aa000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/followers"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensanssemibold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvNumFollowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#aa000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensansbold" />
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#aa000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/following"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensanssemibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/tvStarReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:shadowColor="#aa000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensansbold" />
+
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#aa000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/stars"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:appFont="@string/font_opensanssemibold" />
+            </LinearLayout>
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+
+    </com.appster.customview.SquaredFrameLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:maxLines="1"
+        android:paddingTop="10dp"
+        android:textColor="#58585b"
+        android:textDirection="locale"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansbold"
+        tools:text="guest" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="2dp"
+        android:textColor="#9c9c9c"
+        android:textSize="12sp"
+        app:appFont="@string/font_opensansemibold"
+        tools:text="\@guest" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/icon_profile_location"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="7dp"
+        android:singleLine="true"
+        android:textColor="#9c9c9c"
+        android:textSize="10sp"
+        app:appFont="@string/font_opensansemibold"
+        tools:text="HCMC, Vietnam" />
+
+
+    <com.appster.customview.autolinktextview.AutoLinkTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:maxLines="5"
+        android:paddingBottom="10dp"
+        android:paddingTop="7dp"
+        android:textColor="#58585b"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansemibold"
+        tools:text="Super handsome man alive" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/llActionContainer">
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/btn_video_call"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/video_call_conner_btn"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginEnd="10dp"
+            app:appFont="@string/font_opensansbold" />
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/btnFollow"
+            android:layout_width="match_parent"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:minWidth="170dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_conner_btn_f05c56"
+            android:letterSpacing="0.15"
+            android:text="@string/profile_un_follow"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:appFont="@string/font_opensansbold" />
+    </LinearLayout>
+</LinearLayout>

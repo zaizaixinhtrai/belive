@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/holder_chat_item">
+
+    <LinearLayout
+        android:id="@+id/lo_owner_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.appster.customview.autolinktextview.AutoLinkTextView
+                android:id="@+id/tvOwnerMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:clickable="true"
+                android:gravity="start"
+                android:paddingEnd="7dp"
+                android:paddingStart="0dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_5c5c5c"
+                android:textDirection="locale"
+                android:textSize="13sp"
+                app:appFont="@string/font_opensansregular"
+                tools:text="A small river named Duden flows A small river named Duden flows A small river named Duden flows A small river named Duden flows" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+
+                <ImageView
+                    android:id="@+id/ivOwnerImageMessage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/chat_left_bg"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivOwnerVideoIndicator"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/playvideo"
+                    android:contentDescription="@string/content_desc"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+            </FrameLayout>
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/tvOwnerMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/color_dfdfdf"
+                android:textSize="13sp"
+                app:appFont="@string/font_opensansemibold"
+                tools:text="10:30AM" />
+        </LinearLayout>
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/ivOwnerUserImage"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:contentDescription="@string/content_desc"
+            android:padding="2.5dp"
+            tools:src="@drawable/user_image_default" />
+    </LinearLayout>
+</merge>

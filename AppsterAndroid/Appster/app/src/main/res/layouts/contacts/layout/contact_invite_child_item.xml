@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?android:attr/selectableItemBackground"
+              android:orientation="horizontal"
+              android:paddingBottom="5dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="16dp"
+              android:paddingTop="5dp"
+    >
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_image_default"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Appsters"
+            android:textColor="@color/color_000000"
+            android:textDirection="locale"
+            android:textSize="13sp"
+            app:appFont="@string/font_helveticaneuelight"/>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="\@Appstersgfgfgfgff"
+            android:textColor="@color/color_bbbbbb"
+            android:textDirection="locale"
+            android:textSize="13sp"
+            app:appFont="@string/font_HelveticaNeueRegular"/>
+    </LinearLayout>
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btnInvite"
+        style="@style/clickable_ripple"
+        android:layout_width="65dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/income_exchange_btn"
+        android:gravity="center"
+        android:letterSpacing="0.09"
+        android:padding="4dp"
+        android:text="@string/invite"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:appFont="@string/font_opensansbold"/>
+</LinearLayout>

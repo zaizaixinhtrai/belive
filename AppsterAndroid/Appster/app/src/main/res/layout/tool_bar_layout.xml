@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/themedToolbarHeight"
+    android:background="?attr/themedToolbarDrawable"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="?attr/themedToolbarPaddingTop"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <ImageButton
+        android:id="@+id/slider_menu"
+        style="@style/toolbar_button_ripple"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:src="?attr/themedToolbarMenuIconDrawable" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="48dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_title_screen"
+            style="?attr/themedToolbarTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:appFont="@string/font_opensansextrabold" />
+
+        <ImageView
+            android:id="@+id/imv_title"
+            android:layout_width="64dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:background="?attr/themedToolbarLogoDrawable"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <com.appster.customview.BadgeImageView
+            android:id="@+id/iv_secondary_badge"
+            style="@style/toolbar_button_ripple"
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_your_prizes"
+            android:visibility="gone"
+            app:fontName="@string/font_opensansbold"
+            app:showBadge="false"
+            app:showText="true"
+            app:text="0"
+            app:textMarginY="-3dp"
+            app:textPosition="center"
+            app:textSize="9sp"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <com.appster.customview.BadgeImageView
+        android:id="@+id/imvNotyOrSetting"
+        style="@style/toolbar_button_ripple"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_gravity="end"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="?attr/themedToolbarNotificationIconDrawable"
+        android:visibility="gone"
+        app:badgePosition="rightTop"
+        app:badgeRadius="6dp"
+        app:badgeX="18dp"
+        app:badgeY="20dp"
+        app:showBadge="false"
+        tools:visibility="visible" />
+
+</androidx.appcompat.widget.Toolbar>

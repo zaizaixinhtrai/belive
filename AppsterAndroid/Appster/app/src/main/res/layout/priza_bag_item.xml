@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/prize_bag_item_background"
+    android:foreground="?android:selectableItemBackground"
+    android:paddingBottom="15dp">
+
+    <com.appster.layout.SquareImageView
+        android:id="@+id/imvBranchImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_image_default"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvVoucherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:text="Color Davit Backam"
+        android:textColor="#6b6c6e"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansbold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvBranchImage" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:text="Color Davit Backam"
+        android:textColor="#6b6c6e"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansregular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVoucherTitle" />
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btCheck"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/prize_bag_check_button"
+        android:gravity="center"
+        android:letterSpacing="0.09"
+        android:text="@string/prize_bt_check"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansbold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

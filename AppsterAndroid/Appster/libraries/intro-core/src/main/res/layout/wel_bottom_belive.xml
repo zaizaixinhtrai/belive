@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/wel_button_skip"
+                style="?attr/welcomeButtonSkipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="?attr/welcomeButtonSkipText"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/wel_button_prev"
+                style="?attr/welcomeButtonPrevStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+        <!--<com.stephentuso.welcome.WelcomeViewPagerIndicator-->
+            <!--android:id="@+id/wel_pager_indicator"-->
+            <!--style="?attr/welcomeIndicatorStyle"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_weight="1"/>-->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<Button-->
+                <!--style="?attr/welcomeButtonDoneStyle"-->
+                <!--android:id="@+id/wel_button_done"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="?attr/welcomeButtonDoneText"/>-->
+
+            <ImageButton
+                style="?attr/welcomeButtonNextStyle"
+                android:id="@+id/wel_button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.stephentuso.welcome.WelcomeViewPagerIndicator
+        android:id="@+id/wel_pager_indicator"
+        style="?attr/welcomeIndicatorStyle"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:id="@+id/wel_button_done"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="?attr/welcomeButtonDoneText"
+        android:textColor="@color/wel_white"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="30dp"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:visibility="visible"
+        android:background="@drawable/wel_button_done_background"/>
+
+</FrameLayout>

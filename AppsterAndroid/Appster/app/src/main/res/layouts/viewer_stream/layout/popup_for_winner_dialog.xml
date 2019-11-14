@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/winner_popup_background"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context="com.appster.features.stream.dialog.TriviaWinnerPopupDialog">
+
+    <ImageButton
+        android:id="@+id/ibClose"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/winner_icon_exit" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_trophy_for_winner" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:appFont="@string/font_ralewayextrabold"
+        tools:text="@string/popup_winner_title" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvPrizeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:appFont="@string/font_ralewayeregular"
+        tools:text="@string/winner_money_title" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvWinCash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffe548"
+        android:textSize="30sp"
+        app:appFont="@string/font_helveticaneuebold"
+        tools:text="S $566.78" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#3050ff" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        app:appFont="@string/font_ralewayeregular"
+        tools:text="@string/winner_notification_of_admin" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff7bcb"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/winner_share_title"
+        android:textColor="#ffe548"
+        android:textSize="14sp"
+        app:appFont="@string/font_ralewayextrabold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/winner_bottom_border"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llShareItemContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff7bcb"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp" />
+    </HorizontalScrollView>
+
+</LinearLayout>

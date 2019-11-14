@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/transparent"
+             android:clipChildren="false">
+    <ImageView
+        android:id="@+id/ivHostAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_image_default" />
+    <View
+        android:id="@+id/vGradientView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_black_gradient"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:clipChildren="false"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal"
+                      tools:parentTag="LinearLayout">
+
+            <com.appster.customview.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:singleLine="true"
+                android:text="Host"
+                android:textColor="@color/white"
+                android:textDirection="locale"
+                android:textSize="13sp"
+                app:appFont="@string/font_helveticaneuebold"
+                tools:ignore="Deprecated"
+                tools:text="Guest"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

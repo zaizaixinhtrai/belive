@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="54dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/stream_live_bottom_panel"
+              android:background="@color/live_stream_background_user_layout"
+              android:orientation="horizontal"
+              android:paddingStart="7dp"
+              android:paddingEnd="7dp"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:visibility="visible"
+              tools:showIn="@layout/fragment_media_player"
+    >
+
+    <com.appster.customview.CustomFontEditText
+        android:id="@+id/etComment"
+        tools:text=""
+        android:hint="@string/chat_with_everyone"
+        app:appFont="@string/font_opensanssemibold"
+        style="@style/stream_comment_style"/>
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/flSendComment"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:minWidth="72dp"-->
+        <!--android:visibility="gone"-->
+        <!--&gt;-->
+
+        <ImageButton
+            android:id="@+id/ibSendComment"
+            android:src="@drawable/icon_chat_send"
+            android:padding="6dp"
+            android:visibility="gone"
+            style="@style/stream_send_comment_icon_style" />
+    <!--</FrameLayout>-->
+
+    <LinearLayout
+        android:id="@+id/llActions"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/ibShareStream"
+            style="@style/stream_bottom_icon_style_viewer"
+            android:src="@drawable/icon_share_stream" />
+
+        <ImageButton
+            android:id="@+id/ibGiftStore"
+            style="@style/stream_bottom_icon_style_viewer"
+            android:src="@drawable/icon_stream_gift" />
+
+        <ImageButton
+            android:id="@+id/ibSendHeart"
+            style="@style/stream_bottom_icon_style_viewer"
+            android:src="@drawable/icon_stream_send_heart" />
+    </LinearLayout>
+</LinearLayout>

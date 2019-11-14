@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_background">
+
+        <com.appster.customview.InterceptViewpager
+            android:id="@+id/vp_inner_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </com.appster.customview.InterceptViewpager>
+
+        <com.appster.customview.AppBarLayoutCustom
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="?attr/themedProfileAppBarCustomWindow">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="?attr/themedProfileAppBarCustomWindow"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:id="@+id/framelayout_header_user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:layout_collapseMode="pin"
+                    android:orientation="vertical"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.appster.customview.AppBarLayoutCustom>
+
+        <RelativeLayout
+            android:id="@+id/rl_live_notification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/red_notification_bar"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.appster.customview.CircleImageView
+                android:id="@+id/img_notification_avatar"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/user_image_default"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/img_notification_avatar"
+                android:layout_alignParentTop="true">
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/txt_notification_user"
+                    style="@style/textUserStyle"
+                    android:ellipsize="end"
+                    app:appFont="@string/font_opensansbold"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    android:maxLines="1"
+                    tools:text="Penelope Jen is Live now"
+                    />
+
+                <com.appster.customview.CustomFontTextView
+                    android:id="@+id/txt_notification_stream_title"
+                    style="@style/textUserStyle"
+                    android:ellipsize="end"
+                    app:appFont="@string/font_opensansemibold"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:maxLines="1"
+                    tools:text="Going to Tokyo Univeral Studio Going to Tokyo Univeral Studio"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ucrop_label_original">原图 </string>
+    <string name="ucrop_label_edit_photo">编辑图片</string>
+
+    <string name="ucrop_menu_crop">剪辑 </string>
+
+    <string name="ucrop_error_input_data_is_absent">必须指定输入和输出链接</string>
+</resources>

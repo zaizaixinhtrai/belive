@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal|bottom"
+            android:paddingBottom="84dp"
+            tools:parentTag="RelativeLayout"
+            tools:background="#000">
+
+    <com.appster.customview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:src="@drawable/user_image_default"
+        style="@style/expensive_gift_avatar"/>
+
+    <TextView
+        android:id="@+id/txt_display_name"
+        style="@style/expensive_gift_display_name"
+        tools:text="cheeruru"/>
+
+    <ImageView
+        android:id="@+id/img_gift_image"
+        style="@style/expensive_gift_image"
+        android:layout_below="@id/txt_display_name"
+        tools:src="@drawable/img_gift_luxury_car_black"/>
+</merge>

@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutTop"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/themedToolbarHeight"
+    android:background="?attr/themedToolbarDrawable"
+    android:orientation="horizontal"
+    android:paddingTop="?attr/themedToolbarPaddingTop">
+
+    <ImageButton
+        android:id="@+id/iBtnLeftToolbar"
+        style="@style/toolbar_button_ripple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start|center_vertical"
+        android:onClick="onClickBack"
+        android:scaleType="centerInside"
+        android:src="?attr/themedToolbarBackIconDrawable" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/pageTitle"
+        style="?attr/themedToolbarTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/edit_profile"
+        app:appFont="@string/font_opensansextrabold" />
+
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btn_right_toolbar"
+        style="?attr/themedTransactionHistoryTextStyle"
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="2dp"
+        android:background="@null"
+        android:clickable="true"
+        android:letterSpacing="0.07"
+        android:text="@string/edit_pro_save"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensanslight"
+        tools:targetApi="lollipop" />
+
+</FrameLayout>

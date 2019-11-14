@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="7dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/numberOrder"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#6b6c6e"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:appFont="@string/font_opensansbold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/border_stt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="1dp"
+        android:layerType="hardware">
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layerType="software"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:orientation="vertical">
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/displayName"
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Appsters"
+            android:textColor="#6b6c6e"
+            android:textSize="13sp"
+            app:appFont="@string/font_opensansbold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/topfan_sent"
+                android:textColor="#9b9b9b"
+                android:textSize="12sp"
+                app:appFont="@string/font_opensansemibold" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/icon_gift_price" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/totalStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|right"
+                android:text="123"
+                android:textColor="#ffd460"
+                android:textSize="12sp"
+                app:appFont="@string/font_opensansemibold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_weight="1"
+        />
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/btn_follow"
+        android:layout_width="36dp"
+        android:layout_height="23dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_follow" />
+</LinearLayout>

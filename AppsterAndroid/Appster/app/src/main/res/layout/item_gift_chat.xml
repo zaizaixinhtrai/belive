@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llCommentContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginStart="@dimen/chat_margin_start"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+
+    <com.apster.common.view.SpannableTextView
+        android:id="@+id/txt_comment_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ems="10"
+        android:textSize="16sp"
+        tools:text="what ever go here dsd"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imv_gift"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/txt_comment_item"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <com.apster.common.view.SpannableTextView
+        android:id="@+id/txt_combo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/imv_gift"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansbold"
+        tools:text="x10" />
+</RelativeLayout>

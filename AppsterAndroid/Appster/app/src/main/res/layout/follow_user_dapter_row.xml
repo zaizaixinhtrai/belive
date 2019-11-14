@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center|left"
+    android:orientation="horizontal"
+    android:paddingBottom="7dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="20dp"
+    android:paddingTop="7dp">
+
+    <FrameLayout
+        android:id="@+id/userImage_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/newfeed_imv_user_background">
+
+        <com.appster.customview.CircleImageView
+            android:id="@+id/imv_user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </FrameLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/btn_follow"
+        android:layout_toRightOf="@+id/userImage_fl"
+        android:singleLine="true"
+        android:text="long Namefdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf"
+        android:textSize="13sp"
+        android:textDirection="locale"
+        app:appFont="@string/font_helveticaneuebold" />
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="@dimen/width_btn_follow"
+        android:layout_height="@dimen/height_btn_follow"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+</RelativeLayout>

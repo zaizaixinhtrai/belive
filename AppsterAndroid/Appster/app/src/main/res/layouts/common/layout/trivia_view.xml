@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="47dp"
+    android:background="@drawable/bg_trivia_container"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingTop="30dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp">
+
+        <com.appster.customview.trivia.TriviaTimer
+            android:id="@+id/triviaTimer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/tvAnswerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_trivia_answer_idle"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:appFont="@string/font_helveticaneuebold"
+            tools:text="Time's up!" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:scaleType="centerInside"
+            app:lottie_scale="1" />
+    </FrameLayout>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/color_58585b"
+        android:textSize="24sp"
+        app:appFont="@string/font_questrialregular"
+        android:importantForAccessibility="no"
+        tools:text="How many stars did scientists estimate in our galaxy?" />
+
+    <com.appster.customview.trivia.TriviaOption
+        android:id="@+id/option1"
+        android:importantForAccessibility="noHideDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.appster.customview.trivia.TriviaOption
+        android:id="@+id/option2"
+        android:importantForAccessibility="noHideDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.appster.customview.trivia.TriviaOption
+        android:id="@+id/option3"
+        android:importantForAccessibility="noHideDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tvRevivedCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="13dp"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/icon_trivia_revive"
+        android:gravity="center"
+        android:textColor="#00d3aa"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:appFont="@string/font_HelveticaNeueRegular"
+        app:drawable_start_height="12dp"
+        app:drawable_start_width="15dp"
+        tools:text="10 Revived  from last round" />
+
+</LinearLayout>

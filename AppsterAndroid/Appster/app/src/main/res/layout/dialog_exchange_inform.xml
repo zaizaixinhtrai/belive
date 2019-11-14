@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundwhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dip"
+        android:text="@string/income_exchange_rate_tips"
+        android:textColor="#58585b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:appFont="@string/font_opensansbold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imv_gem"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/refill_gem_icon" />
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="fgfgfg"
+            android:textColor="#58585b"
+            android:textSize="13sp"
+            app:appFont="@string/font_opensansregular" />
+
+        <ImageView
+            android:id="@+id/imv_star"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/icon_gift_price" />
+
+    </LinearLayout>
+
+    <com.appster.customview.CustomFontButton
+        android:id="@+id/ok"
+        android:layout_width="280dip"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/income_exchange_btn"
+        android:letterSpacing="0.09"
+        android:text="@string/btn_text_ok"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:appFont="@string/font_opensansbold" />
+</LinearLayout>

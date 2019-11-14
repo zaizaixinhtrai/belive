@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    tools:parentTag="RelativeLayout">
+
+    <LinearLayout
+        android:id="@+id/ll_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/white_border_view_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <com.appster.customview.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:letterSpacing="0.285"
+                android:text="@string/shop"
+                android:textColor="@color/color_b3b6b7"
+                app:appFont="@string/font_helveticaneuebold"
+                tools:targetApi="lollipop" />
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                style="@style/clickable_ripple"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/icon_live_exit" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/live_shop_dialog_header_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/bg_radius_bottom_gray"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/txt_promo_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/color_ff5167"
+                android:textSize="21sp"
+                app:appFont="@string/font_helveticaneuebold"
+                tools:text="$17.90" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/txt_promo_price"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/color_9b9b9b"
+                android:textSize="10sp"
+                app:appFont="@string/font_helveticaneuelight"
+                tools:text="U.P $36.0" />
+
+            <com.appster.customview.CustomFontTextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/txt_promo_price"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/txt_promo_price"
+                android:gravity="center_vertical"
+                android:letterSpacing="0.037"
+                android:lineSpacingExtra="4dp"
+                android:maxLength="36"
+                android:textColor="@color/live_shop_dialog_title"
+                android:textSize="12sp"
+                app:appFont="@string/font_helveticaneuebold"
+                tools:targetApi="lollipop"
+                tools:text="veekherWong bundle oral hygiene " />
+
+        </RelativeLayout>
+
+        <com.appster.customview.CustomFontTextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="3dp"
+            android:lines="4"
+            android:maxLength="200"
+            android:maxLines="4"
+            android:scrollbars="none"
+            android:textColor="@color/color_9b9b9b"
+            android:textSize="10sp"
+            app:appFont="@string/font_helveticaneuelight"
+            tools:text="The upcoming iPhone 8 will launch in three storage options - the base 64GB, a middle 256GB and a whopping 512GB one - and all three will have 3GB of RAM and the new Apple A11 chip." />
+
+        <com.appster.customview.RoundedCornerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="?attr/themedShopButtonContainerBackground">
+
+            <LinearLayout
+                android:id="@+id/ll_promo_code"
+                style="@style/clickable_ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.appster.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promo_code"
+                    android:textColor="?attr/themedShopPromoteTextColor"
+                    android:textSize="10sp"
+                    app:appFont="@string/font_HelveticaNeueRegular" />
+
+                <com.appster.customview.BeLiveAutoResizeTextView
+                    android:id="@+id/txt_promo_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:letterSpacing="0.037"
+                    android:textColor="?attr/themedShopPromoteTextColor"
+                    android:textSize="12sp"
+                    app:appFont="@string/font_helveticaneuebold"
+                    app:max_lines="1"
+                    app:min_text_size="6sp"
+                    tools:targetApi="lollipop"
+                    tools:text="0123456789" />
+                <!--<com.appster.customview.AutoResizeTextView-->
+                <!--android:id="@+id/txt_promo_code"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="12sp"-->
+                <!--app:appFont="@string/font_helveticaneuebold"-->
+                <!--android:textColor="@color/color_ff5167"-->
+                <!--android:textSize="12sp"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="1"-->
+                <!--android:letterSpacing="0.037"-->
+                <!--app:maxTextSize="12sp"-->
+                <!--app:minTextSize="6sp"-->
+                <!--tools:text="0123456789"-->
+                <!--tools:targetApi="lollipop"/>-->
+            </LinearLayout>
+
+
+            <com.appster.customview.CustomFontButton
+                android:id="@+id/btn_order"
+                style="?attr/themedShopButtonTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="?attr/themedShopButtonBackground"
+                android:letterSpacing="0.148"
+                android:text="@string/order_now"
+                android:textColor="@color/white"
+                app:appFont="@string/font_helveticaneuebold"
+                tools:targetApi="lollipop" />
+        </com.appster.customview.RoundedCornerFrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/live_shop_product_image_drop_shadow_14">
+
+        <com.appster.customview.RoundRectCornerImageView
+            android:id="@+id/img_product_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:src="@drawable/belive_icon" />
+    </FrameLayout>
+</merge>

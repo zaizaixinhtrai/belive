@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundwhite"
+    android:gravity="center_horizontal"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.appster.customview.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rippleBackground"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        app:rb_color="#0099CC"
+        app:rb_duration="2000"
+        app:rb_radius="22dp"
+        app:rb_rippleAmount="3"
+        app:rb_scale="2">
+        <com.appster.customview.CircleImageView
+            android:id="@+id/imv_profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_image_default"/>
+    </com.appster.customview.RippleBackground>
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:gravity="bottom"
+        android:text="@string/video_call_live_invite_title"
+        android:textColor="#58585b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:appFont="@string/font_opensansbold" />
+
+    <com.appster.customview.CustomFontTextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/video_call_host_invitation"
+        android:textColor="#58585b"
+        android:textSize="13sp"
+        app:appFont="@string/font_opensansregular" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/video_call_decline_selector"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:minWidth="135dp"
+            android:text="@string/video_call_decline"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"
+            tools:targetApi="lollipop" />
+
+
+        <com.appster.customview.CustomFontButton
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/video_call_accept_selector"
+            android:letterSpacing="0.15"
+            android:minWidth="135dp"
+            android:text="@string/video_call_accept"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:appFont="@string/font_opensansbold"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+</LinearLayout>

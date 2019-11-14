@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    def appDependencies = rootProject.ext.appDependencies
+    implementation (appDependencies.supportv4)
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+}
+
